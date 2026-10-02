@@ -110,9 +110,6 @@ export default function GuidesIndexPage() {
             <Link href="/guides" className="font-semibold text-teal-700">
               Guides
             </Link>
-            <Link href="/creative-bootcamp" className={styles.bootcampNavLink}>
-              Creative Bootcamp
-            </Link>
             <Link href="/#community">Community</Link>
             <Link href="/#consultation">Consulting</Link>
             <Link href="/#ai-lab">AI Lab</Link>

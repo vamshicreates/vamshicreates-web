@@ -1215,9 +1215,6 @@
 }
 
 @media (max-width: 800px) {
-  .bootcampNavLink {
-    display: none;
-  }
   .container {
     width: calc(100% - 40px);
   }

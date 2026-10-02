@@ -133,7 +133,6 @@ export default function HomePage() {
           <nav aria-label="Main navigation" className={styles.navLinks}>
             <Link href="/journey">My Journey</Link>
             <Link href="/guides">Guides</Link>
-            <Link href="/creative-bootcamp" className={styles.bootcampNavLink}>Creative Bootcamp</Link>
             <a href="#community">Community</a>
             <a href="#consultation">Consulting</a>
             <a href="#ai-lab">AI Lab</a>
@@ -898,7 +897,6 @@ export default function HomePage() {
           <div className={styles.footerLinks}>
             <Link href="/journey">My Journey</Link>
             <Link href="/guides">All guides</Link>
-            <Link href="/creative-bootcamp">Creative Bootcamp</Link>
             <a href="#community">Community</a>
             <a href="#playbook">Playbook</a>
             <a href={`mailto:${config.email}`}>{config.email}</a>

@@ -53,9 +53,6 @@ export default function MyJourneyPage() {
               My Journey
             </Link>
             <Link href="/guides">Guides</Link>
-            <Link href="/creative-bootcamp" className={styles.bootcampNavLink}>
-              Creative Bootcamp
-            </Link>
             <Link href="/#community">Community</Link>
             <Link href="/#consultation">Consulting</Link>
             <Link href="/#ai-lab">AI Lab</Link>

@@ -49,3 +49,8 @@ store. Never commit local environment files.
 
 Run `npm run build` before pushing changes. Each push to `main` creates a new
 production deployment through Vercel's GitHub integration.
+
+The Creative Bootcamp page is currently unlinked from public navigation and
+marked `noindex, nofollow`. It remains available directly at
+`/creative-bootcamp`. To launch it publicly, restore its navigation links and
+remove the `robots` override in `src/app/creative-bootcamp/layout.tsx`.
