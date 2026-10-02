@@ -55,7 +55,7 @@ export function GuideLookup() {
     if (!matchedGuide) return;
     setStatus("loading");
     try {
-      await fetch("/api/email-list", {
+      const response = await fetch("/api/email-list", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -63,6 +63,7 @@ export function GuideLookup() {
           guide: keyword.trim().toLowerCase(),
         }),
       });
+      if (!response.ok) throw new Error("Could not save email");
       try {
         window.localStorage.setItem(STORAGE_KEY, email.trim().toLowerCase());
       } catch {

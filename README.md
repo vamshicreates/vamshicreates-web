@@ -27,7 +27,25 @@ A Next.js 15 (App Router) + TypeScript + CSS Modules & Tailwind CSS creator plat
 ## Running Locally
 
 ```bash
+npm install
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000).
+
+## Deployment
+
+The GitHub `main` branch deploys to the `vamshicreates-web` project in the
+`vamshicreates` Vercel Hobby account. Production URL:
+[vamshicreates-web.vercel.app](https://vamshicreates-web.vercel.app).
+
+The guide email, creative bootcamp interest, and call request forms save each
+submission as a JSON file in the project's private `vamshicreates-web-blob`
+store. Vercel connects the store to Production and Preview with OIDC. The
+project also sets `NEXT_PUBLIC_SITE_URL` to the production URL for social
+metadata. To test form submissions locally, link the project with the Vercel
+CLI and pull its development environment variables, or use a development Blob
+store. Never commit local environment files.
+
+Run `npm run build` before pushing changes. Each push to `main` creates a new
+production deployment through Vercel's GitHub integration.
