@@ -20,6 +20,8 @@ export const metadata: Metadata = {
   },
 };
 
+import TokenWidget from "@/components/TokenWidget";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -39,8 +41,9 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-sans bg-zinc-50 text-zinc-900 antialiased selection:bg-zinc-200">
+      <body className="font-sans bg-zinc-50 text-zinc-900 antialiased selection:bg-zinc-200 relative">
         {children}
+        <TokenWidget />
       </body>
     </html>
   );

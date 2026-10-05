@@ -19,7 +19,6 @@ import {
   Search,
 } from "lucide-react";
 import styles from "./home.module.css";
-import { GuideLookup } from "@/components/GuideLookup";
 import { CallRequestModal } from "@/components/CallRequestModal";
 import { InteractiveAiLab } from "@/components/InteractiveAiLab";
 import { CommandPalette } from "@/components/CommandPalette";
@@ -218,7 +217,7 @@ export default function HomePage() {
               <p className={styles.heroDescription}>{config.bio}</p>
 
               <div className={styles.heroActions}>
-                <a href="#featured" className={styles.primaryButton}>
+                <a href="#guides" className={styles.primaryButton}>
                   Explore free guides <ArrowDown size={17} aria-hidden="true" />
                 </a>
                 <Link href="/journey" className={styles.textLink}>
@@ -267,100 +266,6 @@ export default function HomePage() {
                 </a>
               </div>
             </div>
-          </section>
-
-          {/* FEATURED GUIDE + STARTING POINTS + VIDEO KEYWORD LOOKUP */}
-          <section
-            id="featured"
-            className={styles.featuredSection}
-            aria-labelledby="featured-title"
-          >
-            <article className={styles.featuredCard}>
-              <Link
-                className={styles.featuredImageLink}
-                aria-label="Read the featured Claude skills guide"
-                href="/guides/claude-skills-i-use"
-              >
-                <img
-                  alt="An illustrated toolkit for documents, writing, coding, spreadsheets, and presentations"
-                  width={1200}
-                  height={800}
-                  className={styles.featuredImage}
-                  src="/home/claude-skills.webp"
-                />
-                <span className={styles.imageBadge}>
-                  <BookOpen size={14} aria-hidden="true" /> Featured guide
-                </span>
-              </Link>
-
-              <div className={styles.featuredCopy}>
-                <p className={styles.eyebrow}>
-                  <span className={styles.freeLabel}>FREE GUIDE</span> / THE CLAUDE TOOLKIT
-                </p>
-                <h2 id="featured-title">
-                  The Claude skills
-                  <br className={styles.desktopBreak} /> I actually use.
-                </h2>
-                <p>
-                  Find useful skills for writing, documents, design, and coding, with
-                  instructions for installing them and choosing the right one for your work.
-                </p>
-                <Link className={styles.textLink} href="/guides/claude-skills-i-use">
-                  Read the free guide <ArrowRight size={18} aria-hidden="true" />
-                </Link>
-              </div>
-            </article>
-
-            <aside className={styles.featuredAside} aria-label="Find your guide">
-              <div className={styles.startingPoints}>
-                <p className={styles.eyebrow}>A GOOD PLACE TO START</p>
-                <h2>What brings you here?</h2>
-
-                <Link
-                  className={styles.startingPoint}
-                  href="/guides/ai-automation-builder-roadmap"
-                >
-                  <Route size={19} aria-hidden="true" />
-                  <span>
-                    <strong>I’m just getting started</strong>
-                    <small>Follow the automation roadmap</small>
-                  </span>
-                  <ArrowUpRight size={16} aria-hidden="true" />
-                </Link>
-
-                <Link className={styles.startingPoint} href="/guides/claude-skills-i-use">
-                  <CodeXml size={19} aria-hidden="true" />
-                  <span>
-                    <strong>I want to get more from Claude</strong>
-                    <small>Explore my go-to skills</small>
-                  </span>
-                  <ArrowUpRight size={16} aria-hidden="true" />
-                </Link>
-
-                <Link className={styles.startingPoint} href="/guides/first-ai-agent-team">
-                  <Users size={19} aria-hidden="true" />
-                  <span>
-                    <strong>I want to build AI agents</strong>
-                    <small>Build your first agent team</small>
-                  </span>
-                  <ArrowUpRight size={16} aria-hidden="true" />
-                </Link>
-
-                <Link
-                  className={styles.startingPoint}
-                  href="/guides/claude-code-agent-finds-clients"
-                >
-                  <Workflow size={19} aria-hidden="true" />
-                  <span>
-                    <strong>I want to automate my business</strong>
-                    <small>Start with client research</small>
-                  </span>
-                  <ArrowUpRight size={16} aria-hidden="true" />
-                </Link>
-              </div>
-
-              <GuideLookup />
-            </aside>
           </section>
 
           {/* 01 / FREE GUIDES GRID */}
