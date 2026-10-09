@@ -16,6 +16,7 @@ export interface JourneyMilestone {
   objectPosition?: string;
   accent: "teal" | "blue";
   gallery?: JourneyGalleryImage[];
+  websiteUrl?: string;
 }
 
 export const JOURNEY_MILESTONES: JourneyMilestone[] = [
@@ -122,6 +123,34 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     imageAlt: "Vamshi with the cast and crew of Save The Tigers series",
     objectPosition: "center center",
     accent: "blue",
+  },
+  {
+    id: "ee-line-chusava",
+    badgeText: "FILM",
+    badgeSub: "STORIES",
+    periodLabel: "FILMMAKER CONTENT · EE LINE CHUSAVA",
+    title: "Building Ee Line Chusava for filmmakers",
+    description:
+      "Built a filmmaker content community to 140K and 30K followers across its channels. Its website brings together short films, articles, scripts, opportunities, and practical learning for aspiring filmmakers.",
+    image: "/journey/ee-line-chusava.jpg",
+    imageAlt: "Ee Line Chusava brand artwork",
+    objectPosition: "center center",
+    accent: "teal",
+    websiteUrl: "https://www.eelinechusava.in",
+  },
+  {
+    id: "mylogline",
+    badgeText: "CO",
+    badgeSub: "FOUNDER",
+    periodLabel: "FILMMAKER TOOL · MYLOGLINE",
+    title: "Co-founding mylogline",
+    description:
+      "Co-founding a creative workspace for aspiring filmmakers to write screenplays, format them automatically, and visualize scenes with AI storyboards.",
+    image: "/journey/mylogline.jpg",
+    imageAlt: "mylogline illustration showing scripts and a filmmaker workspace",
+    objectPosition: "center center",
+    accent: "blue",
+    websiteUrl: "https://www.mylogline.com",
   },
   {
     id: "mallareddy-ai-classes",

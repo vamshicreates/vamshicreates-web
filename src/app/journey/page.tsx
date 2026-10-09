@@ -349,6 +349,17 @@ export default function MyJourneyPage() {
                                 {item.description}
                               </p>
 
+                              {item.websiteUrl && (
+                                <a
+                                  href={item.websiteUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-blue-700 hover:underline focus-visible:rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                                >
+                                  Visit website <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
+                                </a>
+                              )}
+
                               {hasGallery && (
                                 <div className="mt-3 border-t border-zinc-100 pt-2.5">
                                   <div className="mb-1.5 flex items-center justify-between gap-2">

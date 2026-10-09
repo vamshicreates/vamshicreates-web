@@ -16,32 +16,33 @@ export const metadata: Metadata = {
   },
 };
 
-function ProjectCard({ project, featured = false }: { project: Project; featured?: boolean }) {
+function ProjectCard({ project, priority = false }: { project: Project; priority?: boolean }) {
   return (
-    <article className={`${styles.projectCard} ${featured ? styles.featured : ""}`}>
+    <article className={styles.projectCard}>
       <img
         className={styles.projectImage}
         src={project.image}
         alt={project.imageAlt}
         width={1200}
         height={800}
-        loading={featured ? "eager" : "lazy"}
+        loading={priority ? "eager" : "lazy"}
       />
       <div className={styles.projectContent}>
-        <p className={styles.projectKind}>{project.kind}</p>
-        <h3>{project.title}</h3>
-        <p className={styles.projectDescription}>{project.description}</p>
+        <div className={styles.projectCopy}>
+          <p className={styles.projectKind}>{project.kind}</p>
+          <h3>{project.title}</h3>
+          <p className={styles.projectDescription}>{project.description}</p>
+        </div>
         <div className={styles.projectLinks}>
-          {project.live && (
-            <a href={project.live} target="_blank" rel="noopener noreferrer">
-              Visit website <ArrowUpRight size={16} aria-hidden="true" />
+          {project.live ? (
+            <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} website`}>
+              View Website <ArrowUpRight size={16} aria-hidden="true" />
             </a>
-          )}
-          {project.code && (
-            <a href={project.code} target="_blank" rel="noopener noreferrer">
-              View on GitHub <ArrowUpRight size={16} aria-hidden="true" />
+          ) : project.code ? (
+            <a href={project.code} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`}>
+              View GitHub <ArrowUpRight size={16} aria-hidden="true" />
             </a>
-          )}
+          ) : null}
         </div>
       </div>
     </article>
@@ -91,7 +92,7 @@ export default function ProjectsPage() {
             </div>
             <div className={styles.projectGrid}>
               {PROJECTS.filter((project) => project.live).map((project, index) => (
-                <ProjectCard key={project.title} project={project} featured={index === 0} />
+                <ProjectCard key={project.title} project={project} priority={index === 0} />
               ))}
             </div>
           </section>
