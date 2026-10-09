@@ -612,108 +612,6 @@
   margin-bottom: 14px;
 }
 
-.projectsSection {
-  padding: 78px 0 94px;
-  border-top: 1px solid #e4e4e7;
-}
-
-.projectGrid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.projectCard {
-  min-width: 0;
-  overflow: hidden;
-  border: 1px solid #e4e4e7;
-  border-radius: 18px;
-  background: #fff;
-  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.projectCard:hover {
-  border-color: #93c5fd;
-  transform: translateY(-3px);
-  box-shadow: 0 14px 35px rgba(24, 24, 27, 0.06);
-}
-
-.projectCard:first-child {
-  grid-column: span 2;
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  align-items: stretch;
-}
-
-.projectCard:first-child .projectImage {
-  height: 100%;
-}
-
-.projectCard:first-child .projectContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: clamp(30px, 5vw, 64px);
-}
-
-.projectCard:first-child .projectContent h3 {
-  font-size: clamp(28px, 3vw, 40px);
-}
-
-.projectImage {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 720 / 460;
-  object-fit: cover;
-}
-
-.projectContent {
-  padding: 25px 27px 27px;
-}
-
-.projectContent .eyebrow {
-  margin-bottom: 9px;
-}
-
-.projectContent h3 {
-  margin: 0 0 9px;
-  font-size: 22px;
-  font-weight: 550;
-  letter-spacing: -0.04em;
-}
-
-.projectContent > p:not(.eyebrow) {
-  min-height: 49px;
-  margin: 0;
-  color: #71717a;
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-.projectLinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 24px;
-  margin-top: 21px;
-  padding-top: 16px;
-  border-top: 1px solid #f4f4f5;
-}
-
-.projectLinks a {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  color: #2563eb;
-  font-size: 12px;
-  font-weight: 550;
-  text-decoration: none;
-}
-
-.projectLinks a:hover {
-  text-decoration: underline;
-}
-
 .guideGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1465,25 +1363,6 @@
   .navLinks {
     gap: 14px;
     font-size: 11px;
-  }
-  .projectGrid {
-    grid-template-columns: 1fr;
-  }
-  .projectCard:first-child {
-    grid-column: auto;
-    display: block;
-  }
-  .projectCard:first-child .projectImage {
-    height: auto;
-  }
-  .projectCard:first-child .projectContent {
-    padding: 22px;
-  }
-  .projectsSection {
-    padding-block: 58px 70px;
-  }
-  .projectContent {
-    padding: 22px;
   }
   .hero {
     grid-template-columns: 1fr;

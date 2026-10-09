@@ -10,6 +10,7 @@ export interface GuideSection {
     description: string;
     repo?: string;
     command?: string;
+    url?: string;
   }[];
 }
 
@@ -29,6 +30,71 @@ export interface GuideItem {
 }
 
 export const GUIDES: GuideItem[] = [
+  {
+    slug: "ai-agent-setup",
+    title: "Set up your AI agent: a guide for any tool",
+    shortTitle: "Set up your AI agent",
+    category: "AI agent setup",
+    description: "Install the agent you prefer, give it useful project context, and complete your first small build.",
+    readTime: "7 min read",
+    keywords: ["setup", "install", "agents", "codex", "gemini", "cursor"],
+    featuredHome: true,
+    iconName: "terminal",
+    updatedAt: "October 2026",
+    heroSummary:
+      "This setup works as a starting point for any AI agent. Pick the tool that fits you, open one project folder, explain the goal clearly, and check the first result before adding more tools.",
+    sections: [
+      {
+        heading: "1. Choose an agent and install it from the official source",
+        body: [
+          "Start with one agent. Use its official installation instructions, sign in, and open or connect the folder you want to work on. The interface and permissions differ by product, so follow the instructions for the tool and operating system you chose.",
+          "Codex, Claude Code, Gemini CLI, and Cursor are examples, not requirements. The rest of this guide is intentionally independent of the product you select."
+        ],
+        bullets: [
+          { title: "Codex", description: "OpenAI's official Codex CLI installation and sign-in guide.", url: "https://learn.chatgpt.com/docs/cli" },
+          { title: "Claude Code", description: "Anthropic's official quickstart and installation instructions.", url: "https://code.claude.com/docs/en/quickstart" },
+          { title: "Gemini CLI", description: "Google's official Gemini CLI installation guide.", url: "https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/installation.mdx" },
+          { title: "Cursor", description: "Cursor's official desktop quickstart and download steps.", url: "https://cursor.com/docs/get-started/quickstart" }
+        ]
+      },
+      {
+        heading: "2. Put the project context in one place",
+        body: [
+          "Create a short README.md in your project folder. Include what you are making, who it helps, the current workflow, important constraints, and what a good result looks like. Any agent can read this file, even if its special instruction files have different names.",
+          "At the start of a session, ask the agent to read README.md and repeat the goal back to you. Correct any misunderstanding before asking it to make changes."
+        ],
+        codeBlock: {
+          label: "README.md starter template",
+          code: `# Project context
+Goal: [What are we building or improving?]
+Audience: [Who will use it?]
+Current workflow: [What happens today?]
+Constraints: [Budget, tools, deadlines, privacy, must-keep behavior]
+Definition of done: [How will we know it works?]`
+        }
+      },
+      {
+        heading: "3. Give the agent one small, testable task",
+        body: [
+          "Start with a task that you can check in a few minutes. Ask for a short plan and a working result. Keep the first task narrow enough that you can review every change.",
+          "When the agent finishes, try the result yourself. Check the output, links, and edge cases. Then decide whether to expand the workflow."
+        ],
+        codeBlock: {
+          label: "First task prompt",
+          code: `Read README.md. Tell me what this project is trying to do in three sentences.
+Then propose the smallest useful improvement we can build today.
+Implement it, show me what changed, and explain how I can test it.`
+        }
+      },
+      {
+        heading: "4. Add skills and connected tools when they solve a real need",
+        body: [
+          "Once your first task works, add repeatable instructions, skills, or connected tools for jobs you actually do often. Availability and setup differ between agents, so use the chosen product's documentation for those features.",
+          "Keep a human review step for actions such as publishing, payments, messages, or deleting data. Reuse the project context and the same verification habit when you switch agents."
+        ]
+      }
+    ]
+  },
   {
     slug: "ai-automation-builder-roadmap",
     title: "Your AI automation roadmap",
@@ -1145,6 +1211,9 @@ echo "✅ All skills installed!"`
 
 // Full keyword-to-guide lookup map supporting all video comment keywords
 export const KEYWORD_MAP: Record<string, { slug: string; title: string }> = {
+  setup: { slug: "ai-agent-setup", title: "Set up your AI agent" },
+  install: { slug: "ai-agent-setup", title: "Set up your AI agent" },
+  agents: { slug: "ai-agent-setup", title: "Set up your AI agent" },
   skill: { slug: "claude-skills-i-use", title: "The Claude skills that I use and the only ones you need" },
   skills: { slug: "claude-skills-i-use", title: "The Claude skills that I use and the only ones you need" },
   plugin: { slug: "claude-skills-i-use", title: "The Claude skills that I use and the only ones you need" },

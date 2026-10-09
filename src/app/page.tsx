@@ -1,7 +1,6 @@
 import Link from "next/link";
 import {
   ArrowUpRight,
-  ArrowDown,
   ArrowRight,
   Mail,
   Users,
@@ -18,54 +17,6 @@ const EMAIL = "hello@vamshicreates.com";
 function emailLink(subject: string, body: string) {
   return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
-
-const projects = [
-  {
-    title: "Movie Draft",
-    kind: "Live website · multiplayer game",
-    description: "A Telugu cinema draft and auction game with shared rooms, live bidding, and a solo AI opponent.",
-    image: "/projects/movie-draft.svg",
-    imageAlt: "Illustration of a Movie Draft auction screen",
-    live: "https://movie-draft-phi.vercel.app",
-    code: "https://github.com/vamshicreates/movie-draft",
-  },
-  {
-    title: "Cricket Draft",
-    kind: "Live website · multiplayer game",
-    description: "A browser based cricket auction where friends build teams from a worldwide player catalog.",
-    image: "/projects/cricket-draft.svg",
-    imageAlt: "Illustration of a Cricket Draft auction screen",
-    live: "https://cricket-draft-hazel.vercel.app",
-    code: "https://github.com/vamshicreates/cricket-draft",
-  },
-  {
-    title: "Logo Cleaner",
-    kind: "Live website · creative tool",
-    description: "A focused web tool for removing logos from video. Built to turn an editing problem into a usable product.",
-    image: "/projects/logo-cleaner.svg",
-    imageAlt: "Illustration of a video editing canvas with a clean frame",
-    live: "https://logo-cleaner-web.vercel.app",
-    code: null,
-  },
-  {
-    title: "Podcast Editor",
-    kind: "AI agent skill · open source",
-    description: "An AI assisted multicamera podcast editing workflow for Premiere Pro and DaVinci Resolve.",
-    image: "/projects/podcast-editor.svg",
-    imageAlt: "Illustration of a podcast editing timeline",
-    live: null,
-    code: "https://github.com/vamshicreates/podcast-editor",
-  },
-  {
-    title: "Image to Blender",
-    kind: "AI agent skill · open source",
-    description: "Turns reference images into 3D Blender scenes with an agent skill and automated setup.",
-    image: "/projects/image-to-blender.svg",
-    imageAlt: "Illustration of an image turning into a three dimensional object",
-    live: null,
-    code: "https://github.com/vamshicreates/image-to-blender",
-  },
-];
 
 export default function HomePage() {
   return (
@@ -89,7 +40,7 @@ export default function HomePage() {
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
             <Link href="/journey">My Journey</Link>
-            <a href="#projects">My Projects</a>
+            <Link href="/projects">My Projects</Link>
             <a href="#consultation">Consulting</a>
           </nav>
 
@@ -118,44 +69,13 @@ export default function HomePage() {
               <p className={styles.heroDescription}>I build useful websites, AI agents, and automations. Bring me an idea or a problem, and let’s turn it into something real.</p>
 
               <div className={styles.heroActions}>
-                <a href="#projects" className={styles.primaryButton}>
-                  Explore projects I built <ArrowDown size={17} aria-hidden="true" />
-                </a>
+                <Link href="/projects" className={styles.primaryButton}>
+                  Explore projects I built <ArrowUpRight size={17} aria-hidden="true" />
+                </Link>
                 <Link href="/journey" className={styles.textLink}>
                   My Journey <ArrowUpRight size={17} aria-hidden="true" />
                 </Link>
               </div>
-            </div>
-          </section>
-
-          <section id="projects" className={styles.projectsSection} aria-labelledby="projects-title">
-            <div className={styles.sectionHeading}>
-              <div>
-                <p className={styles.eyebrow}>SELECTED WORK</p>
-                <h2 id="projects-title">My Projects</h2>
-              </div>
-              <div>
-                <p>Websites you can try and AI agent skills you can explore.</p>
-                <a className={styles.textLink} href="https://github.com/vamshicreates" target="_blank" rel="noopener noreferrer">
-                  More on GitHub <ArrowUpRight size={17} aria-hidden="true" />
-                </a>
-              </div>
-            </div>
-            <div className={styles.projectGrid}>
-              {projects.map((project) => (
-                <article className={styles.projectCard} key={project.title}>
-                  <img className={styles.projectImage} src={project.image} alt={project.imageAlt} width={720} height={460} loading="lazy" />
-                  <div className={styles.projectContent}>
-                    <p className={styles.eyebrow}>{project.kind}</p>
-                    <h3>{project.title}</h3>
-                    <p>{project.description}</p>
-                    <div className={styles.projectLinks}>
-                      {project.live && <a href={project.live} target="_blank" rel="noopener noreferrer">Visit website <ArrowUpRight size={15} aria-hidden="true" /></a>}
-                      {project.code && <a href={project.code} target="_blank" rel="noopener noreferrer">View on GitHub <ArrowUpRight size={15} aria-hidden="true" /></a>}
-                    </div>
-                  </div>
-                </article>
-              ))}
             </div>
           </section>
 
@@ -352,6 +272,54 @@ export default function HomePage() {
             </div>
           </section>
 
+          <section id="agent-setup" className={styles.guideSection} aria-labelledby="agent-setup-title">
+            <div className={styles.sectionHeading}>
+              <div>
+                <p className={styles.eyebrow}>A PRACTICAL PLACE TO START</p>
+                <h2 id="agent-setup-title">Set up your AI agent.</h2>
+              </div>
+              <div>
+                <p>Use the agent you prefer. The same foundations help you get useful work done.</p>
+                <Link className={styles.textLink} href="/guides/ai-agent-setup">
+                  Read the full setup guide <ArrowUpRight size={17} aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+
+            <div className={styles.guideGrid}>
+              <Link className={styles.guideCard} href="/guides/ai-agent-setup">
+                <div className={styles.guideCardTop}>
+                  <span className={styles.guideIcon}><GraduationCap size={22} strokeWidth={1.5} aria-hidden="true" /></span>
+                  <span className={styles.freeTag}>01</span>
+                </div>
+                <span className={styles.guideCategory}>Choose &amp; install</span>
+                <h3>Start with your agent</h3>
+                <p>Codex, Claude Code, Gemini CLI, Cursor, or another tool: install from its official source and open your project.</p>
+                <span className={styles.guideCardCta}>See setup steps <ArrowUpRight size={16} aria-hidden="true" /></span>
+              </Link>
+              <Link className={styles.guideCard} href="/guides/ai-agent-setup">
+                <div className={styles.guideCardTop}>
+                  <span className={styles.guideIcon}><FileText size={22} strokeWidth={1.5} aria-hidden="true" /></span>
+                  <span className={styles.freeTag}>02</span>
+                </div>
+                <span className={styles.guideCategory}>Give it context</span>
+                <h3>Tell it what matters</h3>
+                <p>Put your goal, audience, constraints, and definition of done in one place so any agent can understand the work.</p>
+                <span className={styles.guideCardCta}>See context template <ArrowUpRight size={16} aria-hidden="true" /></span>
+              </Link>
+              <Link className={styles.guideCard} href="/guides/ai-agent-setup">
+                <div className={styles.guideCardTop}>
+                  <span className={styles.guideIcon}><Workflow size={22} strokeWidth={1.5} aria-hidden="true" /></span>
+                  <span className={styles.freeTag}>03</span>
+                </div>
+                <span className={styles.guideCategory}>Build &amp; verify</span>
+                <h3>Make the first useful thing</h3>
+                <p>Give your agent a small task, review the result, and add skills or tools only when the workflow needs them.</p>
+                <span className={styles.guideCardCta}>See first task <ArrowUpRight size={16} aria-hidden="true" /></span>
+              </Link>
+            </div>
+          </section>
+
           {/* FAQ SECTION */}
           <section className={styles.faqSection} aria-labelledby="faq-title">
             <div>
@@ -373,7 +341,7 @@ export default function HomePage() {
                   <span aria-hidden="true">+</span>
                 </summary>
                 <p>
-                  Websites, AI agents, useful automations, and creative tools. <a href="#projects">See my projects</a> for examples.
+                  Websites, AI agents, useful automations, and creative tools. <Link href="/projects">See my projects</Link> for examples.
                 </p>
               </details>
 
@@ -420,7 +388,7 @@ export default function HomePage() {
 
           <div className={styles.footerLinks}>
             <Link href="/journey">My Journey</Link>
-            <a href="#projects">My Projects</a>
+            <Link href="/projects">My Projects</Link>
             <a href="#consultation">Consulting</a>
             <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
           </div>

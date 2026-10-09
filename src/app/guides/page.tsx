@@ -18,6 +18,7 @@ import { GUIDES, KEYWORD_MAP } from "@/data/guides";
 import { useRouter } from "next/navigation";
 
 const SUGGESTED_KEYWORDS = [
+  "setup",
   "skills",
   "roadmap",
   "team",
@@ -107,18 +108,14 @@ export default function GuidesIndexPage() {
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
             <Link href="/journey">My Journey</Link>
+            <Link href="/projects">My Projects</Link>
             <Link href="/guides" className="font-semibold text-teal-700">
               Guides
             </Link>
-            <Link href="/#community">Community</Link>
-            <Link href="/#consultation">Consulting</Link>
-            <Link href="/#ai-lab">AI Lab</Link>
           </nav>
 
           <div className={styles.navRight}>
-            <Link href="/#playbook" className={styles.navCta}>
-              Get the playbook <ArrowUpRight size={15} aria-hidden="true" />
-            </Link>
+            <a href="mailto:hello@vamshicreates.com" className={styles.navCta}>Get in touch <ArrowUpRight size={15} aria-hidden="true" /></a>
           </div>
         </header>
       </div>
@@ -139,19 +136,18 @@ export default function GuidesIndexPage() {
               VAMSHICREATES / FREE KNOWLEDGE HUB
             </p>
             <h1 className="text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl md:text-5xl">
-              AI &amp; OpenClaw Guides
+              AI Agent Guides
             </h1>
             <p className="mt-4 max-w-2xl text-sm leading-7 text-zinc-600 sm:text-base sm:leading-8">
-              Step-by-step build guides, copy-paste prompts, and GitHub skill packs from
-              my videos. Pick a category below, search any topic, or enter a video keyword
-              to jump straight in.
+              Start with a setup that works across AI agents, then explore practical builds,
+              prompts, and skills. Pick a category or search a topic below.
             </p>
             <div className="mt-6 flex flex-wrap items-center gap-3 text-xs text-zinc-500">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 font-mono font-medium text-zinc-800">
                 <BookOpen className="h-3.5 w-3.5 text-teal-600" /> {GUIDES.length} Free Playbooks
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 font-mono font-medium text-zinc-800">
-                <Sparkles className="h-3.5 w-3.5 text-blue-600" /> Updated September 2026
+                <Sparkles className="h-3.5 w-3.5 text-blue-600" /> Updated October 2026
               </span>
             </div>
           </div>
@@ -173,7 +169,7 @@ export default function GuidesIndexPage() {
             <Search className="absolute left-3.5 h-4 w-4 text-zinc-400" />
             <input
               type="text"
-              placeholder="Search guides by topic, skill, or tool (e.g. Claude, Stitch, MCP)…"
+              placeholder="Search guides by topic, skill, or agent…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
               className="w-full rounded-xl border border-zinc-200 bg-zinc-50/80 py-2.5 pl-10 pr-9 text-sm text-zinc-900 outline-none transition focus:border-teal-600 focus:bg-white"

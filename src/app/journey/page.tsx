@@ -52,16 +52,12 @@ export default function MyJourneyPage() {
             <Link href="/journey" className="font-semibold text-teal-700">
               My Journey
             </Link>
-            <Link href="/guides">Guides</Link>
-            <Link href="/#community">Community</Link>
+            <Link href="/projects">My Projects</Link>
             <Link href="/#consultation">Consulting</Link>
-            <Link href="/#ai-lab">AI Lab</Link>
           </nav>
 
           <div className={styles.navRight}>
-            <Link href="/#playbook" className={styles.navCta}>
-              Get the playbook <ArrowUpRight size={15} aria-hidden="true" />
-            </Link>
+            <a href="mailto:hello@vamshicreates.com" className={styles.navCta}>Get in touch <ArrowUpRight size={15} aria-hidden="true" /></a>
           </div>
         </header>
       </div>

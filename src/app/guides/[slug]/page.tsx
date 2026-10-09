@@ -52,18 +52,14 @@ export default function GuideDetailPage() {
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
             <Link href="/journey">My Journey</Link>
+            <Link href="/projects">My Projects</Link>
             <Link href="/guides" className="font-semibold text-teal-700">
               Guides
             </Link>
-            <Link href="/#community">Community</Link>
-            <Link href="/#consultation">Consulting</Link>
-            <Link href="/#ai-lab">AI Lab</Link>
           </nav>
 
           <div className={styles.navRight}>
-            <Link href="/#playbook" className={styles.navCta}>
-              Get the playbook <ArrowUpRight size={15} aria-hidden="true" />
-            </Link>
+            <a href="mailto:hello@vamshicreates.com" className={styles.navCta}>Get in touch <ArrowUpRight size={15} aria-hidden="true" /></a>
           </div>
         </header>
       </div>
@@ -104,7 +100,7 @@ export default function GuideDetailPage() {
                 VamshiCreates
               </h2>
               <p className="mt-1 text-xs leading-relaxed text-zinc-600 sm:text-sm">
-                AI Engineer &amp; Creator teaching OpenClaw, autonomous agents, and practical AI automation systems.
+                AI engineer and creator building websites, AI agents, and practical automations.
               </p>
 
               <div className="mt-3.5 flex flex-wrap items-center justify-center gap-2.5 sm:justify-start">
@@ -123,11 +119,11 @@ export default function GuideDetailPage() {
                   View My Journey
                 </Link>
                 <Link
-                  href="/#playbook"
+                  href="/projects"
                   className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-blue-700 hover:border-blue-300 hover:bg-blue-50/50"
                 >
                   <BookOpen className="h-3.5 w-3.5" />
-                  Get the Playbook
+                  My Projects
                 </Link>
               </div>
             </div>
@@ -152,18 +148,17 @@ export default function GuideDetailPage() {
             {guide.shortTitle || guide.title}
           </h1>
 
-          {/* Community CTA Banner inside article */}
+          {/* Contact banner inside article */}
           <div className="mb-10 flex flex-col items-center justify-between gap-4 rounded-2xl border border-blue-100 bg-blue-50/60 p-5 sm:flex-row">
             <p className="text-xs leading-relaxed text-zinc-700 sm:text-sm">
-              <strong>Don&apos;t want to figure this out alone?</strong> I walk members
-              through every step inside the VamshiCreates community.
+              <strong>Want help applying this to your idea?</strong> Tell me what you are trying to build and where you are stuck.
             </p>
-            <Link
-              href="/#community"
+            <a
+              href="mailto:hello@vamshicreates.com?subject=Help%20with%20an%20AI%20agent"
               className="shrink-0 inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-blue-700"
             >
-              Join the Community <ArrowUpRight className="h-4 w-4" />
-            </Link>
+              Send an email <ArrowUpRight className="h-4 w-4" />
+            </a>
           </div>
 
           {/* Hero Summary */}
@@ -250,6 +245,11 @@ export default function GuideDetailPage() {
                             GitHub: {b.repo}
                           </p>
                         )}
+                        {b.url && (
+                          <a href={b.url} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-blue-700 hover:underline">
+                            Official setup guide <ArrowUpRight className="h-3.5 w-3.5" />
+                          </a>
+                        )}
                         {b.command && (
                           <div className="mt-3 flex items-center justify-between gap-2 rounded-xl bg-zinc-900 px-3.5 py-2.5">
                             <code className="overflow-x-auto font-mono text-xs text-zinc-100">
@@ -285,20 +285,18 @@ export default function GuideDetailPage() {
           {/* Bottom Callout */}
           <div className="mt-12 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 sm:p-8">
             <h3 className="text-xl font-bold text-zinc-950">
-              You just read the full playbook.
+              Ready to build something useful?
             </h3>
             <p className="mt-2 text-sm leading-7 text-zinc-600">
-              Inside the VamshiCreates community, I walk you through the exact build
-              step-by-step, troubleshoot your setup live, and share the scripts and
-              templates I use to land paying clients.
+              Use this guide as a starting point, then test your setup on one real task. If you want help finding a use case or building an AI agent, send me your problem statement.
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
-              <Link
-                href="/#community"
+              <a
+                href="mailto:hello@vamshicreates.com?subject=My%20AI%20agent%20idea"
                 className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-xs font-semibold text-white transition hover:bg-blue-700"
               >
-                Join the Community <ArrowUpRight className="h-4 w-4" />
-              </Link>
+                Send an email <ArrowUpRight className="h-4 w-4" />
+              </a>
               <Link
                 href="/guides"
                 className="inline-flex items-center gap-2 rounded-xl border border-zinc-300 bg-white px-5 py-3 text-xs font-semibold text-zinc-800 transition hover:bg-zinc-100"
@@ -315,8 +313,9 @@ export default function GuideDetailPage() {
             More free guides from VamshiCreates
           </h3>
           <div className="grid gap-4 sm:grid-cols-3">
-            {GUIDES.filter((g) => g.slug !== guide.slug)
-              .slice(0, 3)
+            {(guide.slug === "ai-agent-setup"
+              ? GUIDES.filter((g) => ["ai-automation-builder-roadmap", "first-ai-agent-team", "karpathy-loop-ai-improvement"].includes(g.slug))
+              : GUIDES.filter((g) => g.slug !== guide.slug).slice(0, 3))
               .map((rel) => (
                 <Link
                   key={rel.slug}
