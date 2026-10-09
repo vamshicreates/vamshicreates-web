@@ -3,24 +3,22 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
-  title: "VamshiCreates | OpenClaw & AI Automation Guides",
+  title: "VamshiCreates | Websites, AI Agents & Automations",
   description:
-    "Learn OpenClaw, AI agents, and practical AI automations with free guides from VamshiCreates, an AI engineer and automation creator.",
+    "Explore websites and AI agent skills built by Vamshi Krishna. Bring your idea or startup problem and build something useful together.",
   icons: {
     icon: "/journey/main-dp-icon.jpg",
     shortcut: "/journey/main-dp-icon.jpg",
     apple: "/journey/main-dp-icon.jpg",
   },
   openGraph: {
-    title: "Master AI Automations with VamshiCreates",
+    title: "VamshiCreates | Build Anything You Think Of",
     description:
-      "Learn OpenClaw, AI agents, and practical AI automations with free guides from VamshiCreates.",
+      "Websites, AI agents, and automations built by Vamshi Krishna.",
     type: "website",
     images: ["/journey/main-dp-hero.jpg"],
   },
 };
-
-import TokenWidget from "@/components/TokenWidget";
 
 export default function RootLayout({
   children,
@@ -43,7 +41,6 @@ export default function RootLayout({
       </head>
       <body className="font-sans bg-zinc-50 text-zinc-900 antialiased selection:bg-zinc-200 relative">
         {children}
-        <TokenWidget />
       </body>
     </html>
   );

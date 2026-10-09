@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460" role="img" aria-labelledby="t">
+<title id="t">Logo Cleaner video editor illustration</title><defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#dbeafe"/><stop offset="1" stop-color="#8db7d8"/></linearGradient><pattern id="grid" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#e5e7eb"/><rect width="7" height="7" fill="#f8fafc"/><rect x="7" y="7" width="7" height="7" fill="#f8fafc"/></pattern></defs>
+<rect width="720" height="460" fill="url(#bg)"/><circle cx="640" cy="5" r="160" fill="#fff" opacity=".25"/>
+<rect x="67" y="49" width="586" height="362" rx="20" fill="#182638" stroke="#fff" stroke-opacity=".8"/>
+<rect x="67" y="49" width="586" height="47" rx="20" fill="#26364a"/><path d="M67 79h586" stroke="#718498" opacity=".5"/>
+<circle cx="95" cy="73" r="5" fill="#eaa0a0"/><circle cx="112" cy="73" r="5" fill="#eccb85"/><circle cx="129" cy="73" r="5" fill="#a8d3b2"/>
+<text x="165" y="79" fill="#f7fbff" font-size="15" font-family="Arial,sans-serif" font-weight="700">LOGO CLEANER</text>
+<rect x="96" y="120" width="391" height="211" rx="9" fill="#6f8fa5"/><rect x="106" y="130" width="371" height="191" rx="4" fill="#96b7ca"/>
+<path d="M106 289l93-87 53 48 61-77 164 125v23H106z" fill="#446b7f"/><circle cx="174" cy="177" r="24" fill="#dce5df"/>
+<rect x="365" y="237" width="80" height="55" rx="8" fill="url(#grid)" stroke="#fff" stroke-width="2"/><path d="M388 266l13 12 24-27" fill="none" stroke="#16877f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="516" y="152" fill="#aebfcf" font-size="11" font-family="Arial,sans-serif">REMOVE MARK</text><rect x="514" y="173" width="107" height="32" rx="6" fill="#334c61"/><text x="527" y="194" fill="#eff7fa" font-size="11" font-family="Arial,sans-serif">Select region</text>
+<rect x="514" y="222" width="107" height="42" rx="7" fill="#57b8ac"/><text x="541" y="248" fill="#0c353c" font-size="12" font-family="Arial,sans-serif" font-weight="700">CLEAN</text>
+<path d="M100 359h515" stroke="#5b7086" stroke-width="5" stroke-linecap="round"/><path d="M100 359h304" stroke="#62c3ba" stroke-width="5" stroke-linecap="round"/><circle cx="404" cy="359" r="10" fill="#d4faf2"/>
+</svg>

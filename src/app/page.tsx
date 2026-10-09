@@ -1,115 +1,73 @@
-"use client";
-
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import {
   ArrowUpRight,
   ArrowDown,
   ArrowRight,
   Mail,
-  BookOpen,
-  Route,
-  CodeXml,
   Users,
   Workflow,
   MessageCircle,
   Check,
   GraduationCap,
   FileText,
-  Search,
 } from "lucide-react";
 import styles from "./home.module.css";
-import { CallRequestModal } from "@/components/CallRequestModal";
-import { InteractiveAiLab } from "@/components/InteractiveAiLab";
-import { CommandPalette } from "@/components/CommandPalette";
-import {
-  CreatorCustomizer,
-  CreatorConfig,
-  DEFAULT_CREATOR_CONFIG,
-} from "@/components/CreatorCustomizer";
 
-const CONFIG_STORAGE_KEY = "vamshicreates-site-config-v3";
+const EMAIL = "hello@vamshicreates.com";
 
-const HERO_DP_OPTIONS = [
+function emailLink(subject: string, body: string) {
+  return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+const projects = [
   {
-    src: "/journey/main-dp-hero.jpg",
-    thumb: "/journey/main-dp-icon.jpg",
-    label: "Main DP",
+    title: "Movie Draft",
+    kind: "Live website · multiplayer game",
+    description: "A Telugu cinema draft and auction game with shared rooms, live bidding, and a solo AI opponent.",
+    image: "/projects/movie-draft.svg",
+    imageAlt: "Illustration of a Movie Draft auction screen",
+    live: "https://movie-draft-phi.vercel.app",
+    code: "https://github.com/vamshicreates/movie-draft",
   },
   {
-    src: "/journey/dp-1.jpg",
-    thumb: "/journey/dp-1-showcase.jpg",
-    label: "Studio 01",
+    title: "Cricket Draft",
+    kind: "Live website · multiplayer game",
+    description: "A browser based cricket auction where friends build teams from a worldwide player catalog.",
+    image: "/projects/cricket-draft.svg",
+    imageAlt: "Illustration of a Cricket Draft auction screen",
+    live: "https://cricket-draft-hazel.vercel.app",
+    code: "https://github.com/vamshicreates/cricket-draft",
   },
   {
-    src: "/journey/dp-2.webp",
-    thumb: "/journey/dp-2-showcase.jpg",
-    label: "Studio 02",
+    title: "Logo Cleaner",
+    kind: "Live website · creative tool",
+    description: "A focused web tool for removing logos from video. Built to turn an editing problem into a usable product.",
+    image: "/projects/logo-cleaner.svg",
+    imageAlt: "Illustration of a video editing canvas with a clean frame",
+    live: "https://logo-cleaner-web.vercel.app",
+    code: null,
+  },
+  {
+    title: "Podcast Editor",
+    kind: "AI agent skill · open source",
+    description: "An AI assisted multicamera podcast editing workflow for Premiere Pro and DaVinci Resolve.",
+    image: "/projects/podcast-editor.svg",
+    imageAlt: "Illustration of a podcast editing timeline",
+    live: null,
+    code: "https://github.com/vamshicreates/podcast-editor",
+  },
+  {
+    title: "Image to Blender",
+    kind: "AI agent skill · open source",
+    description: "Turns reference images into 3D Blender scenes with an agent skill and automated setup.",
+    image: "/projects/image-to-blender.svg",
+    imageAlt: "Illustration of an image turning into a three dimensional object",
+    live: null,
+    code: "https://github.com/vamshicreates/image-to-blender",
   },
 ];
 
 export default function HomePage() {
-  const [cmdOpen, setCmdOpen] = useState(false);
-  const [config, setConfig] = useState<CreatorConfig>(DEFAULT_CREATOR_CONFIG);
-  const [heroDpIndex, setHeroDpIndex] = useState(0);
-
-  useEffect(() => {
-    try {
-      const saved = window.localStorage.getItem(CONFIG_STORAGE_KEY);
-      if (saved) {
-        setConfig({ ...DEFAULT_CREATOR_CONFIG, ...JSON.parse(saved) });
-      }
-    } catch {
-      // ignore
-    }
-  }, []);
-
-  const updateConfig = (next: CreatorConfig) => {
-    setConfig(next);
-    try {
-      window.localStorage.setItem(CONFIG_STORAGE_KEY, JSON.stringify(next));
-    } catch {
-      // ignore
-    }
-  };
-
-  const resetConfig = () => {
-    setConfig(DEFAULT_CREATOR_CONFIG);
-    setHeroDpIndex(0);
-    try {
-      window.localStorage.removeItem(CONFIG_STORAGE_KEY);
-    } catch {
-      // ignore
-    }
-  };
-
-  const heroPortraitSrc =
-    config.photoMode === "custom" && config.customPortraitDataUrl
-      ? config.customPortraitDataUrl
-      : config.photoMode === "ray"
-      ? "/profile-ray-ref.png"
-      : HERO_DP_OPTIONS[heroDpIndex].src;
-
-  const communityImgSrc =
-    config.photoMode === "ray"
-      ? "/home/skool-community.jpg"
-      : "/journey/dp-1-showcase.jpg";
-
-  const playbookImgSrc =
-    config.photoMode === "ray"
-      ? "/home/ray-playbook.webp"
-      : "/journey/dp-2-showcase.jpg";
-
-  const consultationImgSrc =
-    config.photoMode === "ray"
-      ? "/home/ray-consultation.webp"
-      : "/journey/main-dp-showcase.jpg";
-
-  const automationImgSrc =
-    config.photoMode === "ray"
-      ? "/home/ray-automation.webp"
-      : "/journey/dp-1-showcase.jpg";
-
   return (
     <div className={styles.page}>
       <a href="#main" className={styles.skipLink}>
@@ -118,367 +76,137 @@ export default function HomePage() {
 
       <div className={styles.container}>
         <header className={styles.navigation}>
-          <Link className={styles.brand} aria-label={`${config.brandName} home`} href="/">
+          <Link className={styles.brand} aria-label="VamshiCreates home" href="/">
             <img
-              alt={`${config.brandName} icon`}
+              alt=""
               width={36}
               height={36}
               className={styles.brandMark}
               src="/journey/main-dp-icon.jpg"
             />
-            {config.brandName}
+            VamshiCreates
           </Link>
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
             <Link href="/journey">My Journey</Link>
-            <Link href="/guides">Guides</Link>
-            <a href="#community">Community</a>
+            <a href="#projects">My Projects</a>
             <a href="#consultation">Consulting</a>
-            <a href="#ai-lab">AI Lab</a>
           </nav>
 
-          <div className={styles.navRight}>
-            <button
-              type="button"
-              onClick={() => setCmdOpen(true)}
-              className={styles.cmdButton}
-              aria-label="Quick search guides and keywords"
-            >
-              <Search size={13} />
-              <span>Search</span>
-              <kbd className={styles.cmdKbd}>⌘K</kbd>
-            </button>
-
-            <a
-              href="#playbook"
-              className={styles.navCta}
-            >
-              Get the playbook <ArrowUpRight size={15} aria-hidden="true" />
-            </a>
-          </div>
+          <a href={emailLink("Let's build something", "Hi Vamshi,\n\nI have an idea I would like to discuss:\n\n")} className={styles.navCta}>
+            Get in touch <ArrowUpRight size={15} aria-hidden="true" />
+          </a>
         </header>
 
         <main id="main">
           {/* HERO SECTION */}
           <section className={styles.hero} aria-labelledby="hero-title">
             <div className={styles.portraitWrap}>
-              <div className="relative">
-                <img
-                  alt={`${config.brandName} — AI automation educator and engineer`}
-                  width={572}
-                  height={610}
-                  className={styles.portrait}
-                  src={heroPortraitSrc}
-                />
-                <div className={styles.portraitCaption}>
-                  <img
-                    src="/journey/main-dp-icon.jpg"
-                    alt=""
-                    width={22}
-                    height={22}
-                    className="h-5.5 w-5.5 rounded-full object-cover border border-teal-500"
-                  />
-                  <span className={styles.captionDot}></span> {config.captionBadge}
-                </div>
+              <img alt="Vamshi Krishna" width={572} height={610} className={styles.portrait} src="/journey/main-dp-hero.jpg" />
+              <div className={styles.portraitCaption}>
+                <span className={styles.captionDot} /> Engineer. Creator. Builder.
               </div>
-
-              {config.photoMode !== "ray" && config.photoMode !== "custom" && (
-                <div className="mt-7 flex items-center justify-center gap-2.5">
-                  {HERO_DP_OPTIONS.map((dp, idx) => (
-                    <button
-                      key={dp.src}
-                      type="button"
-                      onClick={() => setHeroDpIndex(idx)}
-                      className={`inline-flex items-center gap-2 rounded-xl border px-2.5 py-1.5 text-xs font-medium transition ${
-                        heroDpIndex === idx
-                          ? "border-teal-600 bg-teal-50/80 text-teal-800 shadow-xs"
-                          : "border-zinc-200 bg-white text-zinc-600 hover:border-zinc-300"
-                      }`}
-                    >
-                      <img
-                        src={dp.thumb}
-                        alt={dp.label}
-                        className="h-6 w-6 rounded-md object-cover"
-                      />
-                      <span>{dp.label}</span>
-                    </button>
-                  ))}
-                </div>
-              )}
             </div>
 
             <div className={styles.heroCopy}>
-              <p className={styles.eyebrow}>{config.eyebrow}</p>
+              <p className={styles.eyebrow}>NOW YOU CAN BUILD ANYTHING</p>
               <h1 id="hero-title">
-                {config.headlineLine1}
+                Hi, I’m Vamshi Krishna.
                 <br />
-                <span>{config.headlineLine2}</span>
+                <span>Let’s build anything you think of.</span>
               </h1>
-              <p className={styles.heroDescription}>{config.bio}</p>
+              <p className={styles.heroDescription}>I build useful websites, AI agents, and automations. Bring me an idea or a problem, and let’s turn it into something real.</p>
 
               <div className={styles.heroActions}>
-                <a href="#guides" className={styles.primaryButton}>
-                  Explore free guides <ArrowDown size={17} aria-hidden="true" />
+                <a href="#projects" className={styles.primaryButton}>
+                  Explore projects I built <ArrowDown size={17} aria-hidden="true" />
                 </a>
                 <Link href="/journey" className={styles.textLink}>
                   My Journey <ArrowUpRight size={17} aria-hidden="true" />
                 </Link>
-                <a href="#community" className={styles.textLink}>
-                  Learn with me <ArrowUpRight size={17} aria-hidden="true" />
-                </a>
-              </div>
-
-              <div className={styles.socials} aria-label={`Find ${config.name} online`}>
-                <a
-                  href={config.instagramUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Instagram
-                  <ArrowUpRight size={12} aria-hidden="true" />
-                </a>
-                <a
-                  href={config.youtubeUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  YouTube
-                  <ArrowUpRight size={12} aria-hidden="true" />
-                </a>
-                <a
-                  href={config.xUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  X
-                  <ArrowUpRight size={12} aria-hidden="true" />
-                </a>
-                <a
-                  href={config.tiktokUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  TikTok
-                  <ArrowUpRight size={12} aria-hidden="true" />
-                </a>
-                <a href={`mailto:${config.email}`} aria-label={`Email ${config.name}`}>
-                  <Mail size={16} aria-hidden="true" />
-                </a>
               </div>
             </div>
           </section>
 
-          {/* 01 / FREE GUIDES GRID */}
-          <section
-            id="guides"
-            className={styles.guideSection}
-            aria-labelledby="guides-title"
-          >
+          <section id="projects" className={styles.projectsSection} aria-labelledby="projects-title">
             <div className={styles.sectionHeading}>
               <div>
-                <p className={styles.eyebrow}>01 / EXPLORE AT YOUR OWN PACE</p>
-                <h2 id="guides-title">
-                  A little guidance.
-                  <br />A lot you can build.
-                </h2>
+                <p className={styles.eyebrow}>SELECTED WORK</p>
+                <h2 id="projects-title">My Projects</h2>
               </div>
               <div>
-                <p>
-                  Pick something you want to make.
-                  <br />
-                  I’ll walk you through it.
-                </p>
-                <Link className={styles.textLink} href="/guides">
-                  Browse all free guides <ArrowUpRight size={17} aria-hidden="true" />
-                </Link>
+                <p>Websites you can try and AI agent skills you can explore.</p>
+                <a className={styles.textLink} href="https://github.com/vamshicreates" target="_blank" rel="noopener noreferrer">
+                  More on GitHub <ArrowUpRight size={17} aria-hidden="true" />
+                </a>
               </div>
             </div>
-
-            <div className={styles.guideGrid}>
-              <Link
-                className={styles.guideCard}
-                href="/guides/ai-automation-builder-roadmap"
-              >
-                <div className={styles.guideCardTop}>
-                  <span className={styles.guideIcon}>
-                    <Route size={22} strokeWidth={1.5} aria-hidden="true" />
-                  </span>
-                  <span className={styles.freeTag}>Free</span>
-                </div>
-                <span className={styles.guideCategory}>Start here</span>
-                <h3>Your AI automation roadmap</h3>
-                <p>
-                  A clear learning path, the skills to focus on, and projects to build along
-                  the way.
-                </p>
-                <span className={styles.guideCardCta}>
-                  Read guide <ArrowUpRight size={16} aria-hidden="true" />
-                </span>
-              </Link>
-
-              <Link className={styles.guideCard} href="/guides/setup-claude-cowork">
-                <div className={styles.guideCardTop}>
-                  <span className={styles.guideIcon}>
-                    <Workflow size={22} strokeWidth={1.5} aria-hidden="true" />
-                  </span>
-                  <span className={styles.freeTag}>Free</span>
-                </div>
-                <span className={styles.guideCategory}>Everyday workflows</span>
-                <h3>Set up Claude Cowork</h3>
-                <p>
-                  Give Claude your context, connect your tools, and put it to work on real
-                  tasks.
-                </p>
-                <span className={styles.guideCardCta}>
-                  Read guide <ArrowUpRight size={16} aria-hidden="true" />
-                </span>
-              </Link>
-
-              <Link className={styles.guideCard} href="/guides/claude-skills-i-use">
-                <div className={styles.guideCardTop}>
-                  <span className={styles.guideIcon}>
-                    <CodeXml size={22} strokeWidth={1.5} aria-hidden="true" />
-                  </span>
-                  <span className={styles.freeTag}>Free</span>
-                </div>
-                <span className={styles.guideCategory}>Claude toolkit</span>
-                <h3>The Claude skills I use</h3>
-                <p>
-                  Find and install useful skills for writing, documents, design, and coding.
-                </p>
-                <span className={styles.guideCardCta}>
-                  Read guide <ArrowUpRight size={16} aria-hidden="true" />
-                </span>
-              </Link>
-
-              <Link className={styles.guideCard} href="/guides/first-ai-agent-team">
-                <div className={styles.guideCardTop}>
-                  <span className={styles.guideIcon}>
-                    <Users size={22} strokeWidth={1.5} aria-hidden="true" />
-                  </span>
-                  <span className={styles.freeTag}>Free</span>
-                </div>
-                <span className={styles.guideCategory}>AI agents</span>
-                <h3>Build your first agent team</h3>
-                <p>
-                  Give each agent a clear role in your business, from finding leads to
-                  delivering work.
-                </p>
-                <span className={styles.guideCardCta}>
-                  Read guide <ArrowUpRight size={16} aria-hidden="true" />
-                </span>
-              </Link>
-
-              <Link
-                className={styles.guideCard}
-                href="/guides/claude-obsidian-ai-second-brain"
-              >
-                <div className={styles.guideCardTop}>
-                  <span className={styles.guideIcon}>
-                    <BookOpen size={22} strokeWidth={1.5} aria-hidden="true" />
-                  </span>
-                  <span className={styles.freeTag}>Free</span>
-                </div>
-                <span className={styles.guideCategory}>Personal productivity</span>
-                <h3>Build an AI second brain</h3>
-                <p>
-                  Turn scattered notes and research into a connected knowledge base with
-                  Claude and Obsidian.
-                </p>
-                <span className={styles.guideCardCta}>
-                  Read guide <ArrowUpRight size={16} aria-hidden="true" />
-                </span>
-              </Link>
-
-              <Link
-                className={styles.guideCard}
-                href="/guides/claude-code-agent-finds-clients"
-              >
-                <div className={styles.guideCardTop}>
-                  <span className={styles.guideIcon}>
-                    <MessageCircle size={22} strokeWidth={1.5} aria-hidden="true" />
-                  </span>
-                  <span className={styles.freeTag}>Free</span>
-                </div>
-                <span className={styles.guideCategory}>Business workflows</span>
-                <h3>Build a client research agent</h3>
-                <p>
-                  Research potential clients, organize your prospects, and prepare outreach
-                  drafts.
-                </p>
-                <span className={styles.guideCardCta}>
-                  Read guide <ArrowUpRight size={16} aria-hidden="true" />
-                </span>
-              </Link>
+            <div className={styles.projectGrid}>
+              {projects.map((project) => (
+                <article className={styles.projectCard} key={project.title}>
+                  <img className={styles.projectImage} src={project.image} alt={project.imageAlt} width={720} height={460} loading="lazy" />
+                  <div className={styles.projectContent}>
+                    <p className={styles.eyebrow}>{project.kind}</p>
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <div className={styles.projectLinks}>
+                      {project.live && <a href={project.live} target="_blank" rel="noopener noreferrer">Visit website <ArrowUpRight size={15} aria-hidden="true" /></a>}
+                      {project.code && <a href={project.code} target="_blank" rel="noopener noreferrer">View on GitHub <ArrowUpRight size={15} aria-hidden="true" /></a>}
+                    </div>
+                  </div>
+                </article>
+              ))}
             </div>
           </section>
 
-          {/* 02 / COMMUNITY SECTION */}
+          {/* 01 / MASTER AND MONETIZE AI */}
           <section
-            id="community"
+            id="master-ai"
             className={`${styles.showcase} ${styles.communitySection}`}
-            aria-labelledby="community-title"
+            aria-labelledby="master-title"
           >
             <div className={styles.showcaseCopy}>
-              <p className={styles.eyebrow}>02 / MASTER AND MONETIZE AI</p>
-              <h2 id="community-title">
+              <p className={styles.eyebrow}>01 / MASTER AND MONETIZE AI</p>
+              <h2 id="master-title">
                 Build useful AI agents.
                 <br />
                 With me in your corner.
               </h2>
               <p>
-                Learn Claude Code and AI automation through guided projects, with help when
-                you get stuck.
+                Learn how to design and build AI agents around real problems. I’ll help you
+                move from an idea to a working use case, whichever tools fit the job.
               </p>
 
               <ul className={styles.features}>
                 <li>
                   <Check size={17} aria-hidden="true" />
-                  <span>Lessons from first setup to a working agent</span>
+                  <span>Practical guidance from first idea to working agent</span>
                 </li>
                 <li>
                   <Check size={17} aria-hidden="true" />
-                  <span>Daily recorded answers to member questions</span>
+                  <span>Useful workflows and real use cases</span>
                 </li>
                 <li>
                   <Check size={17} aria-hidden="true" />
-                  <span>Weekly live build calls with me</span>
-                </li>
-                <li>
-                  <Check size={17} aria-hidden="true" />
-                  <span>Prompts, guides, and lessons on finding clients</span>
+                  <span>Help when you get stuck</span>
                 </li>
               </ul>
 
-              <div className={styles.offerPrice}>
-                {config.communityPrice}
-                <span>/month</span>
-              </div>
-
-              <a
-                href="#custom-builds"
-                className={styles.primaryButton}
-              >
-                Explore the community <ArrowUpRight size={17} aria-hidden="true" />
+              <a href={emailLink("Master and Monetize AI", "Hi Vamshi,\n\nI want to learn how to build AI agents. Here is what I am working on:\n\n")} className={styles.primaryButton}>
+                Send an email <Mail size={17} aria-hidden="true" />
               </a>
-              <p className={styles.offerNote}>
-                Beginner friendly. No coding background needed.
-              </p>
             </div>
 
             <div className={styles.communityVisual}>
-              <a
-                href="#custom-builds"
-                className={styles.skoolImageLink}
-              >
+              <div className={styles.skoolImageLink}>
                 <img
-                  alt={`Master and Monetize AI — ${config.brandName} course and community`}
+                  alt="Vamshi Krishna"
                   width={720}
                   height={383}
                   className={styles.skoolImage}
-                  src={communityImgSrc}
+                  src="/journey/dp-1-showcase.jpg"
                 />
-              </a>
+              </div>
 
               <div className={styles.communityDetails}>
                 <span>
@@ -492,171 +220,17 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <figure className={styles.review}>
-                <blockquote>
-                  “{config.name} breaks down complex multi-agent workflows so clearly that I
-                  shipped my first client automation in 48 hours.”
-                </blockquote>
-                <figcaption>
-                  <span className={styles.reviewAvatar}>AK</span>
-                  <span>
-                    <strong>Arjun K.</strong>
-                    <small>Community member</small>
-                  </span>
-                  <a
-                    href="#community"
-                    aria-label="Read member review"
-                  >
-                    <ArrowUpRight size={18} aria-hidden="true" />
-                  </a>
-                </figcaption>
-              </figure>
-            </div>
-          </section>
-
-          {/* 03 / PLAYBOOK SECTION */}
-          <section
-            id="playbook"
-            className={styles.showcase}
-            aria-labelledby="playbook-title"
-          >
-            <div className={styles.playbookVisual}>
-              <img
-                alt={`${config.name} with a workbook and prompt cards in a bright studio`}
-                width={1200}
-                height={797}
-                className={styles.offerImage}
-                src={playbookImgSrc}
-              />
-              <span className={styles.bookCaption}>
-                Your next build starts with a prompt.
-              </span>
-            </div>
-
-            <div className={styles.showcaseCopy}>
-              <p className={styles.eyebrow}>03 / A PRACTICAL PLACE TO BEGIN</p>
-              <h2 id="playbook-title">
-                The $5K/Month
-                <br />
-                Claude Plugin Playbook
-              </h2>
-              <p>
-                10 plugins with exact prompts, build guides, and outreach scripts. Open the
-                guide, pick a project, and follow the steps.
-              </p>
-
-              <ul className={styles.features}>
-                <li>
-                  <Check size={17} aria-hidden="true" /> Prompts you can copy and use
-                </li>
-                <li>
-                  <Check size={17} aria-hidden="true" /> Instructions for each build
-                </li>
-                <li>
-                  <Check size={17} aria-hidden="true" /> Outreach scripts for finding
-                  clients
-                </li>
-              </ul>
-
-              <div className={styles.offerPrice}>{config.playbookPrice}</div>
-
-              <Link
-                href="/guides/claude-skills-i-use"
-                className={styles.primaryButton}
-              >
-                Get the playbook <ArrowUpRight size={17} aria-hidden="true" />
-              </Link>
-            </div>
-          </section>
-
-          {/* 04 / 1:1 CONSULTATION SECTION */}
-          <section
-            id="consultation"
-            className={`${styles.showcase} ${styles.consultationSection}`}
-            aria-labelledby="consultation-title"
-          >
-            <div className={styles.showcaseCopy}>
-              <p className={styles.eyebrow}>04 / LET’S WORK THROUGH IT</p>
-              <h2 id="consultation-title">
-                Your ideas.
-                <br />A conversation with me.
-              </h2>
-              <p>
-                Book a 1:1 consultation to work with me on AI automations for your business
-                or workflows. Bring your questions, your project, or the part you’re stuck
-                on.
-              </p>
-
-              <div className={styles.offerPrice}>
-                {config.consultationPrice}
-                <span> / consultation</span>
-              </div>
-
-              <a
-                href="#custom-builds"
-                className={styles.primaryButton}
-              >
-                Book a 1:1 consultation <ArrowUpRight size={17} aria-hidden="true" />
-              </a>
-            </div>
-
-            <div className={styles.consultationVisual}>
-              <img
-                alt={`${config.name} at a laptop with a notebook, ready for a personal consultation`}
-                width={1200}
-                height={797}
-                className={styles.offerImage}
-                src={consultationImgSrc}
-              />
-
-              <div className={styles.sessionCard}>
-                <div className={styles.sessionHost}>
-                  <img
-                    src="/journey/main-dp-icon.jpg"
-                    alt={config.name}
-                    width={42}
-                    height={42}
-                    className="h-10.5 w-10.5 shrink-0 rounded-full object-cover border-2 border-teal-500"
-                  />
-                  <div>
-                    <strong>1:1 with {config.name}</strong>
-                    <span>A conversation about your next build</span>
-                  </div>
-                  <MessageCircle size={22} aria-hidden="true" />
-                </div>
-
-                <p className={styles.eyebrow}>WHAT WE CAN WORK THROUGH</p>
-
-                <div className={styles.agendaRow}>
-                  <span>01</span>
-                  Your idea or existing workflow
-                  <Check size={16} aria-hidden="true" />
-                </div>
-                <div className={styles.agendaRow}>
-                  <span>02</span>
-                  Questions and technical blockers
-                  <Check size={16} aria-hidden="true" />
-                </div>
-                <div className={styles.agendaRow}>
-                  <span>03</span>
-                  Practical next steps
-                  <Check size={16} aria-hidden="true" />
-                </div>
-
-                <div className={styles.sessionFooter}>
-                  <img
-                    alt=""
-                    width={20}
-                    height={20}
-                    src="/gcal-icon.svg"
-                  />{" "}
-                  Make time for your next step.
+              <div className={styles.review}>
+                <p className={styles.pendingReview}>Testimonial text coming soon.</p>
+                <div className={styles.reviewPerson}>
+                  <span className={styles.reviewAvatar}>SV</span>
+                  <span><strong>Satish Varma</strong><small>Velpula Mama</small></span>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* 05 / CUSTOM BUILDS SECTION */}
+          {/* 02 / CUSTOM BUILDS SECTION */}
           <section
             id="custom-builds"
             className={styles.showcase}
@@ -664,29 +238,30 @@ export default function HomePage() {
           >
             <div className={styles.automationVisual}>
               <img
-                alt={`${config.name} studio portrait`}
+                alt="Vamshi Krishna"
                 width={1200}
                 height={960}
                 className={styles.offerImage}
-                src={automationImgSrc}
+                src="/journey/dp-1-showcase.jpg"
               />
               <div className={styles.workflowSteps}>
-                <span>Connect your tools</span>
+                <span>Your idea</span>
                 <ArrowRight size={16} aria-hidden="true" />
-                <span>Build the workflow</span>
+                <span>A useful AI agent</span>
               </div>
             </div>
 
             <div className={styles.showcaseCopy}>
-              <p className={styles.eyebrow}>05 / BUILT FOR YOUR BUSINESS</p>
+              <p className={styles.eyebrow}>02 / BUILT FOR YOUR BUSINESS</p>
               <h2 id="custom-title">
-                Let’s put AI to work
+                Let’s build what your
                 <br />
-                in your business.
+                business needs.
               </h2>
               <p>
-                Have a workflow you want to automate? I build custom AI agents around your
-                tools, your processes, and the way your business works.
+                From a single repetitive task to a full workflow, I build AI agents and
+                automations around your goals. Tell me the problem and I’ll find a practical
+                way forward.
               </p>
 
               <div className={styles.useCases}>
@@ -701,16 +276,81 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <div className={styles.offerPrice}>
-                Custom<span> / based on your project</span>
-              </div>
-
-              <CallRequestModal />
+              <a href={emailLink("Build an AI agent for my business", "Hi Vamshi,\n\nHere is the problem I want to solve:\n\nMy current workflow:\n\n")} className={styles.primaryButton}>
+                Send an email <Mail size={17} aria-hidden="true" />
+              </a>
             </div>
           </section>
 
-          {/* 06 / BONUS INTERACTIVE AI BUILDER LAB */}
-          <InteractiveAiLab />
+          {/* CONSULTING */}
+          <section
+            id="consultation"
+            className={`${styles.showcase} ${styles.consultationSection}`}
+            aria-labelledby="consultation-title"
+          >
+            <div className={styles.showcaseCopy}>
+              <p className={styles.eyebrow}>AI AUTOMATION LEAD FOR YOUR STARTUP</p>
+              <h2 id="consultation-title">
+                Bring me your
+                <br />problem statement.
+              </h2>
+              <p>
+                I’ll work through it with you and suggest practical AI use cases you can
+                actually put to work. We can discuss what to build, how it should fit your
+                team, and the next steps to make it happen.
+              </p>
+
+              <a href={emailLink("AI automation for my startup", "Hi Vamshi,\n\nMy startup's problem statement is:\n\nWhat we have tried so far:\n\n")} className={styles.primaryButton}>
+                Send an email <Mail size={17} aria-hidden="true" />
+              </a>
+            </div>
+
+            <div className={styles.consultationVisual}>
+              <img
+                alt="Vamshi Krishna at his desk"
+                width={1200}
+                height={797}
+                className={styles.offerImage}
+                src="/journey/main-dp-showcase.jpg"
+              />
+
+              <div className={styles.sessionCard}>
+                <div className={styles.sessionHost}>
+                  <img
+                    src="/journey/main-dp-icon.jpg"
+                    alt=""
+                    width={42}
+                    height={42}
+                    className="h-10.5 w-10.5 shrink-0 rounded-full object-cover border-2 border-teal-500"
+                  />
+                  <div>
+                    <strong>Work with Vamshi</strong>
+                    <span>From problem statement to practical use cases</span>
+                  </div>
+                  <MessageCircle size={22} aria-hidden="true" />
+                </div>
+
+                <p className={styles.eyebrow}>WHAT WE CAN WORK THROUGH</p>
+
+                <div className={styles.agendaRow}>
+                  <span>01</span>
+                  Your startup’s problem
+                  <Check size={16} aria-hidden="true" />
+                </div>
+                <div className={styles.agendaRow}>
+                  <span>02</span>
+                  Useful AI opportunities
+                  <Check size={16} aria-hidden="true" />
+                </div>
+                <div className={styles.agendaRow}>
+                  <span>03</span>
+                  A realistic path to build
+                  <Check size={16} aria-hidden="true" />
+                </div>
+
+              </div>
+            </div>
+          </section>
 
           {/* FAQ SECTION */}
           <section className={styles.faqSection} aria-labelledby="faq-title">
@@ -720,7 +360,7 @@ export default function HomePage() {
               <p>
                 Still wondering about something?
                 <br />
-                <a href={`mailto:${config.email}`} className={styles.textLink}>
+                <a href={`mailto:${EMAIL}`} className={styles.textLink}>
                   Send me an email <ArrowUpRight size={15} aria-hidden="true" />
                 </a>
               </p>
@@ -729,55 +369,34 @@ export default function HomePage() {
             <div className={styles.faqList}>
               <details>
                 <summary>
-                  Where should I start?
+                  What kind of projects do you build?
                   <span aria-hidden="true">+</span>
                 </summary>
                 <p>
-                  Start with the{" "}
-                  <Link href="/guides/ai-automation-builder-roadmap">
-                    free AI automation roadmap
-                  </Link>{" "}
-                  for a learning path, or pick a project from the guide library. If you
-                  already use Claude, the{" "}
-                  <Link href="/guides/claude-skills-i-use">featured skills guide</Link> is a
-                  useful next step.
+                  Websites, AI agents, useful automations, and creative tools. <a href="#projects">See my projects</a> for examples.
                 </p>
               </details>
 
               <details>
                 <summary>
-                  What’s included in the free guides?
+                  Do I need a detailed technical brief?
                   <span aria-hidden="true">+</span>
                 </summary>
                 <p>
-                  The library includes setup instructions, practical walkthroughs, install
-                  commands, and prompts for working with AI. The guides are free to read;
-                  some projects use tools that have their own costs.
+                  No. Send the problem in your own words. We can find the right use case and scope together.
                 </p>
               </details>
 
               <details>
                 <summary>
-                  What do I get inside the community?
+                  Can you help my startup find AI use cases?
                   <span aria-hidden="true">+</span>
                 </summary>
                 <p>
-                  Guided lessons, prompts, recorded answers to member questions, and weekly
-                  live calls. It’s a place to learn with support while you build.
+                  Yes. Tell me what your team does, where work gets stuck, and what you want to improve. I’ll suggest practical options.
                 </p>
               </details>
 
-              <details>
-                <summary>
-                  Can you help with my business?
-                  <span aria-hidden="true">+</span>
-                </summary>
-                <p>
-                  Yes. Book a <a href="#consultation">1:1 consultation</a> for help with
-                  your project, or <a href="#custom-builds">tell me about a custom build</a>{" "}
-                  if you want an AI workflow built for your business.
-                </p>
-              </details>
             </div>
           </section>
         </main>
@@ -793,32 +412,25 @@ export default function HomePage() {
                 className={styles.brandMark}
                 src="/journey/main-dp-icon.jpg"
               />
-              {config.brandName}
+              VamshiCreates
               <span className={styles.captionDot}></span>
             </Link>
-            <p>Practical AI. Things you can actually build.</p>
+            <p>Ideas into useful things.</p>
           </div>
 
           <div className={styles.footerLinks}>
             <Link href="/journey">My Journey</Link>
-            <Link href="/guides">All guides</Link>
-            <a href="#community">Community</a>
-            <a href="#playbook">Playbook</a>
-            <a href={`mailto:${config.email}`}>{config.email}</a>
+            <a href="#projects">My Projects</a>
+            <a href="#consultation">Consulting</a>
+            <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
           </div>
 
           <span className={styles.copyright}>
-            © 2026 @{config.brandName.toLowerCase()}
+            © 2026 @vamshicreates
           </span>
         </footer>
       </div>
 
-      <CommandPalette open={cmdOpen} onClose={() => setCmdOpen(false)} />
-      <CreatorCustomizer
-        config={config}
-        onChange={updateConfig}
-        onReset={resetConfig}
-      />
     </div>
   );
 }
