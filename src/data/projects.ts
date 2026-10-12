@@ -55,6 +55,15 @@ export const PROJECTS: Project[] = [
     code: null,
   },
   {
+    title: "Whiteboard for Code",
+    kind: "Live website · developer tool",
+    description: "Turns Mermaid, DOT, and basic code snippets into editable architecture whiteboards you can export.",
+    image: "/projects/whiteboard-for-code-ai.jpg",
+    imageAlt: "A code symbol becoming a simple connected diagram on a whiteboard",
+    live: "https://whiteboard-for-code.vercel.app",
+    code: null,
+  },
+  {
     title: "Chitralaya",
     kind: "Live website · artist portfolio",
     description: "A visual home for Sahithi Vengaldas's wall murals, canvas art, and creative process.",
