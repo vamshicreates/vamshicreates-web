@@ -128,7 +128,7 @@ export default function MyJourneyPage() {
               <strong className="font-semibold text-zinc-900">VamshiCreates</strong>, I
               spent years in the trenches—pitching my first startup on stage, directing
               celebrity shoots with Rana Daggubati, Adivi Sesh, Tharun Bhascker, and
-              Vennela Kishore at <strong className="font-semibold text-zinc-900">aha</strong>,
+              J. D. Chakravarthy at <strong className="font-semibold text-zinc-900">aha</strong>,
               leading viral campaigns for hit series like <em>Save The Tigers</em>, and
               scaling the <em>aha</em> YouTube channel past{" "}
               <strong className="font-semibold text-zinc-900">1,000,000 subscribers</strong>.
