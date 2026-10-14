@@ -113,6 +113,19 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
     accent: "teal",
   },
   {
+    id: "swipeup-productions",
+    badgeText: "S-UP",
+    badgeSub: "TEAM",
+    periodLabel: "FOUNDING TEAM · SWIPEUP PRODUCTIONS",
+    title: "Founding Team at SwipeUp Productions",
+    description:
+      "Handled marketing and operations as part of the founding team, worked with all Telugu OTT platforms, and produced a micro drama.",
+    image: "/journey/swipeup-productions.jpg",
+    imageAlt: "A Sony camera with an S-UP label held outdoors",
+    objectPosition: "center center",
+    accent: "blue",
+  },
+  {
     id: "save-the-tigers",
     badgeText: "HIT",
     badgeSub: "SERIES",
