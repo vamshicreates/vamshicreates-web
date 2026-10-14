@@ -2,6 +2,7 @@ export interface JourneyGalleryImage {
   src: string;
   alt: string;
   caption?: string;
+  rotateCounterclockwise?: boolean;
 }
 
 export interface JourneyMilestone {
@@ -185,16 +186,19 @@ export const JOURNEY_MILESTONES: JourneyMilestone[] = [
         src: "/journey/mallareddy/class-1.jpg",
         alt: "Hands-on 1-on-1 lab mentoring with Malla Reddy Engineering students",
         caption: "Session 04 · Hands-On Lab Mentoring with Mallareddy Engineering Students",
+        rotateCounterclockwise: true,
       },
       {
         src: "/journey/mallareddy/class-2.jpg",
         alt: "Interactive AI & creator economy lab session with Malla Reddy students",
         caption: "Session 05 · Interactive Creator Economy Lab Walkthrough",
+        rotateCounterclockwise: true,
       },
       {
         src: "/journey/mallareddy/class-4.jpg",
         alt: "Guiding Malla Reddy Engineering students on AI content creation tools",
         caption: "Session 06 · Practical AI Tooling & Student Project Reviews",
+        rotateCounterclockwise: true,
       },
     ],
   },

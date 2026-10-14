@@ -287,7 +287,7 @@ export default function MyJourneyPage() {
                         const activeIdx = cardGalleryIndex[item.id] ?? 0;
                         const currentPhoto = hasGallery
                           ? item.gallery![activeIdx] || item.gallery![0]
-                          : { src: item.image, alt: item.imageAlt, caption: item.title };
+                          : { src: item.image, alt: item.imageAlt, caption: item.title, rotateCounterclockwise: false };
                         const showWholeInCard = Boolean(cardShowWholeImage[item.id]);
 
                         return (
@@ -313,7 +313,7 @@ export default function MyJourneyPage() {
                                       src={currentPhoto.src}
                                       alt={currentPhoto.alt}
                                       loading="lazy"
-                                      className="relative z-10 h-full w-full object-contain p-1 transition-transform duration-300"
+                                      className={`relative z-10 h-full w-full object-contain p-1 transition-transform duration-300 ${currentPhoto.rotateCounterclockwise ? "-rotate-90" : ""}`}
                                     />
                                   </>
                                 ) : (
@@ -324,7 +324,7 @@ export default function MyJourneyPage() {
                                     style={{
                                       objectPosition: item.objectPosition || "center center",
                                     }}
-                                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                                    className={`h-full w-full transition-transform duration-500 ${currentPhoto.rotateCounterclockwise ? "-rotate-90 object-contain" : "object-cover group-hover:scale-105"}`}
                                   />
                                 )}
 
@@ -402,7 +402,7 @@ export default function MyJourneyPage() {
                                             src={gImg.src}
                                             alt={gImg.alt}
                                             loading="lazy"
-                                            className="h-full w-full object-cover"
+                                            className={`h-full w-full ${gImg.rotateCounterclockwise ? "-rotate-90 object-contain" : "object-cover"}`}
                                           />
                                         </button>
                                       );
@@ -458,7 +458,7 @@ export default function MyJourneyPage() {
                     style={{
                       objectPosition: item.objectPosition || "center center",
                     }}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    className={`h-full w-full transition-transform duration-500 ${item.gallery?.[cardGalleryIndex[item.id] ?? 0]?.rotateCounterclockwise ? "-rotate-90 object-contain" : "object-cover group-hover:scale-105"}`}
                   />
                   {item.gallery && item.gallery.length > 1 && (
                     <span className="absolute bottom-2 right-2 rounded-md bg-zinc-900/80 px-2 py-0.5 font-mono text-[10px] font-semibold text-white">
@@ -545,17 +545,28 @@ export default function MyJourneyPage() {
                     src: lightboxItem.image,
                     alt: lightboxItem.imageAlt,
                     caption: lightboxItem.title,
+                    rotateCounterclockwise: false,
                   };
 
               return (
                 <>
                   {/* Whole Uncropped Image Display */}
                   <div className="relative flex max-h-[62vh] min-h-[280px] w-full items-center justify-center overflow-hidden rounded-2xl bg-zinc-950">
-                    <img
-                      src={activePhoto.src}
-                      alt={activePhoto.alt}
-                      className="max-h-[62vh] w-auto max-w-full object-contain"
-                    />
+                    {activePhoto.rotateCounterclockwise ? (
+                      <div className="aspect-square w-[62vh] max-w-full">
+                        <img
+                          src={activePhoto.src}
+                          alt={activePhoto.alt}
+                          className="h-full w-full -rotate-90 object-contain"
+                        />
+                      </div>
+                    ) : (
+                      <img
+                        src={activePhoto.src}
+                        alt={activePhoto.alt}
+                        className="max-h-[62vh] w-auto max-w-full object-contain"
+                      />
+                    )}
 
                     {hasGallery && total > 1 && (
                       <>
@@ -617,7 +628,7 @@ export default function MyJourneyPage() {
                           <img
                             src={gImg.src}
                             alt={gImg.alt}
-                            className="h-full w-full object-cover"
+                            className={`h-full w-full ${gImg.rotateCounterclockwise ? "-rotate-90 object-contain" : "object-cover"}`}
                           />
                         </button>
                       ))}
