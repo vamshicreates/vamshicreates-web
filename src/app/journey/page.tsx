@@ -50,9 +50,9 @@ export default function MyJourneyPage() {
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
             <Link href="/journey" className="font-semibold text-teal-700">
-              My Journey
+              Journey
             </Link>
-            <Link href="/projects">My Projects</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
           </nav>
@@ -118,7 +118,7 @@ export default function MyJourneyPage() {
           {/* Story Intro Copy */}
           <div>
             <p className="mb-3 font-mono text-xs uppercase tracking-widest text-teal-700">
-              MY JOURNEY / MILESTONES ACHIEVED
+              JOURNEY / MILESTONES ACHIEVED
             </p>
             <h1 className="text-3xl font-bold tracking-tight text-zinc-950 sm:text-4xl md:text-5xl">
               From Pitching My 1st Startup to{" "}
@@ -171,7 +171,7 @@ export default function MyJourneyPage() {
             CHRONOLOGICAL STORYLINE
           </p>
           <h2 className="mt-1.5 text-2xl font-bold tracking-tight text-zinc-950 sm:text-3xl md:text-4xl">
-            My Journey Timeline &amp; Milestones Achieved
+            Journey Timeline &amp; Milestones Achieved
           </h2>
           <p className="mx-auto mt-2 max-w-xl text-xs text-zinc-500 sm:text-sm">
             Every chapter that shaped how I build products, grow audiences, and automate
@@ -180,7 +180,7 @@ export default function MyJourneyPage() {
         </div>
 
         {/* CENTER-SPINE ALTERNATING MILESTONE TIMELINE (Reference Design in Website Colors) */}
-        <section aria-label="My Journey Timeline" className="relative mx-auto max-w-5xl">
+        <section aria-label="Journey Timeline" className="relative mx-auto max-w-5xl">
           {/* Central Vertical Hatched Spine (Center on Desktop, Left on Mobile) */}
           <div
             aria-hidden="true"

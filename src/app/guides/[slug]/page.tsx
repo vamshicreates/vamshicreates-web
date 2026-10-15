@@ -51,8 +51,8 @@ export default function GuideDetailPage() {
           </Link>
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
-            <Link href="/journey">My Journey</Link>
-            <Link href="/projects">My Projects</Link>
+            <Link href="/journey">Journey</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/guides" className="font-semibold text-teal-700">
               Guides
             </Link>
@@ -116,14 +116,14 @@ export default function GuideDetailPage() {
                   className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-teal-700 hover:border-teal-300 hover:bg-teal-50/50"
                 >
                   <Sparkles className="h-3.5 w-3.5" />
-                  View My Journey
+                  View Journey
                 </Link>
                 <Link
                   href="/projects"
                   className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-blue-700 hover:border-blue-300 hover:bg-blue-50/50"
                 >
                   <BookOpen className="h-3.5 w-3.5" />
-                  My Projects
+                  Projects
                 </Link>
               </div>
             </div>

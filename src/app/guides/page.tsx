@@ -107,8 +107,8 @@ export default function GuidesIndexPage() {
           </Link>
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
-            <Link href="/journey">My Journey</Link>
-            <Link href="/projects">My Projects</Link>
+            <Link href="/journey">Journey</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/guides" className="font-semibold text-teal-700">
               Guides
             </Link>

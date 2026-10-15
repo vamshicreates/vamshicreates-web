@@ -6,11 +6,11 @@ import homeStyles from "@/app/home.module.css";
 import styles from "./projects.module.css";
 
 export const metadata: Metadata = {
-  title: "My Projects | VamshiCreates",
+  title: "Projects | VamshiCreates",
   description:
     "Explore live websites and open source AI agent skills built by Vamshi Krishna.",
   openGraph: {
-    title: "My Projects | VamshiCreates",
+    title: "Projects | VamshiCreates",
     description: "Live websites and AI agent skills built by Vamshi Krishna.",
     images: ["/projects/movie-draft-ai.jpg"],
   },
@@ -60,8 +60,8 @@ export default function ProjectsPage() {
             VamshiCreates
           </Link>
           <nav aria-label="Main navigation" className={homeStyles.navLinks}>
-            <Link href="/journey">My Journey</Link>
-            <Link href="/projects" aria-current="page" className={styles.activeNav}>My Projects</Link>
+            <Link href="/journey">Journey</Link>
+            <Link href="/projects" aria-current="page" className={styles.activeNav}>Projects</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
           </nav>
@@ -74,7 +74,7 @@ export default function ProjectsPage() {
           <section className={styles.hero} aria-labelledby="projects-title">
             <div className={styles.heroOrb} aria-hidden="true" />
             <p className={styles.eyebrow}>LIVE PRODUCTS / OPEN SOURCE SKILLS</p>
-            <h1 id="projects-title">My <span>Projects.</span></h1>
+            <h1 id="projects-title">Projects<span>.</span></h1>
             <p className={styles.heroCopy}>
               Games, creative tools, and AI agent skills I’ve taken from an idea to something people can use.
             </p>
@@ -129,8 +129,8 @@ export default function ProjectsPage() {
             <p>Ideas into useful things.</p>
           </div>
           <div className={homeStyles.footerLinks}>
-            <Link href="/journey">My Journey</Link>
-            <Link href="/projects">My Projects</Link>
+            <Link href="/journey">Journey</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
             <a href="mailto:hello@vamshicreates.com">hello@vamshicreates.com</a>

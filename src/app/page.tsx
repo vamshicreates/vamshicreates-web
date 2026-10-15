@@ -39,8 +39,8 @@ export default function HomePage() {
           </Link>
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
-            <Link href="/journey">My Journey</Link>
-            <Link href="/projects">My Projects</Link>
+            <Link href="/journey">Journey</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/blog">Blog</Link>
             <a href="#consultation">Consulting</a>
           </nav>
@@ -74,7 +74,7 @@ export default function HomePage() {
                   Explore projects I built <ArrowUpRight size={17} aria-hidden="true" />
                 </Link>
                 <Link href="/journey" className={styles.textLink}>
-                  My Journey <ArrowUpRight size={17} aria-hidden="true" />
+                  Journey <ArrowUpRight size={17} aria-hidden="true" />
                 </Link>
               </div>
             </div>
@@ -388,8 +388,8 @@ export default function HomePage() {
           </div>
 
           <div className={styles.footerLinks}>
-            <Link href="/journey">My Journey</Link>
-            <Link href="/projects">My Projects</Link>
+            <Link href="/journey">Journey</Link>
+            <Link href="/projects">Projects</Link>
             <Link href="/blog">Blog</Link>
             <a href="#consultation">Consulting</a>
             <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
