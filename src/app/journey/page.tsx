@@ -53,6 +53,7 @@ export default function MyJourneyPage() {
               My Journey
             </Link>
             <Link href="/projects">My Projects</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
           </nav>
 
@@ -495,12 +496,12 @@ export default function MyJourneyPage() {
             Let’s build the next milestone together.
           </h2>
           <p className="mx-auto mt-3 max-w-lg text-sm leading-6 text-zinc-600">
-            Whether you want to learn AI automations from my free guides, join the
-            community, or work 1:1 on your business growth and workflows.
+            Explore my practical notes on Python and AI, or talk through the
+            next useful thing you want to build.
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
-            <Link href="/guides" className={styles.primaryButton}>
-              Explore free guides <ArrowUpRight size={16} />
+            <Link href="/blog" className={styles.primaryButton}>
+              Read the blog <ArrowUpRight size={16} />
             </Link>
             <Link
               href="/#consultation"

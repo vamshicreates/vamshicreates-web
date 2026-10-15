@@ -62,6 +62,7 @@ export default function ProjectsPage() {
           <nav aria-label="Main navigation" className={homeStyles.navLinks}>
             <Link href="/journey">My Journey</Link>
             <Link href="/projects" aria-current="page" className={styles.activeNav}>My Projects</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
           </nav>
           <a href="mailto:hello@vamshicreates.com?subject=Let%27s%20build%20something" className={homeStyles.navCta}>
@@ -130,6 +131,7 @@ export default function ProjectsPage() {
           <div className={homeStyles.footerLinks}>
             <Link href="/journey">My Journey</Link>
             <Link href="/projects">My Projects</Link>
+            <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
             <a href="mailto:hello@vamshicreates.com">hello@vamshicreates.com</a>
           </div>

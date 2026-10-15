@@ -1563,6 +1563,19 @@
   }
 }
 
+@media (max-width: 650px) {
+  .navigation {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 22px;
+  }
+  .navLinks {
+    order: 2;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .page *,
   .page :after,

@@ -41,6 +41,7 @@ export default function HomePage() {
           <nav aria-label="Main navigation" className={styles.navLinks}>
             <Link href="/journey">My Journey</Link>
             <Link href="/projects">My Projects</Link>
+            <Link href="/blog">Blog</Link>
             <a href="#consultation">Consulting</a>
           </nav>
 
@@ -389,6 +390,7 @@ export default function HomePage() {
           <div className={styles.footerLinks}>
             <Link href="/journey">My Journey</Link>
             <Link href="/projects">My Projects</Link>
+            <Link href="/blog">Blog</Link>
             <a href="#consultation">Consulting</a>
             <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
           </div>
