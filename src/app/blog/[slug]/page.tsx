@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Clock3 } from "lucide-react";
-import { BLOG_ARTICLES, getBlogArticle, getReadingMinutes, type BlogArticle, type BlogBlock } from "@/data/blog";
+import { BLOG_ARTICLES, getBlogArticle, getReadingMinutes, getSeriesArticles, type BlogArticle, type BlogBlock } from "@/data/blog";
 import BlogShell from "../BlogShell";
 import styles from "../blog.module.css";
 
@@ -57,7 +57,16 @@ function ArticleBlock({ article, block, index }: { article: BlogArticle; block: 
       ? <h3 id={id} className={styles.articleSubheading}>{block.text}</h3>
       : <h2 id={id} className={styles.articleHeading}>{block.text}</h2>;
   }
+  if (block.type === "subheading") return <h3 className={styles.articleSubheading}>{block.text}</h3>;
   if (block.type === "code") return <pre className={styles.codeBlock}><code>{block.text}</code></pre>;
+  if (block.type === "table") return (
+    <div className={styles.tableScroll}>
+      <table className={styles.articleTable}>
+        <thead><tr>{block.rows[0].map((cell, cellIndex) => <th key={cellIndex} scope="col">{cell}</th>)}</tr></thead>
+        <tbody>{block.rows.slice(1).map((row, rowIndex) => <tr key={rowIndex}>{row.map((cell, cellIndex) => <td key={cellIndex}>{cell}</td>)}</tr>)}</tbody>
+      </table>
+    </div>
+  );
   if (block.type === "list") return (
     <ul className={styles.articleList}>
       {block.items.map((item, itemIndex) => <li key={`${index}-${itemIndex}`}>
@@ -73,9 +82,10 @@ export default async function BlogArticlePage({ params }: Props) {
   const article = getBlogArticle(slug);
   if (!article) notFound();
 
-  const currentIndex = BLOG_ARTICLES.findIndex((item) => item.slug === article.slug);
-  const next = BLOG_ARTICLES[(currentIndex + 1) % BLOG_ARTICLES.length];
-  const related = BLOG_ARTICLES.filter((item) => item.slug !== article.slug);
+  const seriesArticles = getSeriesArticles(article.series);
+  const currentIndex = seriesArticles.findIndex((item) => item.slug === article.slug);
+  const next = seriesArticles[(currentIndex + 1) % seriesArticles.length];
+  const related = seriesArticles.filter((item) => item.slug !== article.slug);
   const headings = article.blocks.map((block, index) => ({ block, index })).filter(({ block }) => block.type === "heading") as { block: Extract<BlogBlock, { type: "heading" }>; index: number }[];
   const halfway = Math.ceil(article.blocks.length / 2);
   const inlineIndex = article.blocks.length > 18
@@ -101,12 +111,12 @@ export default async function BlogArticlePage({ params }: Props) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       <article className={styles.articlePage}>
         <div className={styles.articleTopline}>
-          <Link href="/blog" className={styles.backLink}><ArrowLeft size={15} aria-hidden="true" /> All articles</Link>
-          <span>{String(currentIndex + 1).padStart(2, "0")} / {String(BLOG_ARTICLES.length).padStart(2, "0")}</span>
+          <Link href={`/blog/${article.series}`} className={styles.backLink}><ArrowLeft size={15} aria-hidden="true" /> All {article.series.toUpperCase()} articles</Link>
+          <span>{String(currentIndex + 1).padStart(2, "0")} / {String(seriesArticles.length).padStart(2, "0")}</span>
         </div>
 
         <header className={styles.articleHeader}>
-          <p className={styles.eyebrow}>{article.category.toUpperCase()} / PYTHON + AI</p>
+          <p className={styles.eyebrow}>{article.category.toUpperCase()} / {article.series.toUpperCase()}</p>
           <h1>{article.title}</h1>
           <p className={styles.articleDek}>{article.description}</p>
           <div className={styles.articleByline}>
@@ -124,7 +134,7 @@ export default async function BlogArticlePage({ params }: Props) {
           <aside className={styles.tableOfContents} aria-label="On this page">
             <p>ON THIS PAGE</p>
             <ol>{headings.map(({ block, index }) => <li key={index}><a href={`#${headingId(block.text, index)}`}>{block.text}</a></li>)}</ol>
-            <Link href="/blog">See all articles <ArrowUpRight size={14} aria-hidden="true" /></Link>
+            <Link href={`/blog/${article.series}`}>See all {article.series.toUpperCase()} articles <ArrowUpRight size={14} aria-hidden="true" /></Link>
           </aside>
 
           <div className={styles.articleContent}>

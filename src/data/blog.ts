@@ -1,8 +1,14 @@
+import { LLM_ARTICLES } from "./llm-articles";
+
 export type BlogBlock =
   | { type: "paragraph"; text: string }
   | { type: "heading"; text: string }
+  | { type: "subheading"; text: string }
   | { type: "code"; text: string }
+  | { type: "table"; rows: string[][] }
   | { type: "list"; items: { text: string; href?: string }[] };
+
+export type BlogSeriesSlug = "python" | "llm";
 
 export type BlogArticle = {
   slug: string;
@@ -10,19 +16,21 @@ export type BlogArticle = {
   description: string;
   image: string;
   category: string;
+  series: BlogSeriesSlug;
   sourceTabId: string;
   blocks: BlogBlock[];
 };
 
 // Each entry is adapted from one tab of the author's “Python Blogs” document.
 // The prose is preserved; headings, lists, and code spacing are presentation edits.
-export const BLOG_ARTICLES: BlogArticle[] = [
+const PYTHON_ARTICLES: BlogArticle[] = [
   {
     "slug": "python-ai-what-you-can-build",
     "title": "Python: The Engine Behind What You Can Build With AI",
     "description": "Explore what Python can do across filmmaking, audio, video, AI agents, SaaS, automation, and more.",
     "image": "/blog/python-ai-engine.jpg",
     "category": "Start here",
+    "series": "python",
     "sourceTabId": "t.0",
     "blocks": [
       {
@@ -257,6 +265,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     "description": "Understand the simple path from an idea to Python code, libraries, tools, and a finished output.",
     "image": "/blog/how-python-works.jpg",
     "category": "Python fundamentals",
+    "series": "python",
     "sourceTabId": "t.spy5yu1xv95p",
     "blocks": [
       {
@@ -311,6 +320,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     "description": "Learn variables, conditions, loops, functions, and libraries through practical Python examples.",
     "image": "/blog/five-python-fundamentals.jpg",
     "category": "Python fundamentals",
+    "series": "python",
     "sourceTabId": "t.c0bnllmkqy6s",
     "blocks": [
       {
@@ -405,6 +415,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     "description": "A practical guide to data structures, packages, files, APIs, debugging, concurrency, and performance.",
     "image": "/blog/deeper-python-fundamentals.jpg",
     "category": "Python fundamentals",
+    "series": "python",
     "sourceTabId": "t.2j8ot6t3qmv8",
     "blocks": [
       {
@@ -487,6 +498,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     "description": "A five-layer learning path from core Python to automation, AI, backend engineering, and systems.",
     "image": "/blog/learn-python-deeply.jpg",
     "category": "Learning path",
+    "series": "python",
     "sourceTabId": "t.zbdr495wtu94",
     "blocks": [
       {
@@ -577,6 +589,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     "description": "Use AI coding assistants as tutors while you build, test, debug, and understand your own Python projects.",
     "image": "/blog/learn-python-with-ai.jpg",
     "category": "Learning path",
+    "series": "python",
     "sourceTabId": "t.9ghcr51pr27",
     "blocks": [
       {
@@ -666,6 +679,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     "description": "See how Python coordinates language, image, and audio models to build an AI filmmaking assistant.",
     "image": "/blog/python-ai-capabilities.jpg",
     "category": "Python + AI",
+    "series": "python",
     "sourceTabId": "t.a1ivhtpp5ewl",
     "blocks": [
       {
@@ -750,13 +764,35 @@ export const BLOG_ARTICLES: BlogArticle[] = [
   }
 ];
 
+export const BLOG_ARTICLES: BlogArticle[] = [...PYTHON_ARTICLES, ...LLM_ARTICLES];
+
+export const BLOG_SERIES = [
+  {
+    slug: "python",
+    title: "Python",
+    description: "Start with Python, then see how it helps you build useful tools with AI.",
+    image: "/blog/python-ai-engine.jpg",
+  },
+  {
+    slug: "llm",
+    title: "LLM",
+    description: "Understand language models, agents, model types, and the pieces behind AI products.",
+    image: "/blog/what-is-an-llm.jpg",
+  },
+] as const;
+
+export function getSeriesArticles(series: BlogSeriesSlug) {
+  return BLOG_ARTICLES.filter((article) => article.series === series);
+}
+
 export function getBlogArticle(slug: string) {
   return BLOG_ARTICLES.find((article) => article.slug === slug);
 }
 
 export function getReadingMinutes(article: BlogArticle) {
   const text = article.blocks.map((block) =>
-    block.type === "list" ? block.items.map((item) => item.text).join(" ") : block.text
+    block.type === "list" ? block.items.map((item) => item.text).join(" ") :
+    block.type === "table" ? block.rows.flat().join(" ") : block.text
   ).join(" ");
   return Math.max(1, Math.ceil(text.split(/\s+/).length / 220));
 }

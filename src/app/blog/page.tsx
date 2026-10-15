@@ -1,87 +1,61 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, BookOpen, Clock3 } from "lucide-react";
-import { BLOG_ARTICLES, getReadingMinutes, type BlogArticle } from "@/data/blog";
+import { ArrowLeft, ArrowUpRight, BookOpen } from "lucide-react";
+import { BLOG_SERIES, getSeriesArticles } from "@/data/blog";
 import BlogShell from "./BlogShell";
 import styles from "./blog.module.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vamshicreates-web.vercel.app"),
-  title: "Blog | Python, AI & Building Useful Things | VamshiCreates",
-  description:
-    "Seven practical articles by Vamshi Krishna on Python fundamentals, learning with AI coding tools, and building useful AI projects.",
+  title: "Blog | Python and LLM Guides | VamshiCreates",
+  description: "Practical, connected articles by Vamshi Krishna on Python, large language models, AI agents, and building useful AI products.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "Python & AI Blog | VamshiCreates",
-    description: "Practical notes on Python, AI coding, and building useful things.",
+    title: "Python and LLM Blog | VamshiCreates",
+    description: "Explore practical, connected series on Python and large language models.",
     url: "/blog",
     type: "website",
-    images: ["/blog/python-ai-engine.jpg"],
+    images: ["/blog/what-is-an-llm.jpg"],
   },
   twitter: { card: "summary_large_image" },
 };
 
-function ArticleCard({ article, index }: { article: BlogArticle; index: number }) {
-  return (
-    <article className={styles.articleCard}>
-      <Link href={`/blog/${article.slug}`} className={styles.cardImageLink} aria-label={`Read ${article.title}`}>
-        <Image
-          src={article.image}
-          alt={`Editorial thumbnail: ${article.title}`}
-          width={1672}
-          height={941}
-          sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 520px"
-          className={styles.cardImage}
-          priority={index === 0}
-        />
-      </Link>
-      <div className={styles.cardBody}>
-        <div className={styles.cardMeta}>
-          <span>{String(index + 1).padStart(2, "0")} / {article.category}</span>
-          <span><Clock3 size={13} aria-hidden="true" /> {getReadingMinutes(article)} min read</span>
-        </div>
-        <h2><Link href={`/blog/${article.slug}`}>{article.title}</Link></h2>
-        <p>{article.description}</p>
-        <Link href={`/blog/${article.slug}`} className={styles.readLink}>
-          Read article <ArrowUpRight size={16} aria-hidden="true" />
-        </Link>
-      </div>
-    </article>
-  );
-}
-
 export default function BlogPage() {
-  const [featured, ...more] = BLOG_ARTICLES;
   return (
     <BlogShell>
       <section className={styles.indexHero} aria-labelledby="blog-title">
         <Link href="/" className={styles.backLink}><ArrowLeft size={15} aria-hidden="true" /> Back to home</Link>
-        <p className={styles.eyebrow}>THE NOTEBOOK / PYTHON + AI</p>
+        <p className={styles.eyebrow}>THE NOTEBOOK / LEARN ONE IDEA AT A TIME</p>
         <h1 id="blog-title">Learn the basics.<br /><span>Build what matters.</span></h1>
         <p className={styles.heroDescription}>
-          Straightforward notes on Python, AI, and the skills behind useful creative tools.
-          Start anywhere, then follow the connected series.
+          Straightforward notes on the skills behind useful AI products.
+          Pick a subject and follow the articles in order, or start wherever you like.
         </p>
-        <div className={styles.seriesNote}><BookOpen size={17} aria-hidden="true" /> 7 articles · One connected series</div>
+        <div className={styles.seriesNote}><BookOpen size={17} aria-hidden="true" /> {BLOG_SERIES.length} subjects · More coming</div>
       </section>
 
-      <section className={styles.featuredSection} aria-labelledby="start-title">
+      <section className={styles.moreSection} aria-labelledby="subjects-title">
         <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>01 / START HERE</p>
-          <h2 id="start-title">The big picture</h2>
+          <p className={styles.eyebrow}>CHOOSE A SUBJECT</p>
+          <h2 id="subjects-title">Explore the series</h2>
+          <p>Each subject has its own page and a connected path through its articles.</p>
         </div>
-        <ArticleCard article={featured} index={0} />
-      </section>
-
-      <section className={styles.moreSection} aria-labelledby="more-title">
-        <div className={styles.sectionHeading}>
-          <p className={styles.eyebrow}>02 / GO DEEPER</p>
-          <h2 id="more-title">Explore the series</h2>
-          <p>Each article stands on its own and points you to a natural next step.</p>
-        </div>
-        <div className={styles.articleGrid}>
-          {more.map((article, index) => <ArticleCard key={article.slug} article={article} index={index + 1} />)}
+        <div className={styles.seriesGrid}>
+          {BLOG_SERIES.map((series, index) => {
+            const articles = getSeriesArticles(series.slug);
+            return <article key={series.slug} className={styles.seriesCard}>
+              <Link href={`/blog/${series.slug}`} className={styles.seriesImageLink} aria-label={`Explore ${series.title} articles`}>
+                <Image src={series.image} alt={`${series.title} series thumbnail`} width={1672} height={941} sizes="(max-width: 700px) 100vw, 50vw" priority={index === 0} />
+              </Link>
+              <div className={styles.seriesCardBody}>
+                <p className={styles.eyebrow}>{String(index + 1).padStart(2, "0")} / {articles.length} ARTICLES</p>
+                <h3><Link href={`/blog/${series.slug}`}>{series.title}</Link></h3>
+                <p>{series.description}</p>
+                <Link href={`/blog/${series.slug}`} className={styles.seriesButton}>Explore {series.title} <ArrowUpRight size={17} aria-hidden="true" /></Link>
+              </div>
+            </article>;
+          })}
         </div>
       </section>
     </BlogShell>
