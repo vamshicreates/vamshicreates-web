@@ -39,8 +39,17 @@ export default function BlogPage() {
         <div className={styles.sectionHeading}>
           <p className={styles.eyebrow}>STANDALONE ARTICLE</p>
           <h2 id="latest-title">Who to learn from now</h2>
-          <p>A curated reading list for people building SaaS and sharing their work in public.</p>
+          <p>Curated accounts for people building AI products and useful software.</p>
         </div>
+        <div className={styles.standaloneList}>
+          <Link href="/blog/indian-ai-builders-instagram" className={styles.standaloneFeature}>
+            <Image src="/blog/indian-ai-builders-instagram.png" alt="10 Indian AI Builders to Follow on Instagram" width={1730} height={909} sizes="(max-width: 700px) 100vw, 50vw" priority />
+            <span>
+              <small>AI / INDIA / INSTAGRAM</small>
+              <strong>10 Indian AI builders to follow on Instagram</strong>
+              <em>Read the article <ArrowUpRight size={17} aria-hidden="true" /></em>
+            </span>
+          </Link>
         <Link href="/blog/indie-saas-builders-to-follow" className={styles.standaloneFeature}>
           <Image src="/blog/indie-saas-builders-cover.png" alt="10 Indie Builders to Follow on X for SaaS Ideas" width={1730} height={909} sizes="(max-width: 700px) 100vw, 50vw" priority />
           <span>
@@ -49,6 +58,7 @@ export default function BlogPage() {
             <em>Read the article <ArrowUpRight size={17} aria-hidden="true" /></em>
           </span>
         </Link>
+        </div>
       </section>
 
       <section className={styles.moreSection} aria-labelledby="subjects-title">
