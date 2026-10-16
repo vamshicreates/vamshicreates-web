@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/journey`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/projects`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${SITE_URL}/blog`, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${SITE_URL}/blog/indie-saas-builders-to-follow`, lastModified: new Date("2026-10-16"), changeFrequency: "monthly", priority: 0.85, images: [`${SITE_URL}/blog/indie-saas-builders-to-follow.svg`] },
+    { url: `${SITE_URL}/blog/indie-saas-builders-to-follow`, lastModified: new Date("2026-10-16"), changeFrequency: "monthly", priority: 0.85, images: [`${SITE_URL}/blog/indie-saas-builders-cover.png`] },
     ...BLOG_SERIES.map((series) => ({
       url: `${SITE_URL}/blog/${series.slug}`,
       changeFrequency: "weekly" as const,

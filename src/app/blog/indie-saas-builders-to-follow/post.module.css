@@ -20,8 +20,9 @@
 .sectionLead h2 { margin: 10px 0 12px; color: #0b1230; font-size: clamp(29px, 3.2vw, 39px); line-height: 1.18; letter-spacing: -.045em; }
 .sectionLead p { margin: 0; color: #666a73; }
 .builderGrid { display: grid; gap: 15px; }
-.builderCard { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 16px; padding: 25px 30px; border: 1px solid #dfe9f8; border-radius: 20px; background: #fff; box-shadow: 0 6px 20px rgba(24, 24, 27, .025); }
+.builderCard { display: grid; grid-template-columns: 42px minmax(0, 1fr) 245px; align-items: start; gap: 16px; padding: 25px 26px; border: 1px solid #dfe9f8; border-radius: 20px; background: #fff; box-shadow: 0 6px 20px rgba(24, 24, 27, .025); }
 .cardNumber { color: #a2b4d3; font: 700 16px/1.5 var(--font-mono), monospace; }
+.cardCopy { min-width: 0; }
 .cardFocus { margin: 0 0 7px !important; font-size: 10px !important; }
 .builderCard h3 { margin: 0 0 4px; color: #10172f; font-size: clamp(24px, 2.8vw, 31px); line-height: 1.2; letter-spacing: -.035em; }
 .profileLink, .productLink { display: inline-flex; align-items: center; gap: 5px; color: #2563eb; font-size: 13px; font-weight: 700; text-decoration: none; }
@@ -30,9 +31,15 @@
 .builderCard .study { padding-left: 14px; border-left: 3px solid #a8d5d1; color: #535762; }
 .builderCard .study strong { color: #10172f; }
 .productLink { margin-top: 18px; }
+.profileShot { display: block; overflow: hidden; border: 1px solid #d9e1ef; border-radius: 14px; background: #08090b; text-decoration: none; box-shadow: 0 10px 22px rgba(6, 16, 38, .1); }
+.profileShot img { display: block; width: 100%; height: auto; }
+.profileShot span { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 10px 13px; color: #fff; font-size: 11px; font-weight: 700; }
+.profileShot:hover span { color: #93c5fd; }
 .moreVoices { margin-top: 10px; }
 .voiceGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .voiceGrid > div { padding: 26px; border: 1px solid #dfe9f8; border-radius: 18px; background: #f4f8ff; }
+.voiceShot { display: block; overflow: hidden; margin-bottom: 20px; border: 1px solid #d9e1ef; border-radius: 14px; background: #08090b; box-shadow: 0 10px 22px rgba(6, 16, 38, .08); }
+.voiceShot img { display: block; width: 100%; height: auto; }
 .voiceGrid h3 { margin: 0 0 12px; font-size: 23px; letter-spacing: -.03em; }
 .voiceGrid h3 a { display: inline-flex; align-items: center; gap: 5px; color: #10172f; text-decoration: none; }
 .voiceGrid h3 a:hover { color: #2563eb; }
@@ -52,6 +59,7 @@
   .body { margin-top: 42px; }
   .intro p { font-size: 16px; }
   .builderCard { grid-template-columns: 1fr; gap: 5px; padding: 22px; }
+  .profileShot { width: min(100%, 360px); margin-top: 18px; }
   .voiceGrid { grid-template-columns: 1fr; }
   .sectionLead { margin-top: 55px; }
 }

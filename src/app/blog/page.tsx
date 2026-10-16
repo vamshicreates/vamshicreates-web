@@ -42,7 +42,7 @@ export default function BlogPage() {
           <p>A curated reading list for people building SaaS and sharing their work in public.</p>
         </div>
         <Link href="/blog/indie-saas-builders-to-follow" className={styles.standaloneFeature}>
-          <Image src="/blog/indie-saas-builders-to-follow.svg" alt="Build in public: 10 indie builders to follow" width={1200} height={630} sizes="(max-width: 700px) 100vw, 50vw" priority />
+          <Image src="/blog/indie-saas-builders-cover.png" alt="10 Indie Builders to Follow on X for SaaS Ideas" width={1730} height={909} sizes="(max-width: 700px) 100vw, 50vw" priority />
           <span>
             <small>SAAS / BUILD IN PUBLIC</small>
             <strong>10 indie builders to follow on X for SaaS ideas</strong>

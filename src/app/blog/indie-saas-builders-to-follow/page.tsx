@@ -9,6 +9,7 @@ const SITE_URL = "https://vamshicreates-web.vercel.app";
 const PATH = "/blog/indie-saas-builders-to-follow";
 const TITLE = "10 Indie Builders to Follow on X for SaaS Ideas";
 const DESCRIPTION = "A practical follow list for learning SaaS, watching products get built in public, and finding ideas worth testing for your own audience.";
+const COVER = "/blog/indie-saas-builders-cover.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -23,9 +24,9 @@ export const metadata: Metadata = {
     type: "article",
     publishedTime: "2026-10-16",
     authors: ["Vamshi Krishna"],
-    images: [{ url: "/blog/indie-saas-builders-to-follow.svg", width: 1200, height: 630, alt: TITLE }],
+    images: [{ url: COVER, width: 1730, height: 909, alt: TITLE }],
   },
-  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: ["/blog/indie-saas-builders-to-follow.svg"] },
+  twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION, images: [COVER] },
 };
 
 const builders = [
@@ -33,6 +34,7 @@ const builders = [
     name: "Marc Lou",
     handle: "@marclou",
     x: "https://x.com/marclou",
+    screenshot: "/blog/profiles/marc-lou.jpg",
     focus: "Fast launches and a portfolio of small bets",
     note: "Marc is one of the clearest people to watch when you want to see an idea move from a tiny experiment to a paid product. His public portfolio includes TrustMRR, DataFast, ShipFast, and plenty of projects that did not become the main business.",
     study: "Study how he names a product, shows its value quickly, launches it, and decides whether to keep going.",
@@ -43,6 +45,7 @@ const builders = [
     name: "Pieter Levels",
     handle: "@levelsio",
     x: "https://x.com/levelsio",
+    screenshot: "/blog/profiles/pieter-levels.jpg",
     focus: "Repeated shipping and finding demand",
     note: "Pieter's archive is useful because it shows the breadth of the work: Photo AI, Remote OK, Nomads, experiments, and projects that failed to take off. You can see how one maker tests many directions over time.",
     study: "Look at which projects became lasting businesses, and ask what audience or distribution each one already had.",
@@ -53,6 +56,7 @@ const builders = [
     name: "Tony Dinh",
     handle: "@tdinh_me",
     x: "https://x.com/tdinh_me",
+    screenshot: "/blog/profiles/tony-dinh.jpg",
     focus: "Useful tools with unusually good product detail",
     note: "Tony builds software he wants to use, including TypingMind and DevUtils. His work is a strong reminder that an existing category can still make room for a product with a clearer experience and a specific point of view.",
     study: "Pay attention to the small workflow frustrations each product removes and how the product page explains them.",
@@ -63,6 +67,7 @@ const builders = [
     name: "Jon Yongfook",
     handle: "@yongfook",
     x: "https://x.com/yongfook",
+    screenshot: "/blog/profiles/jon-yongfook.jpg",
     focus: "Operating and growing a durable SaaS",
     note: "Jon founded Bannerbear, an image and video automation API. His writing goes beyond launch day into conversion, marketing, positioning, and how a SaaS business changes as the market changes.",
     study: "Read his longer posts when you want to understand the tradeoffs behind pricing, acquisition, and product direction.",
@@ -73,6 +78,7 @@ const builders = [
     name: "Danny Postma",
     handle: "@dannypostma",
     x: "https://x.com/dannypostma",
+    screenshot: "/blog/profiles/danny-postma.jpg",
     focus: "AI products and sharp positioning",
     note: "Danny founded HeadshotPro and has built other AI products. He is worth watching for the way a broad technical capability gets packaged into one clear outcome for a buyer.",
     study: "Notice the niche, the promise on the landing page, and the trust signals that help a customer try an AI product.",
@@ -83,6 +89,7 @@ const builders = [
     name: "Tibo Louis-Lucas",
     handle: "@tibo_maker",
     x: "https://x.com/tibo_maker",
+    screenshot: "/blog/profiles/tibo-louis-lucas.jpg",
     focus: "Creator tools and distribution-led products",
     note: "Tibo co-founded Revid and also works on products around SEO and X growth. Follow him to watch how a small team turns a recurring creator problem into a product, then uses its own product for distribution.",
     study: "Look for the loop between what the product makes, where that output is published, and how new users discover it.",
@@ -93,6 +100,7 @@ const builders = [
     name: "Jack Friks",
     handle: "@jackfriks",
     x: "https://x.com/jackfriks",
+    screenshot: "/blog/profiles/jack-friks.jpg",
     focus: "Consumer apps, organic growth, and honest experiments",
     note: "Jack's public project list includes Post Bridge, Lovelee, and several smaller apps. It also records failures. That makes it useful for learning how a builder moves from a personal workflow problem to a product people pay for.",
     study: "Watch how he demonstrates products in the channels where potential customers already spend time.",
@@ -103,6 +111,7 @@ const builders = [
     name: "Nico Jeannen",
     handle: "@nico_jeannen",
     x: "https://x.com/nico_jeannen",
+    screenshot: "/blog/profiles/nico-jeannen.jpg",
     focus: "Paid acquisition for small software businesses",
     note: "Nico is building AdKit after years of running ads. He adds a perspective that many build-in-public feeds miss: distribution through measurable paid campaigns, competitor research, and the work behind acquiring customers.",
     study: "Follow the practical ad research and ask whether a product has enough margin and retention to support a paid channel.",
@@ -116,7 +125,7 @@ const structuredData = {
   "@type": "BlogPosting",
   headline: TITLE,
   description: DESCRIPTION,
-  image: SITE_URL + "/blog/indie-saas-builders-to-follow.svg",
+  image: SITE_URL + COVER,
   datePublished: "2026-10-16",
   dateModified: "2026-10-16",
   author: { "@type": "Person", name: "Vamshi Krishna", url: SITE_URL },
@@ -142,7 +151,7 @@ export default function IndieSaasBuildersPost() {
           </div>
         </header>
 
-        <Image className={styles.heroImage} src="/blog/indie-saas-builders-to-follow.svg" alt="Build in public: ten indie builders to follow" width={1200} height={630} priority sizes="(max-width: 1100px) 100vw, 1060px" />
+        <Image className={styles.heroImage} src={COVER} alt="Vamshi typing at his laptop beside the article title" width={1730} height={909} priority sizes="(max-width: 1100px) 100vw, 1060px" />
 
         <div className={styles.body}>
           <div className={styles.intro}>
@@ -160,7 +169,7 @@ export default function IndieSaasBuildersPost() {
               {builders.map((builder, index) => (
                 <section className={styles.builderCard} key={builder.handle} aria-labelledby={"builder-" + index}>
                   <div className={styles.cardNumber}>{String(index + 1).padStart(2, "0")}</div>
-                  <div>
+                  <div className={styles.cardCopy}>
                     <p className={styles.cardFocus}>{builder.focus}</p>
                     <h3 id={"builder-" + index}>{builder.name}</h3>
                     <a className={styles.profileLink} href={builder.x} target="_blank" rel="noopener noreferrer">{builder.handle} on X <ArrowUpRight size={15} aria-hidden="true" /></a>
@@ -168,6 +177,10 @@ export default function IndieSaasBuildersPost() {
                     <p className={styles.study}><strong>What to study:</strong> {builder.study}</p>
                     <a className={styles.productLink} href={builder.productUrl} target="_blank" rel="noopener noreferrer">{builder.product} <ArrowUpRight size={15} aria-hidden="true" /></a>
                   </div>
+                  <a className={styles.profileShot} href={builder.x} target="_blank" rel="noopener noreferrer" aria-label={`Open ${builder.name}'s X profile`}>
+                    <Image src={builder.screenshot} alt={`Screenshot of ${builder.name}'s X profile`} width={602} height={624} sizes="(max-width: 700px) 100vw, 245px" />
+                    <span>View profile on X <ArrowUpRight size={14} aria-hidden="true" /></span>
+                  </a>
                 </section>
               ))}
             </div>
@@ -180,10 +193,16 @@ export default function IndieSaasBuildersPost() {
             </div>
             <div className={styles.voiceGrid}>
               <div>
+                <a className={styles.voiceShot} href="https://x.com/arvidkahl" target="_blank" rel="noopener noreferrer" aria-label="Open Arvid Kahl's X profile">
+                  <Image src="/blog/profiles/arvid-kahl.jpg" alt="Screenshot of Arvid Kahl's X profile" width={602} height={624} sizes="(max-width: 700px) 100vw, 380px" />
+                </a>
                 <h3><a href="https://x.com/arvidkahl" target="_blank" rel="noopener noreferrer">Arvid Kahl <ArrowUpRight size={17} aria-hidden="true" /></a></h3>
                 <p>Follow for thoughtful writing on bootstrapping, customer research, and building an audience that cares about a real problem. His <a href="https://thebootstrappedfounder.com/" target="_blank" rel="noopener noreferrer">Bootstrapped Founder archive</a> is useful when you want more depth than a post can hold.</p>
               </div>
               <div>
+                <a className={styles.voiceShot} href="https://x.com/dvassallo" target="_blank" rel="noopener noreferrer" aria-label="Open Daniel Vassallo's X profile">
+                  <Image src="/blog/profiles/daniel-vassallo.jpg" alt="Screenshot of Daniel Vassallo's X profile" width={602} height={624} sizes="(max-width: 700px) 100vw, 380px" />
+                </a>
                 <h3><a href="https://x.com/dvassallo" target="_blank" rel="noopener noreferrer">Daniel Vassallo <ArrowUpRight size={17} aria-hidden="true" /></a></h3>
                 <p>Follow for the small-bets approach: test modest ideas, learn from the outcome, and avoid making one launch carry your whole future. His <a href="https://smallbets.com/" target="_blank" rel="noopener noreferrer">Small Bets</a> library expands on that mindset.</p>
               </div>
