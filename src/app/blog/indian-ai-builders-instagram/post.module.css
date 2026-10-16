@@ -1,7 +1,9 @@
-.profilePreview { display: flex; flex-direction: column; align-items: flex-start; min-height: 255px; padding: 17px; background: radial-gradient(circle at 78% 20%, #6943a8 0, transparent 34%), linear-gradient(145deg, #172452, #111729 70%); color: #fff; }
-.previewTop { display: flex; align-items: center; gap: 7px; color: #bfc8e4; font: 650 9px/1.4 var(--font-mono), monospace; letter-spacing: .06em; }
-.previewMark { display: inline-grid; place-items: center; width: 21px; height: 21px; border-radius: 7px; background: linear-gradient(135deg, #f9ba63, #ed5288 55%, #8b56cf); color: #fff; font: 800 9px Arial, sans-serif; letter-spacing: -.08em; }
-.previewIcon { display: grid; place-items: center; width: 58px; height: 58px; margin: 34px 0 14px; border: 2px solid #c8a9fa; border-radius: 50%; background: #293c76; color: #fff; font: 750 20px Arial, sans-serif; }
-.profilePreview strong { font-size: 19px; line-height: 1.2; letter-spacing: -.02em; }
-.profilePreview small { margin-top: 5px; color: #c4cbe0; font-size: 11px; overflow-wrap: anywhere; }
-.previewTopic { margin-top: auto; padding: 7px 10px; border: 1px solid #67729f; border-radius: 999px; color: #e4dbfa; font: 700 9px/1 var(--font-mono), monospace; letter-spacing: .06em; }
+.profilePreview { background: #0b0c10; color: #f5f5f5; }
+.previewTop { display: flex; align-items: center; gap: 9px; padding: 13px 15px; border-bottom: 1px solid #282a2f; font-size: 12px; font-weight: 750; }
+.profileIdentity { display: flex; flex-direction: column; align-items: center; padding: 19px 10px 20px; text-align: center; }
+.avatarRing { display: grid; place-items: center; width: 86px; height: 86px; margin-bottom: 11px; border-radius: 50%; background: linear-gradient(135deg, #f9c05a, #e94480 52%, #8759d4); }
+.avatarRing img { width: 79px; height: 79px; border: 3px solid #0b0c10; border-radius: 50%; object-fit: cover; }
+.profileIdentity strong { font-size: 15px; line-height: 1.25; }
+.profileIdentity small { margin-top: 4px; color: #aaaeb8; font-size: 10px; overflow-wrap: anywhere; }
+.postGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2px; padding-top: 1px; border-top: 1px solid #282a2f; }
+.postGrid img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; }
