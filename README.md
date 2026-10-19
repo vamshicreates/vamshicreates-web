@@ -1,77 +1,37 @@
-# VamshiCreates — AI & OpenClaw Creator Platform
+# Vamshi Creates
 
-A Next.js 15 (App Router) + TypeScript + CSS Modules & Tailwind CSS creator platform replicating and extending [raycfu.com](https://www.raycfu.com/) for **VamshiCreates**.
+The official website for Vamshi Krishna and Vamshi Creates. It brings together shipped products, build notes, guides, and practical AI workflows.
 
-## Included Pages & Features
+**Live site:** https://vamshicreates-web.vercel.app  
+**GitHub profile:** https://github.com/vamshicreates
 
-1. **Homepage (`/`)**
-   - Floating frosted-glass pill navigation (`Guides`, `Community`, `Consulting`, `AI Lab`, `⌘K Search`, `Get the playbook ↗`)
-   - 2-column split Hero with live status pill (`● Engineer. Creator. Your AI guide.`), social links, and CTAs
-   - Featured Guide card + **"What brings you here?"** 4-track routing + **"Coming from a video?"** interactive keyword lookup box
-   - **01 / Free Guides Grid** (6-card grid linking to full step-by-step guides)
-   - **02 / Community Showcase** (`Master and Monetize AI` + member review card)
-   - **03 / Playbook Showcase** (`The $5K/Month Claude Plugin Playbook`)
-   - **04 / 1:1 Consultation Showcase** with structured `01 / 02 / 03` agenda card + Google Calendar footer
-   - **05 / Custom Builds Showcase** with interactive `<dialog>` **"Schedule a call"** lead capture modal (`/api/waitlist`)
-   - **06 / Interactive AI Builder Lab** (GitHub Skill Stack Builder + AI Automation ROI & Time-Saved Calculator)
-   - **FAQ Accordion** (`<details>/<summary>`) & Footer
-   - **Live Site Customizer** (bottom-right button to upload your own portrait, switch between Vamshi Studio & Ray Fu Reference visuals, or edit headlines/prices live)
-   - **Global `⌘K` Command Palette** to search any guide or video keyword instantly
+## Explore
 
-2. **All Guides Library (`/guides`)**
-   - Live search bar, video keyword unlock bar, category filter pills, and responsive guide cards
+- [Projects](https://vamshicreates-web.vercel.app/projects) — products and working demos
+- [What 2 Build](https://vamshicreates-web.vercel.app/projects/what-to-build) — product opportunity research
+- [How 2 Build](https://vamshicreates-web.vercel.app/projects/how-to-build) — practical build walkthroughs
+- [Journey](https://vamshicreates-web.vercel.app/journey) — the builder story
+- [Blog](https://vamshicreates-web.vercel.app/blog) and [guides](https://vamshicreates-web.vercel.app/guides) — useful notes and tutorials
 
-3. **Interactive Guide Reader (`/guides/[slug]`)**
-   - Copy-paste prompt & terminal blocks, per-section completion checkboxes, and related guides
+## Stack
 
-## Running Locally
+Next.js 16 App Router, React 19, TypeScript, CSS Modules, Tailwind CSS, and Vercel Blob.
+
+## Run locally
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open http://localhost:3000. Run `npm run build` before deploying.
 
-## Deployment
+## Deployment and data
 
-The GitHub `main` branch deploys to the `vamshicreates-web` project in the
-`vamshicreates` Vercel Hobby account. Production URL:
-[vamshicreates-web.vercel.app](https://vamshicreates-web.vercel.app).
+The `main` branch deploys to the `vamshicreates-web` Vercel project. `NEXT_PUBLIC_SITE_URL` supplies the production URL for social metadata. Form submissions use the project’s private Vercel Blob store. To test forms locally, link the Vercel project and pull its development environment variables or use a development Blob store. Keep local environment files out of Git.
 
-The guide email, creative bootcamp interest, and call request forms save each
-submission as a JSON file in the project's private `vamshicreates-web-blob`
-store. Vercel connects the store to Production and Preview with OIDC. The
-project also sets `NEXT_PUBLIC_SITE_URL` to the production URL for social
-metadata. To test form submissions locally, link the project with the Vercel
-CLI and pull its development environment variables, or use a development Blob
-store. Never commit local environment files.
+Builder Notes signups require explicit consent and are stored privately. The mailing list is a launch list; an email sending provider and schedule are not connected yet. The Creative Bootcamp page is available directly but remains outside public navigation and marked `noindex, nofollow`.
 
-Run `npm run build` before pushing changes. Each push to `main` creates a new
-production deployment through Vercel's GitHub integration.
+## Contributing
 
-The Creative Bootcamp page is currently unlinked from public navigation and
-marked `noindex, nofollow`. It remains available directly at
-`/creative-bootcamp`. To launch it publicly, restore its navigation links and
-remove the `robots` override in `src/app/creative-bootcamp/layout.tsx`.
-
-## Builder journey and launch list
-
-The homepage introduces What 2 Build and How 2 Build under Vamshi Creates.
-The first opportunity sample is on `/projects/what-to-build#sample-opportunity`;
-its matching interactive walkthrough is on `/projects/how-to-build#sample-build`.
-The downloadable `/samples/claim-desk.html` starter runs without dependencies.
-It uses fictional records and resets on refresh; it is not a production claim system.
-
-Builder Notes forms on the homepage and project pages post to `/api/email-list`
-with `type: builder-updates`, an explicit consent flag, and a known source page.
-Consenting signups are saved privately in Blob at `builder-notes/<email-sha256>.json`.
-Repeat submissions overwrite the same record. Existing guide/bootcamp forms retain
-their original storage format. Run `node --test tests/email-list.test.cjs` to check
-validation, private storage options, repeat signups, and storage failure responses.
-
-Builder Notes is presented as a launch list for a planned weekly email. No email
-provider or sending schedule is connected by this implementation. Before sending,
-connect a provider, import only these consented records, configure sender identity
-and unsubscribe handling, and prepare the first issue. Do not import guide emails
-as newsletter subscribers without their separate consent.
+Issues and focused pull requests are welcome. For product context, start with the [live site](https://vamshicreates-web.vercel.app) and [project portfolio](https://vamshicreates-web.vercel.app/projects).
