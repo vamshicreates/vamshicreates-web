@@ -71,7 +71,7 @@ export default function HomePage() {
 
               <div className={styles.heroActions}>
                 <Link href="/projects" className={styles.primaryButton}>
-                  Explore projects I built <ArrowUpRight size={17} aria-hidden="true" />
+                  Explore the two projects <ArrowUpRight size={17} aria-hidden="true" />
                 </Link>
                 <Link href="/journey" className={styles.textLink}>
                   Journey <ArrowUpRight size={17} aria-hidden="true" />
