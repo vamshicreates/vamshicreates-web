@@ -272,6 +272,7 @@ export default function HomePage() {
             <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
             <Link href="/blog">Blog</Link>
+            <a href="https://github.com/vamshicreates" rel="me">GitHub</a>
             <a href="#consultation">Consulting</a>
             <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
           </div>
