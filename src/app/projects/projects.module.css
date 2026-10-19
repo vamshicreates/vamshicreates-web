@@ -751,6 +751,18 @@
   outline-offset: 3px;
 }
 
+.projectLinks .repoLink {
+  border-color: #c5daf6;
+  background: #fff;
+  box-shadow: none;
+  color: #1658bd;
+}
+
+.projectLinks .repoLink:hover {
+  background: #edf5ff;
+  box-shadow: 0 5px 14px rgba(6, 82, 202, .1);
+}
+
 .contact {
   margin: 0 0 70px;
   padding: clamp(30px, 5vw, 56px);
@@ -813,6 +825,16 @@
 
   .projectContent {
     padding: 25px;
+  }
+
+  .projectLinks {
+    gap: 8px;
+  }
+
+  .projectLinks a {
+    gap: 6px;
+    padding: 0 10px;
+    font-size: 12px;
   }
 
   .collection {

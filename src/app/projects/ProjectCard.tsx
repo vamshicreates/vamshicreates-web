@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { PROJECT_STORIES } from "@/data/projectStories";
 import styles from "./projects.module.css";
@@ -35,6 +35,9 @@ export default function ProjectCard({ project, mode, priority = false }: { proje
         <div className={styles.projectLinks}>
           <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} website`}>
             View Website <ArrowUpRight size={16} aria-hidden="true" />
+          </a>
+          <a href={project.code} className={styles.repoLink} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} GitHub repository${project.codePrivate ? " (private, access required)" : ""}`} title={project.codePrivate ? "Private repository — GitHub access required" : undefined}>
+            <Github size={16} aria-hidden="true" /> GitHub{project.codePrivate ? " · Private" : ""}
           </a>
         </div>
       </div>
