@@ -3,7 +3,6 @@ import {
   ArrowUpRight,
   ArrowRight,
   Mail,
-  Users,
   Workflow,
   MessageCircle,
   Check,
@@ -82,122 +81,6 @@ export default function HomePage() {
           <BuilderPaths />
           <BuildCaseStudies />
           <BuilderNewsletter source="home" />
-
-          {/* 01 / MASTER AND MONETIZE AI */}
-          <section
-            id="master-ai"
-            className={`${styles.showcase} ${styles.communitySection}`}
-            aria-labelledby="master-title"
-          >
-            <div className={styles.showcaseCopy}>
-              <p className={styles.eyebrow}>01 / MASTER AND MONETIZE AI</p>
-              <h2 id="master-title">
-                Build useful AI agents.
-                <br />
-                With me in your corner.
-              </h2>
-              <p>
-                Learn how to design and build AI agents around real problems. I’ll help you
-                move from an idea to a working use case, whichever tools fit the job.
-              </p>
-
-              <ul className={styles.features}>
-                <li>
-                  <Check size={17} aria-hidden="true" />
-                  <span>Practical guidance from first idea to working agent</span>
-                </li>
-                <li>
-                  <Check size={17} aria-hidden="true" />
-                  <span>Useful workflows and real use cases</span>
-                </li>
-                <li>
-                  <Check size={17} aria-hidden="true" />
-                  <span>Help when you get stuck</span>
-                </li>
-              </ul>
-
-              <a href={emailLink("Master and Monetize AI", "Hi Vamshi,\n\nI want to learn how to build AI agents. Here is what I am working on:\n\n")} className={styles.primaryButton}>
-                Send an email <Mail size={17} aria-hidden="true" />
-              </a>
-            </div>
-
-            <div className={styles.communityVisual}>
-              <div className={styles.skoolImageLink}>
-                <img
-                  alt="Vamshi Krishna"
-                  width={720}
-                  height={383}
-                  className={styles.skoolImage}
-                  src="/journey/dp-1-showcase.jpg"
-                />
-              </div>
-
-              <div className={styles.communityDetails}>
-                <span>
-                  <GraduationCap size={18} aria-hidden="true" /> Guided builds
-                </span>
-                <span>
-                  <MessageCircle size={18} aria-hidden="true" /> Real support
-                </span>
-                <span>
-                  <Users size={18} aria-hidden="true" /> Learn together
-                </span>
-              </div>
-
-            </div>
-          </section>
-
-          {/* 02 / CUSTOM BUILDS SECTION */}
-          <section
-            id="custom-builds"
-            className={styles.showcase}
-            aria-labelledby="custom-title"
-          >
-            <div className={styles.automationVisual}>
-              <img
-                alt="Vamshi Krishna"
-                width={1200}
-                height={960}
-                className={styles.offerImage}
-                src="/journey/dp-1-showcase.jpg"
-              />
-              <div className={styles.workflowSteps}>
-                <span>Your idea</span>
-                <ArrowRight size={16} aria-hidden="true" />
-                <span>A useful AI agent</span>
-              </div>
-            </div>
-
-            <div className={styles.showcaseCopy}>
-              <p className={styles.eyebrow}>02 / BUILT FOR YOUR BUSINESS</p>
-              <h2 id="custom-title">
-                Let’s build what your
-                <br />
-                business needs.
-              </h2>
-              <p>
-                From a single repetitive task to a full workflow, I build AI agents and
-                automations around your goals. Tell me the problem and I’ll find a practical
-                way forward.
-              </p>
-
-              <div className={styles.useCases}>
-                <span>
-                  <FileText size={16} aria-hidden="true" /> Research &amp; reporting
-                </span>
-                <span>
-                  <Workflow size={16} aria-hidden="true" /> Repetitive workflows
-                </span>
-                <span>
-                  <MessageCircle size={16} aria-hidden="true" /> Business operations
-                </span>
-              </div>
-
-              <a href={emailLink("Build an AI agent for my business", "Hi Vamshi,\n\nHere is the problem I want to solve:\n\nMy current workflow:\n\n")} className={styles.primaryButton}>
-                Send an email <Mail size={17} aria-hidden="true" />
-              </a>
-            </div>
-          </section>
 
           {/* CONSULTING */}
           <section
