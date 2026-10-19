@@ -54,3 +54,24 @@ The Creative Bootcamp page is currently unlinked from public navigation and
 marked `noindex, nofollow`. It remains available directly at
 `/creative-bootcamp`. To launch it publicly, restore its navigation links and
 remove the `robots` override in `src/app/creative-bootcamp/layout.tsx`.
+
+## Builder journey and launch list
+
+The homepage introduces What 2 Build and How 2 Build under Vamshi Creates.
+The first opportunity sample is on `/projects/what-to-build#sample-opportunity`;
+its matching interactive walkthrough is on `/projects/how-to-build#sample-build`.
+The downloadable `/samples/claim-desk.html` starter runs without dependencies.
+It uses fictional records and resets on refresh; it is not a production claim system.
+
+Builder Notes forms on the homepage and project pages post to `/api/email-list`
+with `type: builder-updates`, an explicit consent flag, and a known source page.
+Consenting signups are saved privately in Blob at `builder-notes/<email-sha256>.json`.
+Repeat submissions overwrite the same record. Existing guide/bootcamp forms retain
+their original storage format. Run `node --test tests/email-list.test.cjs` to check
+validation, private storage options, repeat signups, and storage failure responses.
+
+Builder Notes is presented as a launch list for a planned weekly email. No email
+provider or sending schedule is connected by this implementation. Before sending,
+connect a provider, import only these consented records, configure sender identity
+and unsubscribe handling, and prepare the first issue. Do not import guide emails
+as newsletter subscribers without their separate consent.

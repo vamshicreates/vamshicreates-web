@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claim desk starter · Vamshi Creates</title>
+<style>
+  *{box-sizing:border-box}body{margin:0;background:#f3f7fc;color:#163a5f;font:16px/1.6 system-ui,sans-serif}main{max-width:850px;margin:40px auto;padding:28px}h1{letter-spacing:-.04em;margin:12px 0}a{color:#175bb3}header{display:flex;align-items:center;justify-content:space-between;gap:20px}small,p{color:#536e87}.card{background:white;border:1px solid #c8d9eb;border-radius:16px;padding:24px;margin:24px 0}form{display:grid;grid-template-columns:1fr 2fr auto;align-items:end;gap:12px}label{font-size:13px}input,select,button{font:inherit;border-radius:7px;padding:11px;border:1px solid #b8cde1}input{display:block;width:100%;margin-top:6px}button{cursor:pointer;background:#175bb3;color:white}button:disabled{opacity:.5;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #64a7eb;outline-offset:2px}ul{list-style:none;padding:0;margin:0}li{display:flex;gap:20px;justify-content:space-between;align-items:center;border-top:1px solid #dce5ef;padding:18px 0}li p{margin:5px 0;overflow-wrap:anywhere}li strong{overflow-wrap:anywhere}#message{min-height:26px;color:#246a52;font-size:13px}#count{white-space:nowrap;background:#e3eefb;border-radius:8px;padding:7px 10px;font-size:13px}.reset{background:white;color:#175bb3}footer{font-size:13px}@media(max-width:650px){main{margin:15px auto;padding:16px}.card{padding:18px}form{grid-template-columns:1fr}li{display:block}select{margin-top:10px;width:100%}}
+</style>
+<main>
+  <small>HOW 2 BUILD / BY VAMSHI CREATES</small>
+  <header><h1>Claim desk starter</h1><span id="count" aria-live="polite"></span></header>
+  <p>A learning prototype. Use fictional details. Records stay in this page’s memory and reset on refresh. No uploads, accounts, or notifications.</p>
+  <div class="card">
+    <form id="claim-form">
+      <label>Order reference<input name="order" maxlength="40" placeholder="DEMO-1050" required></label>
+      <label>What needs resolving?<input name="issue" maxlength="160" placeholder="One item missing" required></label>
+      <button id="add" type="submit">Add claim</button>
+    </form>
+    <p id="message" role="status"></p>
+    <ul id="claims" aria-label="Claims"></ul>
+    <button class="reset" id="reset" type="button">Reset demo</button>
+  </div>
+  <h2>Your next change: add an owner</h2>
+  <p>Add an owner input to the form, store its value in each claim, and display it in the row. Test with two different owners before adding more features.</p>
+  <footer>Read the <a href="https://vamshicreates-web.vercel.app/projects/how-to-build#sample-build">full walkthrough</a> and <a href="https://vamshicreates-web.vercel.app/projects/what-to-build#sample-opportunity">buyer research</a>.</footer>
+</main>
+<script>
+  // No dependencies. Keep the first version small enough to understand.
+  const sample = [
+    { order: "DEMO-1042", issue: "Two cartons missing from delivery", status: "Open" },
+    { order: "DEMO-1048", issue: "Damaged packaging; photo requested", status: "Waiting for proof" }
+  ];
+  let claims = sample.map(claim => ({ ...claim }));
+  const form = document.getElementById("claim-form");
+  const list = document.getElementById("claims");
+  const message = document.getElementById("message");
+  function render() {
+    list.replaceChildren();
+    document.getElementById("count").textContent = `${claims.filter(claim => claim.status !== "Resolved").length} active`;
+    document.getElementById("add").disabled = claims.length >= 12;
+    claims.forEach((claim, index) => {
+      const row = document.createElement("li");
+      const details = document.createElement("div");
+      const order = document.createElement("strong");
+      order.textContent = claim.order;
+      const issue = document.createElement("p");
+      issue.textContent = claim.issue;
+      details.append(order, issue);
+      const select = document.createElement("select");
+      select.setAttribute("aria-label", `Status for ${claim.order}`);
+      ["Open", "Waiting for proof", "Resolved"].forEach(status => {
+        const option = document.createElement("option");
+        option.textContent = status;
+        option.value = status;
+        select.append(option);
+      });
+      select.value = claim.status;
+      select.addEventListener("change", () => {
+        claims[index].status = select.value;
+        document.getElementById("count").textContent = `${claims.filter(item => item.status !== "Resolved").length} active`;
+        message.textContent = `${claim.order} moved to ${select.value.toLowerCase()}.`;
+      });
+      row.append(details, select);
+      list.append(row);
+    });
+  }
+  form.addEventListener("submit", event => {
+    event.preventDefault();
+    if (claims.length >= 12) return;
+    const data = new FormData(form);
+    const order = String(data.get("order") || "").trim();
+    const issue = String(data.get("issue") || "").trim();
+    if (!order || !issue) { message.textContent = "Add an order reference and a short issue."; return; }
+    claims.push({ order, issue, status: "Open" });
+    form.reset();
+    message.textContent = claims.length >= 12 ? "Demo limit reached. Reset to try again." : `${order} added. Try changing its status.`;
+    render();
+  });
+  document.getElementById("reset").addEventListener("click", () => {
+    claims = sample.map(claim => ({ ...claim }));
+    message.textContent = "Demo reset to the two sample claims.";
+    render();
+  });
+  render();
+</script>
+</html>

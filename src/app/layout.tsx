@@ -3,18 +3,18 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
-  title: "VamshiCreates | Websites, AI Agents & Automations",
+  title: "Vamshi Creates | Find a Problem. Build It. Reach Your First Users.",
   description:
-    "Explore products and websites built by Vamshi Krishna. See why each idea exists and how it was built.",
+    "Product research, practical builds, and shipped work by Vamshi Krishna. Explore What 2 Build and How 2 Build for your next useful product.",
   icons: {
     icon: "/journey/main-dp-icon.jpg",
     shortcut: "/journey/main-dp-icon.jpg",
     apple: "/journey/main-dp-icon.jpg",
   },
   openGraph: {
-    title: "VamshiCreates | Build Anything You Think Of",
+    title: "Vamshi Creates | Ideas into Useful Products",
     description:
-      "Websites, AI agents, and automations built by Vamshi Krishna.",
+      "Find a useful problem, build a small product, and reach your first users with What 2 Build and How 2 Build.",
     type: "website",
     images: ["/journey/main-dp-hero.jpg"],
   },

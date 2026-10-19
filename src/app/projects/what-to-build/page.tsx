@@ -3,14 +3,16 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import ProjectsShell from "../ProjectsShell";
 import styles from "../projects.module.css";
+import BuilderNewsletter from "@/components/BuilderNewsletter";
+import ClaimDeskOpportunity from "@/components/ClaimDeskOpportunity";
 
 const LIVE_URL = "https://whattobuildindia.vercel.app";
 
 export const metadata: Metadata = {
-  title: "What to Build | VamshiCreates",
-  description: "Explore What to Build: a source-linked SaaS opportunity radar, builder stories, and practical ways to test product ideas before building.",
+  title: "What 2 Build | VamshiCreates",
+  description: "Explore What 2 Build: a source-linked SaaS opportunity radar, builder stories, and practical ways to test product ideas before building.",
   alternates: { canonical: "/projects/what-to-build" },
-  openGraph: { title: "What to Build | VamshiCreates", description: "Find a real problem and test an idea before you build.", url: "/projects/what-to-build" },
+  openGraph: { title: "What 2 Build | VamshiCreates", description: "Find a real problem and test an idea before you build.", url: "/projects/what-to-build" },
 };
 
 export default function WhatToBuildPage() {
@@ -19,19 +21,22 @@ export default function WhatToBuildPage() {
       <section className={styles.detailHero} aria-labelledby="what-title">
         <Link href="/projects" className={styles.backLink}><ArrowLeft size={16} aria-hidden="true" /> The two projects</Link>
         <p className={styles.eyebrow}>01 / DISCOVER THE OPPORTUNITY</p>
-        <h1 id="what-title">What to Build<span>.</span></h1>
-        <p>Good products begin with a problem people care enough to solve. What to Build collects product signals, buyer context, and clear next tests so an idea can earn its way into a build.</p>
+        <h1 id="what-title">What 2 Build<span>.</span></h1>
+        <p>Good products begin with a problem people care enough to solve. What 2 Build collects product signals, buyer context, and clear next tests so an idea can earn its way into a build.</p>
         <div className={styles.detailActions}>
-          <a href={LIVE_URL} target="_blank" rel="noopener noreferrer" className={styles.primaryAction}>Explore the live site <ArrowUpRight size={17} aria-hidden="true" /></a>
+          <a href="#sample-opportunity" className={styles.primaryAction}>Read the free sample <ArrowRight size={17} aria-hidden="true" /></a>
           <Link href="/projects/what-to-build/portfolio" className={styles.secondaryAction}>See the portfolio <ArrowRight size={17} aria-hidden="true" /></Link>
         </div>
+        <p className={styles.prototypeNote}>By Vamshi Creates. Explore the live research and the free sample below. The product is still evolving; each opportunity needs its own buyer validation.</p>
       </section>
 
-      <div className={styles.proofStrip} aria-label="What to Build research assets">
+      <div className={styles.proofStrip} aria-label="What 2 Build research assets">
         <div><strong>160</strong><span>ideas in the research guide</span></div>
         <div><strong>20</strong><span>fields per opportunity</span></div>
         <div><strong>9</strong><span>founder field guides</span></div>
       </div>
+
+      <ClaimDeskOpportunity />
 
       <section className={styles.detailSection} aria-labelledby="what-exists">
         <div className={styles.sectionIntro}>
@@ -58,9 +63,10 @@ export default function WhatToBuildPage() {
       <section className={styles.nextPath} aria-labelledby="what-next">
         <span>THE NEXT STEP</span>
         <h2 id="what-next">Found an idea worth testing?<br />Now make it real.</h2>
-        <p>How to Build turns a validated problem into a scoped product, a working release, and a plan to keep improving it. My shipped work sits alongside the path as a portfolio of examples.</p>
-        <div><Link href="/projects/how-to-build" className={styles.primaryAction}>Explore How to Build <ArrowRight size={17} aria-hidden="true" /></Link><Link href="/projects/what-to-build/portfolio" className={styles.secondaryAction}>View shipped work <ArrowUpRight size={17} aria-hidden="true" /></Link></div>
+        <p>How 2 Build turns a validated problem into a scoped product, a working release, and a plan to keep improving it. My shipped work sits alongside the path as a portfolio of examples.</p>
+        <div><Link href="/projects/how-to-build" className={styles.primaryAction}>Explore How 2 Build <ArrowRight size={17} aria-hidden="true" /></Link><Link href="/projects/what-to-build/portfolio" className={styles.secondaryAction}>View shipped work <ArrowUpRight size={17} aria-hidden="true" /></Link></div>
       </section>
+      <BuilderNewsletter source="what-to-build" />
     </ProjectsShell>
   );
 }

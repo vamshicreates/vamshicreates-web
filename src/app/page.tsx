@@ -11,6 +11,9 @@ import {
   FileText,
 } from "lucide-react";
 import styles from "./home.module.css";
+import BuilderPaths from "@/components/BuilderPaths";
+import BuilderNewsletter from "@/components/BuilderNewsletter";
+import BuildCaseStudies from "@/components/BuildCaseStudies";
 
 const EMAIL = "hello@vamshicreates.com";
 
@@ -61,24 +64,24 @@ export default function HomePage() {
             </div>
 
             <div className={styles.heroCopy}>
-              <p className={styles.eyebrow}>NOW YOU CAN BUILD ANYTHING</p>
+              <p className={styles.eyebrow}>VAMSHI CREATES / FOR PEOPLE WHO BUILD</p>
               <h1 id="hero-title">
-                Hi, I’m Vamshi Krishna.
+                Find a useful problem.
                 <br />
-                <span>Let’s build anything you think of.</span>
+                <span>Build it. Reach your first users.</span>
               </h1>
-              <p className={styles.heroDescription}>I build useful websites, AI agents, and automations. Bring me an idea or a problem, and let’s turn it into something real.</p>
+              <p className={styles.heroDescription}>I’m Vamshi Krishna. I build websites, AI tools, and automations, and share the research and practical steps behind them. Find your next idea with What 2 Build. Make it real with How 2 Build.</p>
 
               <div className={styles.heroActions}>
-                <Link href="/projects" className={styles.primaryButton}>
-                  Explore the two projects <ArrowUpRight size={17} aria-hidden="true" />
-                </Link>
-                <Link href="/journey" className={styles.textLink}>
-                  Journey <ArrowUpRight size={17} aria-hidden="true" />
-                </Link>
+                <a href="#start-building" className={styles.primaryButton}>Choose your starting point <ArrowRight size={17} aria-hidden="true" /></a>
+                <a href="#build-studies" className={styles.textLink}>See what I’ve shipped <ArrowUpRight size={17} aria-hidden="true" /></a>
               </div>
             </div>
           </section>
+
+          <BuilderPaths />
+          <BuildCaseStudies />
+          <BuilderNewsletter source="home" />
 
           {/* 01 / MASTER AND MONETIZE AI */}
           <section
@@ -141,13 +144,6 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <div className={styles.review}>
-                <p className={styles.pendingReview}>Testimonial text coming soon.</p>
-                <div className={styles.reviewPerson}>
-                  <span className={styles.reviewAvatar}>SV</span>
-                  <span><strong>Satish Varma</strong><small>Velpula Mama</small></span>
-                </div>
-              </div>
             </div>
           </section>
 
@@ -336,6 +332,10 @@ export default function HomePage() {
             </div>
 
             <div className={styles.faqList}>
+              <details>
+                <summary>Where should I start as a solo builder?<span aria-hidden="true">+</span></summary>
+                <p>Start with <Link href="/projects/what-to-build#sample-opportunity">What 2 Build</Link> to explore a buyer and test an idea. If you already have a problem in mind, try the free <Link href="/projects/how-to-build#sample-build">How 2 Build walkthrough</Link>. Both are projects by Vamshi Creates, and their first samples are open to everyone.</p>
+              </details>
               <details>
                 <summary>
                   What kind of projects do you build?
