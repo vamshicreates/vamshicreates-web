@@ -23,7 +23,7 @@ export default function WhatToBuildPage() {
         <p>Good products begin with a problem people care enough to solve. What to Build collects product signals, buyer context, and clear next tests so an idea can earn its way into a build.</p>
         <div className={styles.detailActions}>
           <a href={LIVE_URL} target="_blank" rel="noopener noreferrer" className={styles.primaryAction}>Explore the live site <ArrowUpRight size={17} aria-hidden="true" /></a>
-          <Link href="/projects/portfolio" className={styles.secondaryAction}>See the portfolio <ArrowRight size={17} aria-hidden="true" /></Link>
+          <Link href="/projects/what-to-build/portfolio" className={styles.secondaryAction}>See the portfolio <ArrowRight size={17} aria-hidden="true" /></Link>
         </div>
       </section>
 
@@ -59,7 +59,7 @@ export default function WhatToBuildPage() {
         <span>THE NEXT STEP</span>
         <h2 id="what-next">Found an idea worth testing?<br />Now make it real.</h2>
         <p>How to Build turns a validated problem into a scoped product, a working release, and a plan to keep improving it. My shipped work sits alongside the path as a portfolio of examples.</p>
-        <div><Link href="/projects/how-to-build" className={styles.primaryAction}>Explore How to Build <ArrowRight size={17} aria-hidden="true" /></Link><Link href="/projects/portfolio" className={styles.secondaryAction}>View shipped work <ArrowUpRight size={17} aria-hidden="true" /></Link></div>
+        <div><Link href="/projects/how-to-build" className={styles.primaryAction}>Explore How to Build <ArrowRight size={17} aria-hidden="true" /></Link><Link href="/projects/what-to-build/portfolio" className={styles.secondaryAction}>View shipped work <ArrowUpRight size={17} aria-hidden="true" /></Link></div>
       </section>
     </ProjectsShell>
   );

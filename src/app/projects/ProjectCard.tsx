@@ -1,8 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 import type { Project } from "@/data/projects";
+import { PROJECT_STORIES } from "@/data/projectStories";
 import styles from "./projects.module.css";
 
-export default function ProjectCard({ project, priority = false }: { project: Project; priority?: boolean }) {
+export default function ProjectCard({ project, mode, priority = false }: { project: Project; mode: "what" | "how"; priority?: boolean }) {
+  const story = PROJECT_STORIES[project.title];
   return (
     <article className={styles.projectCard}>
       <img
@@ -17,18 +19,23 @@ export default function ProjectCard({ project, priority = false }: { project: Pr
         <div className={styles.projectCopy}>
           <p className={styles.projectKind}>{project.kind}</p>
           <h3>{project.title}</h3>
-          <p className={styles.projectDescription}>{project.description}</p>
+          {mode === "what" ? (
+            <div className={styles.projectFacts}>
+              <div><span>Why I built it</span><p>{story.why}</p></div>
+              <div><span>What it is for</span><p>{story.forWhom}</p></div>
+            </div>
+          ) : (
+            <div className={styles.projectFacts}>
+              <div><span>Where the idea came from</span><p>{story.idea}</p></div>
+              <div><span>Technology used</span><p>{story.technology}</p></div>
+              <div><span>How I built it</span><p>{story.build}</p></div>
+            </div>
+          )}
         </div>
         <div className={styles.projectLinks}>
-          {project.live ? (
-            <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} website`}>
-              View Website <ArrowUpRight size={16} aria-hidden="true" />
-            </a>
-          ) : project.code ? (
-            <a href={project.code} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`}>
-              View GitHub <ArrowUpRight size={16} aria-hidden="true" />
-            </a>
-          ) : null}
+          <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} website`}>
+            View Website <ArrowUpRight size={16} aria-hidden="true" />
+          </a>
         </div>
       </div>
     </article>

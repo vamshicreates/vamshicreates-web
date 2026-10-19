@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
   title: "VamshiCreates | Websites, AI Agents & Automations",
   description:
-    "Explore websites and AI agent skills built by Vamshi Krishna. Bring your idea or startup problem and build something useful together.",
+    "Explore products and websites built by Vamshi Krishna. See why each idea exists and how it was built.",
   icons: {
     icon: "/journey/main-dp-icon.jpg",
     shortcut: "/journey/main-dp-icon.jpg",

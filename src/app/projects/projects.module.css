@@ -683,6 +683,35 @@
   line-height: 1.75;
 }
 
+.projectFacts {
+  display: grid;
+  gap: 17px;
+  margin-top: 18px;
+}
+
+.projectFacts div + div {
+  padding-top: 15px;
+  border-top: 1px solid #e8eef7;
+}
+
+.projectFacts span {
+  display: block;
+  margin-bottom: 5px;
+  color: #1464d6;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.projectFacts p {
+  margin: 0;
+  color: #536985;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
 .projectLinks {
   display: flex;
   flex-wrap: wrap;
