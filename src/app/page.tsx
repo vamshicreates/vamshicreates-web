@@ -12,7 +12,6 @@ import {
 import styles from "./home.module.css";
 import BuilderPaths from "@/components/BuilderPaths";
 import BuilderNewsletter from "@/components/BuilderNewsletter";
-import BuildCaseStudies from "@/components/BuildCaseStudies";
 
 const EMAIL = "hello@vamshicreates.com";
 
@@ -65,21 +64,20 @@ export default function HomePage() {
             <div className={styles.heroCopy}>
               <p className={styles.eyebrow}>VAMSHI CREATES / FOR PEOPLE WHO BUILD</p>
               <h1 id="hero-title">
-                Find a useful problem.
+                Find a problem,
                 <br />
-                <span>Build it. Reach your first users.</span>
+                <span>build a solution, reach your first user &amp; monetise it.</span>
               </h1>
               <p className={styles.heroDescription}>I’m Vamshi Krishna. I build websites, AI tools, and automations, and share the research and practical steps behind them. Find your next idea with What 2 Build. Make it real with How 2 Build.</p>
 
               <div className={styles.heroActions}>
                 <a href="#start-building" className={styles.primaryButton}>Choose your starting point <ArrowRight size={17} aria-hidden="true" /></a>
-                <a href="#build-studies" className={styles.textLink}>See what I’ve shipped <ArrowUpRight size={17} aria-hidden="true" /></a>
+                <Link href="/projects/what-to-build/portfolio" className={styles.textLink}>See what I’ve shipped <ArrowUpRight size={17} aria-hidden="true" /></Link>
               </div>
             </div>
           </section>
 
           <BuilderPaths />
-          <BuildCaseStudies />
           <BuilderNewsletter source="home" />
 
           {/* CONSULTING */}
