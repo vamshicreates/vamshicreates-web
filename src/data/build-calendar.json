@@ -113,20 +113,6 @@
     },
     {
       "date": "2026-10-20",
-      "repo": "vamshicreates-web",
-      "title": "Vamshi Creates website",
-      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
-      "demoUrl": "https://vamshicreates-web.vercel.app/",
-      "image": "/journey/main-dp-showcase.jpg",
-      "count": 8,
-      "highlights": [
-        "Update website README to match current site",
-        "Link official GitHub profile from site footer",
-        "Update homepage headline and remove project case studies"
-      ]
-    },
-    {
-      "date": "2026-10-20",
       "repo": "vamsi-creates-carousel-skill",
       "title": "Vamsi Creates Carousel Skill",
       "description": "Canva skill for editable social media carousels using the Vamsi Creates visual system.",
@@ -189,20 +175,6 @@
     },
     {
       "date": "2026-10-16",
-      "repo": "vamshicreates-web",
-      "title": "Vamshi Creates website",
-      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
-      "demoUrl": "https://vamshicreates-web.vercel.app/",
-      "image": "/journey/main-dp-showcase.jpg",
-      "count": 4,
-      "highlights": [
-        "Use real Instagram media and Vamshi cover in AI builders post",
-        "Publish Indian AI builders Instagram reading list",
-        "Add profile screenshots and photo cover to indie builders post"
-      ]
-    },
-    {
-      "date": "2026-10-16",
       "repo": "vamsi-creates-carousel-skill",
       "title": "Vamsi Creates Carousel Skill",
       "description": "Canva skill for editable social media carousels using the Vamsi Creates visual system.",
@@ -211,34 +183,6 @@
       "count": 1,
       "highlights": [
         "Add Vamsi Creates carousel skill"
-      ]
-    },
-    {
-      "date": "2026-10-15",
-      "repo": "vamshicreates-web",
-      "title": "Vamshi Creates website",
-      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
-      "demoUrl": "https://vamshicreates-web.vercel.app/",
-      "image": "/journey/main-dp-showcase.jpg",
-      "count": 3,
-      "highlights": [
-        "Add LLM blog series",
-        "Shorten Journey and Projects labels",
-        "Publish Python and AI blog series"
-      ]
-    },
-    {
-      "date": "2026-10-14",
-      "repo": "vamshicreates-web",
-      "title": "Vamshi Creates website",
-      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
-      "demoUrl": "https://vamshicreates-web.vercel.app/",
-      "image": "/journey/main-dp-showcase.jpg",
-      "count": 3,
-      "highlights": [
-        "Add SwipeUp Productions journey milestone",
-        "Correct orientation of final journey gallery photos",
-        "Correct J. D. Chakravarthy journey photo"
       ]
     },
     {
@@ -254,19 +198,6 @@
       ]
     },
     {
-      "date": "2026-10-12",
-      "repo": "vamshicreates-web",
-      "title": "Vamshi Creates website",
-      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
-      "demoUrl": "https://vamshicreates-web.vercel.app/",
-      "image": "/journey/main-dp-showcase.jpg",
-      "count": 2,
-      "highlights": [
-        "List Whiteboard for Code in projects",
-        "Publish new projects and public film audio skill"
-      ]
-    },
-    {
       "date": "2026-10-11",
       "repo": "film-audio-python",
       "title": "Film Audio Python",
@@ -278,20 +209,6 @@
         "Keep REAPER smoke session for Windows app test",
         "Add REAPER film audio mixing skill and Windows setup",
         "Install both film skills on Windows"
-      ]
-    },
-    {
-      "date": "2026-10-09",
-      "repo": "vamshicreates-web",
-      "title": "Vamshi Creates website",
-      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
-      "demoUrl": "https://vamshicreates-web.vercel.app/",
-      "image": "/journey/main-dp-showcase.jpg",
-      "count": 3,
-      "highlights": [
-        "Show all public skills as project rows and extend journey",
-        "Move projects to dedicated page and add AI agent setup guide",
-        "Refresh homepage around projects and AI services"
       ]
     },
     {
@@ -415,18 +332,6 @@
         "Fix ad uploads with OIDC Blob store",
         "Make video sponsor cards usable on phones",
         "Add sponsored placements and ad manager"
-      ]
-    },
-    {
-      "date": "2026-10-06",
-      "repo": "vamshicreates-web",
-      "title": "Vamshi Creates website",
-      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
-      "demoUrl": "https://vamshicreates-web.vercel.app/",
-      "image": "/journey/main-dp-showcase.jpg",
-      "count": 1,
-      "highlights": [
-        "Remove featured guide and starting points section from homepage"
       ]
     },
     {
@@ -559,20 +464,6 @@
         "Auto-start full online lobbies and show player readiness",
         "Retry mobile room joins and restore host signaling",
         "Expand hero film catalogs and enable five-player online rooms"
-      ]
-    },
-    {
-      "date": "2026-10-02",
-      "repo": "vamshicreates-web",
-      "title": "Vamshi Creates website",
-      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
-      "demoUrl": "https://vamshicreates-web.vercel.app/",
-      "image": "/journey/main-dp-showcase.jpg",
-      "count": 3,
-      "highlights": [
-        "Hide Creative Bootcamp until launch",
-        "Deploy VamshiCreates on Vercel with private lead storage",
-        "Initial commit: VamshiCreates website, My Journey timeline, and AI guides library"
       ]
     },
     {

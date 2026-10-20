@@ -50,10 +50,10 @@
 .calendarPanel, .detailsPanel { min-width: 0; overflow: hidden; border: 1px solid #dde7f3; border-radius: 25px; background: #fff; box-shadow: 0 16px 42px #173b7410; }
 .calendarPanel { padding: 26px; }
 .calendarToolbar { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 25px; }
-.calendarToolbar .eyebrow { margin-bottom: 7px; }
-.calendarToolbar h2 { margin: 0; color: #0a2855; font-size: clamp(24px, 2.5vw, 34px); letter-spacing: -.045em; }
+.calendarToolbar .eyebrow { margin-bottom: 7px; font-weight: 700; }
+.calendarToolbar h2 { margin: 0; color: #2563d8; font-size: clamp(24px, 2.5vw, 34px); font-weight: 750; letter-spacing: -.045em; }
 .monthControls { display: flex; gap: 6px; }
-.monthControls button { display: grid; place-items: center; height: 36px; min-width: 36px; padding: 0 11px; border: 1px solid #d9e6f6; border-radius: 10px; background: #f8fbff; color: #17427e; cursor: pointer; font-family: inherit; font-size: 12px; font-weight: 600; }
+.monthControls button { display: grid; place-items: center; height: 36px; min-width: 36px; padding: 0 11px; border: 1px solid #d9e6f6; border-radius: 10px; background: #f8fbff; color: #2563d8; cursor: pointer; font-family: inherit; font-size: 12px; font-weight: 700; }
 .monthControls button:hover { border-color: #83b2fa; background: #edf5ff; }
 .monthControls button:focus-visible, .dayCell:focus-visible, .noWork button:focus-visible, .entryBody a:focus-visible { outline: 3px solid #86b7ff; outline-offset: 2px; }
 .weekdays, .calendarGrid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }

@@ -4,10 +4,9 @@ import { resolve } from "node:path";
 const USER = "vamshicreates";
 const MAX_PAGES = Number(process.env.CALENDAR_MAX_PAGES || 1);
 const OUTPUT = resolve("src/data/build-calendar.json");
-const EXCLUDED = new Set(["vamshicreates"]);
+const EXCLUDED = new Set(["vamshicreates", "vamshicreates-web"]);
 
 const TITLES = {
-  "vamshicreates-web": "Vamshi Creates website",
   "movie-draft": "Movie Draft",
   "cricket-draft": "Cricket Draft",
   "logo-cleaner-web": "Logo Cleaner",
@@ -17,7 +16,6 @@ const TITLES = {
 };
 
 const DESCRIPTIONS = {
-  "vamshicreates-web": "The home for Vamshi's products, writing, journey, and consulting work.",
   "movie-draft": "A multiplayer Telugu film draft and auction game.",
   "cricket-draft": "A live cricket player auction game for friends.",
   "logo-cleaner-web": "A browser tool for cleaning logos from video footage.",
@@ -27,7 +25,6 @@ const DESCRIPTIONS = {
 };
 
 const DEMOS = {
-  "vamshicreates-web": "https://vamshicreates-web.vercel.app",
   "movie-draft": "https://movie-draft-phi.vercel.app",
   "cricket-draft": "https://cricket-draft-hazel.vercel.app",
   "logo-cleaner-web": "https://logo-cleaner-web.vercel.app",
@@ -35,7 +32,6 @@ const DEMOS = {
 };
 
 const IMAGES = {
-  "vamshicreates-web": "/journey/main-dp-showcase.jpg",
   "movie-draft": "/projects/movie-draft-ai.jpg",
   "cricket-draft": "/projects/cricket-draft-ai.jpg",
   "logo-cleaner-web": "/projects/logo-cleaner-ai.jpg",
@@ -90,7 +86,6 @@ for (const repo of publicRepos) {
   while (page <= MAX_PAGES) {
     const { data: commits, hasNext } = await github(`/repos/${USER}/${repo.name}/commits?per_page=100&page=${page}`);
     for (const commit of commits) {
-      if (repo.name === "vamshicreates-web" && /^Refresh public build calendar$/.test(commit.commit?.message?.split("\n")[0] || "")) continue;
       const timestamp = commit.commit?.committer?.date || commit.commit?.author?.date;
       if (!timestamp) continue;
       const date = dayInIndia(timestamp);
