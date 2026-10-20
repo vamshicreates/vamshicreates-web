@@ -57,6 +57,8 @@ export default function CalendarPage() {
             <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
+            <Link href="/terms">Terms</Link>
+            <Link href="/privacy">Privacy</Link>
             <a href="mailto:hello@vamshicreates.com">hello@vamshicreates.com</a>
           </div>
           <span className={homeStyles.copyright}>© 2026 @vamshicreates</span>
