@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { ArrowUpRight, CalendarDays, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowUpRight, CalendarDays, ChevronLeft, ChevronRight, Github } from "lucide-react";
 import styles from "./calendar.module.css";
 
 type BuildEntry = {
@@ -150,7 +150,10 @@ export default function CalendarClient({ entries }: { entries: BuildEntry[] }) {
                     <h3>{entry.title}</h3>
                     <p>{entry.description}</p>
                     {entry.highlights.length > 0 && <div className={styles.changeNotes}><strong>What moved forward</strong><ul>{entry.highlights.map((item) => <li key={item}>{item}</li>)}</ul></div>}
-                    {entry.demoUrl && <a href={entry.demoUrl} target="_blank" rel="noopener noreferrer">Open live demo <ArrowUpRight size={15} aria-hidden="true" /></a>}
+                    <div className={styles.entryActions}>
+                      {entry.demoUrl && <a href={entry.demoUrl} target="_blank" rel="noopener noreferrer">Open live demo <ArrowUpRight size={15} aria-hidden="true" /></a>}
+                      <a href={`https://github.com/vamshicreates/${encodeURIComponent(entry.repo)}`} target="_blank" rel="noopener noreferrer" aria-label={`View ${entry.title} on GitHub`}>View GitHub <Github size={15} aria-hidden="true" /></a>
+                    </div>
                   </div>
                 </article>
               ))}

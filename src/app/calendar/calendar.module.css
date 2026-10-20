@@ -55,7 +55,7 @@
 .monthControls { display: flex; gap: 6px; }
 .monthControls button { display: grid; place-items: center; height: 36px; min-width: 36px; padding: 0 11px; border: 1px solid #d9e6f6; border-radius: 10px; background: #f8fbff; color: #2563d8; cursor: pointer; font-family: inherit; font-size: 12px; font-weight: 700; }
 .monthControls button:hover { border-color: #83b2fa; background: #edf5ff; }
-.monthControls button:focus-visible, .dayCell:focus-visible, .noWork button:focus-visible, .entryBody a:focus-visible { outline: 3px solid #86b7ff; outline-offset: 2px; }
+.monthControls button:focus-visible, .dayCell:focus-visible, .noWork button:focus-visible, .entryActions a:focus-visible { outline: 3px solid #86b7ff; outline-offset: 2px; }
 .weekdays, .calendarGrid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
 .weekdays { padding: 0 0 9px; }
 .weekdays span { text-align: center; color: #8b9aaf; font: 600 10px var(--font-mono), monospace; text-transform: uppercase; letter-spacing: .05em; }
@@ -98,8 +98,9 @@
 .changeNotes { margin-top: 15px; padding-top: 13px; border-top: 1px solid #edf1f7; }
 .changeNotes strong { color: #3869a8; font: 600 10px var(--font-mono), monospace; text-transform: uppercase; letter-spacing: .05em; }
 .changeNotes ul { display: grid; gap: 5px; margin: 9px 0 0; padding-left: 17px; color: #556985; font-size: 11px; line-height: 1.5; }
-.entryBody a { display: inline-flex; align-items: center; gap: 7px; margin-top: 16px; padding: 8px 11px; border: 1px solid #c6dcff; border-radius: 9px; background: #eaf3ff; color: #145dc7; font-size: 11px; font-weight: 700; text-decoration: none; }
-.entryBody a:hover { background: #dcecff; }
+.entryActions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; margin-top: 16px; }
+.entryActions a { display: inline-flex; align-items: center; gap: 7px; padding: 8px 11px; border: 1px solid #c6dcff; border-radius: 9px; background: #eaf3ff; color: #145dc7; font-size: 11px; font-weight: 700; text-decoration: none; }
+.entryActions a:hover { background: #dcecff; }
 .noWork { padding: 38px 30px 48px; text-align: center; }
 .noWork > span { color: #b6cdef; font-size: 55px; line-height: 1; }
 .noWork h3 { margin: 12px 0 8px; color: #1a3762; font-size: 16px; }
