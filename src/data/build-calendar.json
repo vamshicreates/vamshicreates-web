@@ -1,0 +1,926 @@
+{
+  "source": "Public GitHub commits, dates shown in Asia/Kolkata",
+  "entries": [
+    {
+      "date": "2026-10-20",
+      "repo": "can-one-sentence-become-a-film",
+      "title": "Can One Sentence Become A Film",
+      "description": "My Logline skill for short film writing reels that turn a movie premise into a one-sentence story lesson.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Document setup and step-by-step usage"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "code-visuals-for-music",
+      "title": "Code Visuals For Music",
+      "description": "AI skill for music visuals using Python audio processing, Chitram and GSAP animation, and FFmpeg video delivery.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add clear step-by-step usage instructions"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "film-audio-python",
+      "title": "Film Audio Python",
+      "description": "A practical film audio workflow built with Python tools.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add clear step-by-step usage instructions"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "indian-film-crew-options",
+      "title": "Indian Film Crew Options",
+      "description": "Codex skill and Excel template for researching and comparing two Indian film crew options.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add clear step-by-step usage instructions"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "logo-cleaner-web",
+      "title": "Logo Cleaner",
+      "description": "A browser tool for cleaning logos from video footage.",
+      "demoUrl": "https://logo-cleaner-web.vercel.app/",
+      "image": "/projects/logo-cleaner-ai.jpg",
+      "count": 2,
+      "highlights": [
+        "Document step-by-step Logo Cleaner use",
+        "Publish Logo Cleaner website source"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "thought-journal-box",
+      "title": "Notely",
+      "description": "A simple space for saving and organizing personal notes.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Align README title with live Notely app",
+        "Replace template README with notes app instructions"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "podcast-to-reels-premiere",
+      "title": "Podcast To Reels Premiere",
+      "description": "Agent skill for podcast reel ideas and Adobe Premiere Pro editing after approval.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add clear step-by-step usage instructions"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "sagar-design-job-hunter",
+      "title": "Sagar Design Job Hunter",
+      "description": "Job search skill for Hyderabad industrial and furniture design roles tailored to Sagar Dabherao’s portfolio.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Document setup and step-by-step usage"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "script-production-breakdown",
+      "title": "Script Production Breakdown",
+      "description": "Codex skill for screenplay indexing, scene breakdowns, continuity tracking, and 3×3 storyboards.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Document setup and step-by-step usage"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "vamshicreates-web",
+      "title": "Vamshi Creates website",
+      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
+      "demoUrl": "https://vamshicreates-web.vercel.app/",
+      "image": "/journey/main-dp-showcase.jpg",
+      "count": 8,
+      "highlights": [
+        "Update website README to match current site",
+        "Link official GitHub profile from site footer",
+        "Update homepage headline and remove project case studies"
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "repo": "vamsi-creates-carousel-skill",
+      "title": "Vamsi Creates Carousel Skill",
+      "description": "Canva skill for editable social media carousels using the Vamsi Creates visual system.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Document carousel skill setup and usage"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "repo": "mylogline-idea-zone",
+      "title": "MyLogline Idea Zone",
+      "description": "A place to develop and test film story ideas.",
+      "demoUrl": "https://mylogline-idea-zone.vercel.app/",
+      "image": null,
+      "count": 3,
+      "highlights": [
+        "Point metadata at public Vercel site",
+        "Ignore local Vercel credentials and project state",
+        "Launch Film Idea Zone for My Logline"
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "repo": "lyric-diagram-music-video",
+      "title": "Lyric Diagram Music Video",
+      "description": "Claude skill that turns audio and lyrics into beat-synced animated diagram music videos for Telugu, Hindi, English, and more.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Lyric-diagram music video skill"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "repo": "can-one-sentence-become-a-film",
+      "title": "Can One Sentence Become A Film",
+      "description": "My Logline skill for short film writing reels that turn a movie premise into a one-sentence story lesson.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add My Logline film sentence reel skill"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "repo": "directors-take",
+      "title": "Directors Take",
+      "description": "My Logline script skill for short Director’s Take reels about bold film choices and visual storytelling.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add Directors Take My Logline skill"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "repo": "vamshicreates-web",
+      "title": "Vamshi Creates website",
+      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
+      "demoUrl": "https://vamshicreates-web.vercel.app/",
+      "image": "/journey/main-dp-showcase.jpg",
+      "count": 4,
+      "highlights": [
+        "Use real Instagram media and Vamshi cover in AI builders post",
+        "Publish Indian AI builders Instagram reading list",
+        "Add profile screenshots and photo cover to indie builders post"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "repo": "vamsi-creates-carousel-skill",
+      "title": "Vamsi Creates Carousel Skill",
+      "description": "Canva skill for editable social media carousels using the Vamsi Creates visual system.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add Vamsi Creates carousel skill"
+      ]
+    },
+    {
+      "date": "2026-10-15",
+      "repo": "vamshicreates-web",
+      "title": "Vamshi Creates website",
+      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
+      "demoUrl": "https://vamshicreates-web.vercel.app/",
+      "image": "/journey/main-dp-showcase.jpg",
+      "count": 3,
+      "highlights": [
+        "Add LLM blog series",
+        "Shorten Journey and Projects labels",
+        "Publish Python and AI blog series"
+      ]
+    },
+    {
+      "date": "2026-10-14",
+      "repo": "vamshicreates-web",
+      "title": "Vamshi Creates website",
+      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
+      "demoUrl": "https://vamshicreates-web.vercel.app/",
+      "image": "/journey/main-dp-showcase.jpg",
+      "count": 3,
+      "highlights": [
+        "Add SwipeUp Productions journey milestone",
+        "Correct orientation of final journey gallery photos",
+        "Correct J. D. Chakravarthy journey photo"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "repo": "code-visuals-for-music",
+      "title": "Code Visuals For Music",
+      "description": "AI skill for music visuals using Python audio processing, Chitram and GSAP animation, and FFmpeg video delivery.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add Code Visuals for Music hybrid skill and timing tools"
+      ]
+    },
+    {
+      "date": "2026-10-12",
+      "repo": "vamshicreates-web",
+      "title": "Vamshi Creates website",
+      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
+      "demoUrl": "https://vamshicreates-web.vercel.app/",
+      "image": "/journey/main-dp-showcase.jpg",
+      "count": 2,
+      "highlights": [
+        "List Whiteboard for Code in projects",
+        "Publish new projects and public film audio skill"
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "repo": "film-audio-python",
+      "title": "Film Audio Python",
+      "description": "A practical film audio workflow built with Python tools.",
+      "demoUrl": null,
+      "image": null,
+      "count": 16,
+      "highlights": [
+        "Keep REAPER smoke session for Windows app test",
+        "Add REAPER film audio mixing skill and Windows setup",
+        "Install both film skills on Windows"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "repo": "vamshicreates-web",
+      "title": "Vamshi Creates website",
+      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
+      "demoUrl": "https://vamshicreates-web.vercel.app/",
+      "image": "/journey/main-dp-showcase.jpg",
+      "count": 3,
+      "highlights": [
+        "Show all public skills as project rows and extend journey",
+        "Move projects to dedicated page and add AI agent setup guide",
+        "Refresh homepage around projects and AI services"
+      ]
+    },
+    {
+      "date": "2026-10-09",
+      "repo": "video-logo-remover",
+      "title": "Video Logo Remover",
+      "description": "Codex skill for local video logo detection, tracking, and removal with Python.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Initial release of video logo remover skill"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "repo": "movie-draft",
+      "title": "Movie Draft",
+      "description": "A multiplayer Telugu film draft and auction game.",
+      "demoUrl": "https://movie-draft-phi.vercel.app/",
+      "image": "/projects/movie-draft-ai.jpg",
+      "count": 1,
+      "highlights": [
+        "Add game legal documents and footer links"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "repo": "sagar-design-job-hunter",
+      "title": "Sagar Design Job Hunter",
+      "description": "Job search skill for Hyderabad industrial and furniture design roles tailored to Sagar Dabherao’s portfolio.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Add verified Windows installation workflow",
+        "Add Sagar design job hunter skill"
+      ]
+    },
+    {
+      "date": "2026-10-08",
+      "repo": "script-production-breakdown",
+      "title": "Script Production Breakdown",
+      "description": "Codex skill for screenplay indexing, scene breakdowns, continuity tracking, and 3×3 storyboards.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Create script production breakdown skill"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "repo": "cricket-draft",
+      "title": "Cricket Draft",
+      "description": "A live cricket player auction game for friends.",
+      "demoUrl": "https://cricket-draft-hazel.vercel.app/",
+      "image": "/projects/cricket-draft-ai.jpg",
+      "count": 1,
+      "highlights": [
+        "Build Cricket Draft multiplayer auction game"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "repo": "mama-pdf",
+      "title": "Mama PDF",
+      "description": "Browser-based PDF editor with local text editing, annotations, signatures, and page tools.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Initial Mama PDF editor with text editing and personal branding"
+      ]
+    },
+    {
+      "date": "2026-10-07",
+      "repo": "movie-draft",
+      "title": "Movie Draft",
+      "description": "A multiplayer Telugu film draft and auction game.",
+      "demoUrl": "https://movie-draft-phi.vercel.app/",
+      "image": "/projects/movie-draft-ai.jpg",
+      "count": 1,
+      "highlights": [
+        "Add published ads dashboard and click tracking"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "repo": "film-cast-actor-database-skill",
+      "title": "Film Cast Actor Database Skill",
+      "description": "Codex skill for sourced film cast research and Google Sheets actor databases.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add portable film cast actor database skill"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "repo": "indian-film-crew-options",
+      "title": "Indian Film Crew Options",
+      "description": "Codex skill and Excel template for researching and comparing two Indian film crew options.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add cross-platform Indian film crew skill and Excel template"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "repo": "movie-draft",
+      "title": "Movie Draft",
+      "description": "A multiplayer Telugu film draft and auction game.",
+      "demoUrl": "https://movie-draft-phi.vercel.app/",
+      "image": "/projects/movie-draft-ai.jpg",
+      "count": 3,
+      "highlights": [
+        "Fix ad uploads with OIDC Blob store",
+        "Make video sponsor cards usable on phones",
+        "Add sponsored placements and ad manager"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "repo": "vamshicreates-web",
+      "title": "Vamshi Creates website",
+      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
+      "demoUrl": "https://vamshicreates-web.vercel.app/",
+      "image": "/journey/main-dp-showcase.jpg",
+      "count": 1,
+      "highlights": [
+        "Remove featured guide and starting points section from homepage"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "repo": "video-to-screenplay",
+      "title": "Video To Screenplay",
+      "description": "Codex skill that converts film video or audio into dialogue-focused Fountain screenplays and PDFs, with Telugu transliteration support.",
+      "demoUrl": null,
+      "image": null,
+      "count": 5,
+      "highlights": [
+        "Add song montages, locations, and Telugu Tinglish dialogue",
+        "Focus screenplay output on reviewed dialogue intervals",
+        "Add macOS and Windows runtime setup"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "repo": "video-to-screenplay-laya",
+      "title": "Video To Screenplay Laya",
+      "description": "Experimental Laya-assisted skill for converting video dialogue into screenplay drafts.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Document Windows and both macOS Laya installs",
+        "Create Laya-assisted screenplay skill with song montages and Tinglish"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "repo": "local-podcast-clips",
+      "title": "Local Podcast Clips",
+      "description": "Codex skill for editing Telugu podcast clips locally with Whisper transcription and FFmpeg.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Document Windows setup and default to portable CPU transcription",
+        "Add local podcast clipping skill with Telugu support"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "repo": "movie-draft",
+      "title": "Movie Draft",
+      "description": "A multiplayer Telugu film draft and auction game.",
+      "demoUrl": "https://movie-draft-phi.vercel.app/",
+      "image": "/projects/movie-draft-ai.jpg",
+      "count": 4,
+      "highlights": [
+        "Show skip control beside Teesko in draft",
+        "Restore film posters from linked Wikipedia pages",
+        "Add films from hero and heroine spreadsheets"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "repo": "podcast-to-reels-premiere",
+      "title": "Podcast To Reels Premiere",
+      "description": "Agent skill for podcast reel ideas and Adobe Premiere Pro editing after approval.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Document Windows setup and add portable Premiere compiler wrapper",
+        "Add podcast-to-reels Premiere skill"
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "repo": "image-to-blender",
+      "title": "Image To Blender",
+      "description": "Cross-platform agent skill that turns reference images into editable Blender 3D scenes with MCP setup.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add universal 1-click installer and YouTube/local video knowledge harvester"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "repo": "job-hunter",
+      "title": "Job Hunter",
+      "description": "Cross-platform job search skill for role discovery, ATS-ready PDF resumes, and approval-gated application prep.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "add explicit job title and profession targeting mode",
+        "add browser DOM verification, strict YoE/location filtering, and isolated PDFs folder to job-hunter"
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "repo": "maya-3d",
+      "title": "Maya 3D",
+      "description": "Codex skill for creating and validating Autodesk Maya 3D projects from images or creative briefs.",
+      "demoUrl": null,
+      "image": null,
+      "count": 3,
+      "highlights": [
+        "Add specification-first Three.js blockout workflow",
+        "Integrate Three.js model reviewer",
+        "Add dimension-aware modeling workflow"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "repo": "maya-3d",
+      "title": "Maya 3D",
+      "description": "Codex skill for creating and validating Autodesk Maya 3D projects from images or creative briefs.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add Maya 3D Codex skill"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "repo": "movie-draft",
+      "title": "Movie Draft",
+      "description": "A multiplayer Telugu film draft and auction game.",
+      "demoUrl": "https://movie-draft-phi.vercel.app/",
+      "image": "/projects/movie-draft-ai.jpg",
+      "count": 9,
+      "highlights": [
+        "Auto-start full online lobbies and show player readiness",
+        "Retry mobile room joins and restore host signaling",
+        "Expand hero film catalogs and enable five-player online rooms"
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "repo": "vamshicreates-web",
+      "title": "Vamshi Creates website",
+      "description": "The home for Vamshi's products, writing, journey, and consulting work.",
+      "demoUrl": "https://vamshicreates-web.vercel.app/",
+      "image": "/journey/main-dp-showcase.jpg",
+      "count": 3,
+      "highlights": [
+        "Hide Creative Bootcamp until launch",
+        "Deploy VamshiCreates on Vercel with private lead storage",
+        "Initial commit: VamshiCreates website, My Journey timeline, and AI guides library"
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "repo": "indesign-portfolio-skill",
+      "title": "Indesign Portfolio Skill",
+      "description": "Adobe InDesign skill for editable design portfolios and review PDFs from approved project content.",
+      "demoUrl": null,
+      "image": null,
+      "count": 3,
+      "highlights": [
+        "Require visual review of every media work",
+        "Add folder-first cross-platform InDesign workflow",
+        "Add InDesign portfolio agent skill and builder"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "repo": "indic-song-studio",
+      "title": "Indic Song Studio",
+      "description": "Local Telugu and Indic song generation studio with ACE-Step, vocal timbre tools, and loudness mastering.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "add 17+ singer personas, custom voice cloning, Seed-VC & Rubberband vocal tract mastering"
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "repo": "podcast-editor",
+      "title": "Podcast Editor",
+      "description": "AI multicamera podcast editing skill for Adobe Premiere Pro and DaVinci Resolve with speaker diarization.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "add setup_podcast_editor.py installer, Windows FFmpeg POSIX concat paths, WinGet/Choco binary lookup, and Wind"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "after-effects-motion-dna",
+      "title": "After Effects Motion Dna",
+      "description": "Adobe After Effects skill and MCP server for analyzing motion style and building keyframed compositions.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "embed NandhaKishorM/laya decision model with strict complexity gate (call Laya only when necessary)"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "davinci-color-dna",
+      "title": "Davinci Color Dna",
+      "description": "DaVinci Resolve skill and MCP server for matching reference color grades with ASC-CDL and 3D LUTs.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "embed NandhaKishorM/laya decision model with strict complexity gate (call Laya only when necessary)"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "film-to-screenplay",
+      "title": "Film To Screenplay",
+      "description": "AI skill for reconstructing supplied films from subtitles into formatted screenplay PDFs with regional dialogue.",
+      "demoUrl": null,
+      "image": null,
+      "count": 3,
+      "highlights": [
+        "Optimize SKILL.md frontmatter description length for global context budget",
+        "Universal film-to-screenplay skill: dynamic movie metadata, SRT chunking & embedded legal PDF compiler",
+        "Initial release: film-to-screenplay skill with SRT reconstruction & embedded legal PDF compiler"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "illustrator-design-dna",
+      "title": "Illustrator Design Dna",
+      "description": "Adobe Illustrator skill and MCP server for extracting design style and creating editable vector art.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "embed NandhaKishorM/laya decision model with strict complexity gate (call Laya only when necessary)"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "image-to-blender",
+      "title": "Image To Blender",
+      "description": "Cross-platform agent skill that turns reference images into editable Blender 3D scenes with MCP setup.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "embed NandhaKishorM/laya decision model with strict complexity gate (call Laya only when necessary)"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "indic-song-studio",
+      "title": "Indic Song Studio",
+      "description": "Local Telugu and Indic song generation studio with ACE-Step, vocal timbre tools, and loudness mastering.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Indic Song Studio web app, CLI wrapper, agent skill & 12yo Telugu Ganesha reference master"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "job-hunter",
+      "title": "Job Hunter",
+      "description": "Cross-platform job search skill for role discovery, ATS-ready PDF resumes, and approval-gated application prep.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "add doctor.py setup verifier, auto-bootstrapped pypdf for Windows PDFs, and fallback --search"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "photoshop-design-dna",
+      "title": "Photoshop Design Dna",
+      "description": "Photoshop skill and MCP server for learning design style from references and creating layered PSD files.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "embed NandhaKishorM/laya decision model with strict complexity gate (call Laya only when necessary)"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "podcast-editor",
+      "title": "Podcast Editor",
+      "description": "AI multicamera podcast editing skill for Adobe Premiere Pro and DaVinci Resolve with speaker diarization.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "build cross-platform multi-cam podcast-editor skill with Laya decision model, Hybrid Voice Diarization, and li"
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "repo": "premiere-editing-dna",
+      "title": "Premiere Editing Dna",
+      "description": "Adobe Premiere Pro skill and MCP server for analyzing editing style and building multi-track timelines.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "embed NandhaKishorM/laya decision model with strict complexity gate (call Laya only when necessary)"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "repo": "after-effects-motion-dna",
+      "title": "After Effects Motion Dna",
+      "description": "Adobe After Effects skill and MCP server for analyzing motion style and building keyframed compositions.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "initial release of after-effects-motion-dna with live foreground execution on macOS and Windows"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "repo": "davinci-color-dna",
+      "title": "Davinci Color Dna",
+      "description": "DaVinci Resolve skill and MCP server for matching reference color grades with ASC-CDL and 3D LUTs.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "initial release of davinci-color-dna for live reference-to-clip color grading on macOS and Windows"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "repo": "illustrator-design-dna",
+      "title": "Illustrator Design Dna",
+      "description": "Adobe Illustrator skill and MCP server for extracting design style and creating editable vector art.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "initial release of illustrator-design-dna with live foreground vector execution on macOS and Windows"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "repo": "image-to-blender",
+      "title": "Image To Blender",
+      "description": "Cross-platform agent skill that turns reference images into editable Blender 3D scenes with MCP setup.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "add live foreground step-by-step execution and viewport redraws on macOS and Windows",
+        "initial release of image-to-blender cross-platform AI agent skill"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "repo": "job-hunter",
+      "title": "Job Hunter",
+      "description": "Cross-platform job search skill for role discovery, ATS-ready PDF resumes, and approval-gated application prep.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "add cross-platform token-minimal job-hunter skill (Windows/macOS/Linux)"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "repo": "photoshop-design-dna",
+      "title": "Photoshop Design Dna",
+      "description": "Photoshop skill and MCP server for learning design style from references and creating layered PSD files.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "add live foreground step-by-step execution and canvas redraw on macOS and Windows",
+        "initial release of photoshop-design-dna cross-platform skill and MCP server"
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "repo": "premiere-editing-dna",
+      "title": "Premiere Editing Dna",
+      "description": "Adobe Premiere Pro skill and MCP server for analyzing editing style and building multi-track timelines.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "add live foreground clip-by-clip timeline placement and playhead scrubbing on macOS and Windows",
+        "initial release of premiere-editing-dna cross-platform skill and MCP server"
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "repo": "basic-youtube-uploader",
+      "title": "Basic Youtube Uploader",
+      "description": "Agent skill for uploading local videos to YouTube Studio as unlisted with a title and description.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Add ChatGPT internal browser fallback when Chrome browser cannot be opened",
+        "Initial release of basic-youtube-uploader skill (4-step Unlisted YouTube uploader)"
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "repo": "lyrics-flow-producer",
+      "title": "Lyrics Flow Producer",
+      "description": "AI lyric video production skill using Gemini image generation and Google Flow video workflows.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Initial release of lyrics-flow-producer skill (Nano Banana + Google Flow Veo 3.1)"
+      ]
+    },
+    {
+      "date": "2026-09-27",
+      "repo": "lyrics-to-video-skill-pack",
+      "title": "Lyrics To Video Skill Pack",
+      "description": "AI skill pack for turning song lyrics and audio into illustrated cinematic lyric videos.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add lyrics-flow-producer skill (Gemini Nano Banana + Google Flow Veo 3.1)"
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "repo": "caveman-video",
+      "title": "Caveman Video",
+      "description": "Token-efficient AI video editing and motion graphics skill pack for NLE timelines and CoreGraphics workflows.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "add screen-and-explainer skill pack, automated browser recorder (record_browser.mjs), and Screen-Studio auto-z",
+        "initial release of caveman-video (7 skill packs, video-shrink MCP, cavecrew agents, native CoreGraphics pipe, "
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "repo": "lyrics-to-video-skill-pack",
+      "title": "Lyrics To Video Skill Pack",
+      "description": "AI skill pack for turning song lyrics and audio into illustrated cinematic lyric videos.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Initial commit: Add lyrics-to-video and video-use skill pack"
+      ]
+    },
+    {
+      "date": "2026-09-26",
+      "repo": "youtube-uploader",
+      "title": "Youtube Uploader",
+      "description": "Agent skill for YouTube uploads, MP4 metadata, lyric SEO, AI disclosure, and post-publish workflow.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Initial release: youtube-uploader AI Agent Skill (Local MP4 Meta Tagging, Lyric SEO, 2026 YouTube Studio Polic"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "repo": "thought-journal-box",
+      "title": "Notely",
+      "description": "A simple space for saving and organizing personal notes.",
+      "demoUrl": null,
+      "image": null,
+      "count": 13,
+      "highlights": [
+        "Add project README",
+        "Added explicit save button",
+        "Added notes app auth & UI"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "repo": "thought-journal-box",
+      "title": "Notely",
+      "description": "A simple space for saving and organizing personal notes.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "template: tanstack_start_ts_current-ad123148fd3e"
+      ]
+    }
+  ]
+}

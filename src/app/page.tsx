@@ -42,6 +42,7 @@ export default function HomePage() {
           <nav aria-label="Main navigation" className={styles.navLinks}>
             <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
+            <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>
             <a href="#consultation">Consulting</a>
           </nav>
@@ -271,6 +272,7 @@ export default function HomePage() {
           <div className={styles.footerLinks}>
             <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
+            <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>
             <a href="https://github.com/vamshicreates" rel="me">GitHub</a>
             <a href="#consultation">Consulting</a>

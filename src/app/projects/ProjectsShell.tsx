@@ -16,6 +16,7 @@ export default function ProjectsShell({ children }: { children: React.ReactNode 
           <nav aria-label="Main navigation" className={homeStyles.navLinks}>
             <Link href="/journey">Journey</Link>
             <Link href="/projects" aria-current="page" className={styles.activeNav}>Projects</Link>
+            <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
           </nav>
@@ -37,6 +38,7 @@ export default function ProjectsShell({ children }: { children: React.ReactNode 
           <div className={homeStyles.footerLinks}>
             <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
+            <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
             <a href="mailto:hello@vamshicreates.com">hello@vamshicreates.com</a>

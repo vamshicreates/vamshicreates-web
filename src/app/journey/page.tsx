@@ -53,6 +53,7 @@ export default function MyJourneyPage() {
               Journey
             </Link>
             <Link href="/projects">Projects</Link>
+            <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
           </nav>
