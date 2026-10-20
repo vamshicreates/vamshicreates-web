@@ -49,13 +49,14 @@
 .workspace { display: grid; grid-template-columns: minmax(0, 1.85fr) minmax(320px, 1fr); align-items: start; gap: 22px; padding-bottom: 28px; }
 .calendarPanel, .detailsPanel { min-width: 0; overflow: hidden; border: 1px solid #dde7f3; border-radius: 25px; background: #fff; box-shadow: 0 16px 42px #173b7410; }
 .calendarPanel { padding: 26px; }
-.calendarToolbar { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin-bottom: 25px; }
-.calendarToolbar .eyebrow { margin-bottom: 7px; font-weight: 700; }
-.calendarToolbar h2 { margin: 0; color: #2563d8; font-size: clamp(24px, 2.5vw, 34px); font-weight: 750; letter-spacing: -.045em; }
+.calendarToolbar { display: flex; justify-content: space-between; align-items: center; gap: 14px; margin: -26px -26px 25px; padding: 26px; background: #2563d8; }
+.calendarToolbar .eyebrow { margin-bottom: 7px; color: #fff; font-weight: 700; }
+.calendarToolbar h2 { margin: 0; color: #fff; font-size: clamp(24px, 2.5vw, 34px); font-weight: 750; letter-spacing: -.045em; }
 .monthControls { display: flex; gap: 6px; }
-.monthControls button { display: grid; place-items: center; height: 36px; min-width: 36px; padding: 0 11px; border: 1px solid #d9e6f6; border-radius: 10px; background: #f8fbff; color: #2563d8; cursor: pointer; font-family: inherit; font-size: 12px; font-weight: 700; }
-.monthControls button:hover { border-color: #83b2fa; background: #edf5ff; }
+.monthControls button { display: grid; place-items: center; height: 36px; min-width: 36px; padding: 0 11px; border: 1px solid #ffffff99; border-radius: 10px; background: #ffffff26; color: #fff; cursor: pointer; font-family: inherit; font-size: 12px; font-weight: 700; }
+.monthControls button:hover { background: #ffffff40; }
 .monthControls button:focus-visible, .dayCell:focus-visible, .noWork button:focus-visible, .entryActions a:focus-visible { outline: 3px solid #86b7ff; outline-offset: 2px; }
+.monthControls button:focus-visible { outline-color: #fff; }
 .weekdays, .calendarGrid { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 6px; }
 .weekdays { padding: 0 0 9px; }
 .weekdays span { text-align: center; color: #8b9aaf; font: 600 10px var(--font-mono), monospace; text-transform: uppercase; letter-spacing: .05em; }
@@ -119,7 +120,7 @@
   .introCopy { font-size: 13px; }
   .todayPill { display: inline-grid; margin-top: 24px; }
   .calendarPanel { padding: 15px; border-radius: 18px; }
-  .calendarToolbar { align-items: end; }
+  .calendarToolbar { align-items: end; margin: -15px -15px 20px; padding: 20px 15px; }
   .calendarToolbar h2 { font-size: 23px; }
   .monthControls button { min-width: 29px; height: 32px; padding: 0 6px; }
   .weekdays, .calendarGrid { gap: 4px; }
