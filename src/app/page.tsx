@@ -65,9 +65,9 @@ export default function HomePage() {
             <div className={styles.heroCopy}>
               <p className={styles.eyebrow}>VAMSHI CREATES / FOR PEOPLE WHO BUILD</p>
               <h1 id="hero-title">
-                Find a problem,
+                Building tech solutions
                 <br />
-                <span>build a solution, reach your first user &amp; monetise it.</span>
+                <span>for real-world problem statements.</span>
               </h1>
               <p className={styles.heroDescription}>I’m Vamshi Krishna. I build websites, AI tools, and automations, and share the research and practical steps behind them. Find your next idea with What 2 Build. Make it real with How 2 Build.</p>
 
