@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import {
   ArrowUpRight,
   ArrowRight,
@@ -10,6 +11,19 @@ import {
 } from "lucide-react";
 import styles from "./home.module.css";
 import BuilderPaths from "@/components/BuilderPaths";
+import { SITE_URL } from "@/config/site";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "AI Automation & Tech Solutions | VamshiCreates",
+    description: "Building tech solutions for real-world problem statements. Websites, AI tools, practical guides, and automation consulting by Vamshi Krishna.",
+    url: SITE_URL,
+    siteName: "VamshiCreates",
+    type: "website",
+    images: ["/journey/main-dp-hero.jpg"],
+  },
+};
 
 const EMAIL = "hello@vamshicreates.tech";
 const TOPMATE_DISCOVERY_URL = "https://topmate.io/vamshikrishna_kokkula10/2368080";

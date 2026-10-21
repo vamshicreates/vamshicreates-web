@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, BookOpen } from "lucide-react";
@@ -7,7 +8,7 @@ import BlogShell from "./BlogShell";
 import styles from "./blog.module.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vamshicreates-web.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: "Blog | VamshiCreates",
   description: "Practical articles by Vamshi Krishna on building useful products, coding agent skills, Python, language models, and AI agents.",
   alternates: { canonical: "/blog" },

@@ -6,7 +6,7 @@ import BlogShell from "../BlogShell";
 import styles from "../indie-saas-builders-to-follow/post.module.css";
 import visual from "./post.module.css";
 
-const SITE_URL = "https://vamshicreates-web.vercel.app";
+import { SITE_URL } from "@/config/site";
 const PATH = "/blog/indian-ai-builders-instagram";
 const TITLE = "10 Indian AI Builders to Follow on Instagram";
 const DESCRIPTION = "A practical Instagram reading list of Indian founders and makers building AI products, agents, and useful workflows—and sharing what they learn.";

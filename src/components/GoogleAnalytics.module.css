@@ -1,0 +1,41 @@
+.banner {
+  position: fixed;
+  z-index: 1000;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: min(1040px, calc(100% - 32px));
+  padding: 20px 24px;
+  border: 1px solid #c9dcff;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 12px 40px #14366b26;
+  color: #18335a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.copy { flex: 1; }
+.copy strong { font-size: 15px; font-weight: 700; }
+.copy p { margin: 4px 0 0; color: #52627a; }
+.copy a { color: #2563eb; text-decoration: underline; text-underline-offset: 3px; }
+.actions { display: flex; flex-shrink: 0; gap: 8px; }
+.actions button, .preferences {
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid #bdd2f5;
+  border-radius: 12px;
+  background: #f5f9ff;
+  color: #1d4ed8;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.actions .accept { background: #2563eb; border-color: #2563eb; color: #fff; }
+.actions button:focus-visible, .preferences:focus-visible { outline: 3px solid #93c5fd; outline-offset: 3px; }
+@media (max-width: 700px) {
+  .banner { bottom: 12px; flex-direction: column; align-items: stretch; gap: 14px; padding: 18px; }
+  .actions button { flex: 1; padding: 10px 12px; }
+}

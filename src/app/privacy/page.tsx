@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, ShieldCheck, Mail, Calendar, Download, Lock } from "lucide-react";
 import homeStyles from "@/app/home.module.css";
 import styles from "../legal.module.css";
+import { AnalyticsPreferencesButton } from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | VamshiCreates",
@@ -70,7 +71,7 @@ export default function PrivacyPage() {
                 <ShieldCheck size={14} aria-hidden="true" /> Transparent &amp; Plain-English
               </span>
               <span>Effective Date: October 2026</span>
-              <span>Applies to: vamshicreates-web &amp; subdomains</span>
+              <span>Applies to: vamshicreates.tech &amp; subdomains</span>
             </div>
           </section>
 
@@ -140,6 +141,9 @@ export default function PrivacyPage() {
               <p className={styles.paragraph}>
                 When you browse our website, minimal standard technical information may be collected by our hosting infrastructure (such as your browser type, operating system, IP address, device viewport, and referring URL) to ensure reliable performance, prevent DDoS attacks, and diagnose bugs.
               </p>
+              <p className={styles.paragraph}>
+                If you allow analytics cookies, Google Analytics 4 measures page visits, engagement, and interactions such as outbound links, downloads, and clicks to book a consultation. We use these reports to understand which content helps visitors and improve the website. A consultation click records interest; it does not confirm a booking. We do not send names, email addresses, or project briefs as analytics event properties, and advertising personalization is disabled.
+              </p>
             </section>
 
             <hr className={styles.divider} />
@@ -197,7 +201,10 @@ export default function PrivacyPage() {
                   <strong>Email Delivery:</strong> Transactional and newsletter platforms (e.g., Resend, ConvertKit, or Mailchimp) for reliable email sending with instant unsubscribe controls.
                 </li>
                 <li>
-                  <strong>Calendar &amp; Scheduling:</strong> Google Calendar, Cal.com, or Calendly for booking consultation slots.
+                  <strong>Calendar &amp; Scheduling:</strong> Topmate handles consultation bookings through its own service and privacy policy.
+                </li>
+                <li>
+                  <strong>Website Analytics:</strong> Google Analytics 4, after you choose to allow analytics cookies. Learn <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>how Google uses information from sites that use its services</a>.
                 </li>
                 <li>
                   <strong>Payment &amp; Invoicing:</strong> Stripe, Lemon Squeezy, or Razorpay for digital transactions.
@@ -260,8 +267,9 @@ export default function PrivacyPage() {
             <section className={styles.section}>
               <h2 className={styles.sectionHeading}>8. Cookies &amp; Local Storage</h2>
               <p className={styles.paragraph}>
-                Our website does not use intrusive advertising tracking networks or cross-site behavioral tracking cookies. We may use local browser storage (localStorage) strictly for functional preferences (such as remembering your navigation choices or customized preview settings).
+                Google Analytics loads only after you select &quot;Allow analytics.&quot; It uses first-party cookies such as <code>_ga</code> to distinguish visits. Selecting &quot;Only necessary&quot; keeps Analytics off. We store your choice in localStorage so you do not have to choose on each visit. You can change your preference below; declining stops Analytics collection and removes its accessible first-party cookies. Browser storage may also remember functional preferences such as customized preview settings.
               </p>
+              <AnalyticsPreferencesButton />
             </section>
 
             <hr className={styles.divider} />

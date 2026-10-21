@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowUpRight, Clock3 } from "lucide-react";
 import BlogShell from "../BlogShell";
 import styles from "./post.module.css";
 
-const SITE_URL = "https://vamshicreates-web.vercel.app";
+import { SITE_URL } from "@/config/site";
 const PATH = "/blog/indie-saas-builders-to-follow";
 const TITLE = "10 Indie Builders to Follow on X for SaaS Ideas";
 const DESCRIPTION = "A practical follow list for learning SaaS, watching products get built in public, and finding ideas worth testing for your own audience.";

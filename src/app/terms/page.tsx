@@ -100,7 +100,7 @@ export default function TermsPage() {
             <section className={styles.section}>
               <h2 className={styles.sectionHeading}>1. Acceptance of Terms</h2>
               <p className={styles.paragraph}>
-                By accessing or using the VamshiCreates website (located at <code>vamshicreates-web.vercel.app</code> or connected custom domains), subscribing to our email newsletters, scheduling a consultation call, or purchasing digital products, you confirm that you have read, understood, and agreed to be bound by these Terms and Conditions.
+                By accessing or using the VamshiCreates website (located at <code>www.vamshicreates.tech</code> or connected custom domains), subscribing to our email newsletters, scheduling a consultation call, or purchasing digital products, you confirm that you have read, understood, and agreed to be bound by these Terms and Conditions.
               </p>
               <p className={styles.paragraph}>
                 If you do not agree with any part of these terms, please discontinue use of the website and services.
@@ -206,7 +206,7 @@ export default function TermsPage() {
                 All content published on this website—including articles, brand designs, logos, typography, visual layouts, and curriculum structures—is the intellectual property of VamshiCreates and protected by applicable copyright and trademark laws.
               </p>
               <p className={styles.paragraph}>
-                You may quote short excerpts or reference our guides with clear attribution and a link back to <code>https://vamshicreates-web.vercel.app</code>.
+                You may quote short excerpts or reference our guides with clear attribution and a link back to <code>https://www.vamshicreates.tech</code>.
               </p>
             </section>
 

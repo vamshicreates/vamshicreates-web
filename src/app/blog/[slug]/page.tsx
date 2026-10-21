@@ -7,7 +7,7 @@ import { BLOG_ARTICLES, getBlogArticle, getReadingMinutes, getSeriesArticles, ty
 import BlogShell from "../BlogShell";
 import styles from "../blog.module.css";
 
-const SITE_URL = "https://vamshicreates-web.vercel.app";
+import { SITE_URL } from "@/config/site";
 const PUBLISHED_DATE = "2026-10-15";
 
 type Props = { params: Promise<{ slug: string }> };

@@ -5,7 +5,7 @@ import { ArrowLeft, ArrowUpRight, Clock3 } from "lucide-react";
 import BlogShell from "../BlogShell";
 import styles from "./post.module.css";
 
-const SITE_URL = "https://vamshicreates-web.vercel.app";
+import { SITE_URL } from "@/config/site";
 const PATH = "/blog/coding-agent-skills";
 const COVER = "/blog/coding-agent-skills.svg";
 const TITLE = "Coding Agent Skills: What They Are, How They Work, and Which Ones to Build";
