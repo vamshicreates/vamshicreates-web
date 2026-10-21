@@ -3,6 +3,18 @@
   "entries": [
     {
       "date": "2026-10-21",
+      "repo": "antigravity-web-skills",
+      "title": "Antigravity Web Skills",
+      "description": "Portable website design, improvement, writing, automation and Vercel deployment skills for Antigravity",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "package portable website skills for Antigravity"
+      ]
+    },
+    {
+      "date": "2026-10-21",
       "repo": "claude-model-guide",
       "title": "Claude Model Guide",
       "description": "Task-aware Claude model + effort recommendations (Haiku, Sonnet, Opus, Fable) for Claude Code and the Claude apps, with global setup and uninstall.",
