@@ -35,7 +35,7 @@ export default function PortfolioView({ mode }: { mode: "what" | "how" }) {
         <p className={styles.eyebrow}>HAVE SOMETHING IN MIND?</p>
         <h2 id="contact-title">Let’s build your next idea.</h2>
         <p>Tell me the problem you want to solve. I’ll help you find a practical way to make it real.</p>
-        <a href="mailto:hello@vamshicreates.com?subject=My%20project%20idea" className={homeStyles.primaryButton}>
+        <a href="mailto:hello@vamshicreates.tech?subject=My%20project%20idea" className={homeStyles.primaryButton}>
           Send an email <Mail size={17} aria-hidden="true" />
         </a>
       </section>

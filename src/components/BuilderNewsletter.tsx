@@ -45,10 +45,10 @@ export default function BuilderNewsletter({ source }: { source: "home" | "projec
             <div className={styles.honeypot} aria-hidden="true"><label htmlFor={`${id}-website`}>Leave this empty</label><input id={`${id}-website`} name="website" tabIndex={-1} autoComplete="off" /></div>
             <label className={styles.consent}><input type="checkbox" name="consent" required disabled={status === "saving"} /><span>Email me Builder Notes and updates on What 2 Build and How 2 Build.</span></label>
             <button type="submit" disabled={status === "saving"}>{status === "saving" ? "Saving your spot…" : "Join the launch list"}<ArrowRight size={17} aria-hidden="true" /></button>
-            {status === "error" && <p role="alert" className={styles.formError}>Your signup wasn’t saved. Please try again, or <a href="mailto:hello@vamshicreates.com?subject=Builder%20Notes%20signup">email me</a>.</p>}
+            {status === "error" && <p role="alert" className={styles.formError}>Your signup wasn’t saved. Please try again, or <a href="mailto:hello@vamshicreates.tech?subject=Builder%20Notes%20signup">email me</a>.</p>}
           </form>
         )}
-        <p id={`${id}-privacy`} className={styles.privacy}>Your email is stored privately for these updates. You can ask to be removed at any time by <a href="mailto:hello@vamshicreates.com?subject=Remove%20me%20from%20Builder%20Notes">emailing me</a>.</p>
+        <p id={`${id}-privacy`} className={styles.privacy}>Your email is stored privately for these updates. You can ask to be removed at any time by <a href="mailto:hello@vamshicreates.tech?subject=Remove%20me%20from%20Builder%20Notes">emailing me</a>.</p>
       </div>
     </section>
   );

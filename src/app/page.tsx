@@ -13,7 +13,7 @@ import styles from "./home.module.css";
 import BuilderPaths from "@/components/BuilderPaths";
 import BuilderNewsletter from "@/components/BuilderNewsletter";
 
-const EMAIL = "hello@vamshicreates.com";
+const EMAIL = "hello@vamshicreates.tech";
 
 function emailLink(subject: string, body: string) {
   return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

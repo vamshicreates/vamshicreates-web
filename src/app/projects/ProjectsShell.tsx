@@ -20,7 +20,7 @@ export default function ProjectsShell({ children }: { children: React.ReactNode 
             <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
           </nav>
-          <a href="mailto:hello@vamshicreates.com?subject=Let%27s%20build%20something" className={homeStyles.navCta}>
+          <a href="mailto:hello@vamshicreates.tech?subject=Let%27s%20build%20something" className={homeStyles.navCta}>
             Get in touch <Mail size={15} aria-hidden="true" />
           </a>
         </header>
@@ -41,7 +41,7 @@ export default function ProjectsShell({ children }: { children: React.ReactNode 
             <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/#consultation">Consulting</Link>
-            <a href="mailto:hello@vamshicreates.com">hello@vamshicreates.com</a>
+            <a href="mailto:hello@vamshicreates.tech">hello@vamshicreates.tech</a>
           </div>
           <span className={homeStyles.copyright}>© 2026 @vamshicreates</span>
         </footer>

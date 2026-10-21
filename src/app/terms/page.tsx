@@ -45,7 +45,7 @@ export default function TermsPage() {
           </nav>
 
           <a
-            href="mailto:hello@vamshicreates.com?subject=Terms%20Inquiry"
+            href="mailto:hello@vamshicreates.tech?subject=Terms%20Inquiry"
             className={homeStyles.navCta}
           >
             Get in touch <ArrowUpRight size={15} aria-hidden="true" />
@@ -178,7 +178,7 @@ export default function TermsPage() {
                 </li>
                 <li>
                   If you experience an issue downloading the files, receive corrupted assets, or find a broken component, please email{" "}
-                  <a href="mailto:hello@vamshicreates.com" className={styles.contactLink}>hello@vamshicreates.com</a> within 14 days of purchase. We will promptly troubleshoot, update, or replace the file.
+                  <a href="mailto:hello@vamshicreates.tech" className={styles.contactLink}>hello@vamshicreates.tech</a> within 14 days of purchase. We will promptly troubleshoot, update, or replace the file.
                 </li>
               </ul>
             </section>
@@ -269,8 +269,8 @@ export default function TermsPage() {
                 Reach out to us directly and we will respond promptly:
               </p>
               <div>
-                <a href="mailto:hello@vamshicreates.com" className={styles.contactLink}>
-                  hello@vamshicreates.com
+                <a href="mailto:hello@vamshicreates.tech" className={styles.contactLink}>
+                  hello@vamshicreates.tech
                 </a>
               </div>
             </div>
@@ -305,7 +305,7 @@ export default function TermsPage() {
             <Link href="/#consultation">Consulting</Link>
             <Link href="/terms">Terms</Link>
             <Link href="/privacy">Privacy</Link>
-            <a href="mailto:hello@vamshicreates.com">hello@vamshicreates.com</a>
+            <a href="mailto:hello@vamshicreates.tech">hello@vamshicreates.tech</a>
           </div>
           <span className={homeStyles.copyright}>© 2026 @vamshicreates</span>
         </footer>

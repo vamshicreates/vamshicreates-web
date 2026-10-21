@@ -115,7 +115,7 @@ export default function GuidesIndexPage() {
           </nav>
 
           <div className={styles.navRight}>
-            <a href="mailto:hello@vamshicreates.com" className={styles.navCta}>Get in touch <ArrowUpRight size={15} aria-hidden="true" /></a>
+            <a href="mailto:hello@vamshicreates.tech" className={styles.navCta}>Get in touch <ArrowUpRight size={15} aria-hidden="true" /></a>
           </div>
         </header>
       </div>

@@ -20,7 +20,7 @@ export default function BlogShell({ children }: { children: React.ReactNode }) {
             <Link href="/blog" aria-current="page" className={styles.activeNav}>Blog</Link>
             <Link href="/#consultation">Consulting</Link>
           </nav>
-          <a href="mailto:hello@vamshicreates.com?subject=Let%27s%20build%20something" className={homeStyles.navCta}>
+          <a href="mailto:hello@vamshicreates.tech?subject=Let%27s%20build%20something" className={homeStyles.navCta}>
             Get in touch <ArrowUpRight size={15} aria-hidden="true" />
           </a>
         </header>
@@ -43,7 +43,7 @@ export default function BlogShell({ children }: { children: React.ReactNode }) {
             <Link href="/#consultation">Consulting</Link>
             <Link href="/terms">Terms</Link>
             <Link href="/privacy">Privacy</Link>
-            <a href="mailto:hello@vamshicreates.com">hello@vamshicreates.com</a>
+            <a href="mailto:hello@vamshicreates.tech">hello@vamshicreates.tech</a>
           </div>
           <span className={homeStyles.copyright}>© 2026 @vamshicreates</span>
         </footer>

@@ -259,16 +259,16 @@ export default function CreativeBootcampPage() {
                 <label htmlFor="bootcamp-email">Email address</label><input id="bootcamp-email" name="email" type="email" autoComplete="email" placeholder="you@example.com" required />
                 <label htmlFor="bootcamp-interest">What do you most want to learn? <span>(optional)</span></label><select id="bootcamp-interest" name="interest" defaultValue=""><option value="">Choose an area</option><option>Design and branding</option><option>Blender and 3D</option><option>Video and AI video</option><option>AI and MCP workflows</option><option>The full creative stack</option></select>
                 <button type="submit" className={styles.primaryButton} disabled={status === "loading"}>{status === "loading" ? "Saving…" : "Register interest"}<ArrowRight size={17} /></button>
-                {status === "error" && <p className={styles.formError} role="alert">We couldn’t save your details. Please try again or email <a href="mailto:hello@vamshicreates.com">hello@vamshicreates.com</a>.</p>}
+                {status === "error" && <p className={styles.formError} role="alert">We couldn’t save your details. Please try again or email <a href="mailto:hello@vamshicreates.tech">hello@vamshicreates.tech</a>.</p>}
                 <small>No payment today. We’ll only use your email for bootcamp updates.</small>
               </form>}
             </div>
           </section>
 
-          <section className={styles.faqSection} id="faq" aria-labelledby="faq-title"><div><p className={styles.eyebrow}>A FEW GOOD QUESTIONS</p><h2 id="faq-title">Before you begin.</h2><p>Still curious? <a href="mailto:hello@vamshicreates.com?subject=Creative%20AI%20Bootcamp">Ask Vamshi directly <Mail size={15} /></a></p></div><div className={styles.faqList}>{faq.map(([question, answer]) => <details key={question}><summary>{question}<ChevronDown size={18} /></summary><p>{answer}</p></details>)}</div></section>
+          <section className={styles.faqSection} id="faq" aria-labelledby="faq-title"><div><p className={styles.eyebrow}>A FEW GOOD QUESTIONS</p><h2 id="faq-title">Before you begin.</h2><p>Still curious? <a href="mailto:hello@vamshicreates.tech?subject=Creative%20AI%20Bootcamp">Ask Vamshi directly <Mail size={15} /></a></p></div><div className={styles.faqList}>{faq.map(([question, answer]) => <details key={question}><summary>{question}<ChevronDown size={18} /></summary><p>{answer}</p></details>)}</div></section>
         </main>
 
-        <footer className={styles.footer}><div><Link className={styles.brand} href="/"><img src="/journey/main-dp-icon.jpg" alt="" width="34" height="34" /> VamshiCreates</Link><p>Practical AI. Creative work you can actually make.</p></div><div><Link href="/">Home</Link><Link href="/journey">Journey</Link><Link href="/guides">Guides</Link><a href="mailto:hello@vamshicreates.com">Contact</a></div></footer>
+        <footer className={styles.footer}><div><Link className={styles.brand} href="/"><img src="/journey/main-dp-icon.jpg" alt="" width="34" height="34" /> VamshiCreates</Link><p>Practical AI. Creative work you can actually make.</p></div><div><Link href="/">Home</Link><Link href="/journey">Journey</Link><Link href="/guides">Guides</Link><a href="mailto:hello@vamshicreates.tech">Contact</a></div></footer>
       </div>
     </div>
   );

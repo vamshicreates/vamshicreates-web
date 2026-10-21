@@ -36,7 +36,7 @@ export const DEFAULT_CREATOR_CONFIG: CreatorConfig = {
   communityPrice: "$86",
   playbookPrice: "$9.99",
   consultationPrice: "$299",
-  email: "hello@vamshicreates.com",
+  email: "hello@vamshicreates.tech",
   instagramUrl: "https://www.instagram.com/",
   youtubeUrl: "https://www.youtube.com/",
   xUrl: "https://x.com/",

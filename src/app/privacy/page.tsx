@@ -45,7 +45,7 @@ export default function PrivacyPage() {
           </nav>
 
           <a
-            href="mailto:hello@vamshicreates.com?subject=Privacy%20Question"
+            href="mailto:hello@vamshicreates.tech?subject=Privacy%20Question"
             className={homeStyles.navCta}
           >
             Get in touch <ArrowUpRight size={15} aria-hidden="true" />
@@ -106,8 +106,8 @@ export default function PrivacyPage() {
               </p>
               <p className={styles.paragraph}>
                 If you have questions about this policy or your personal data, you can contact us directly at{" "}
-                <a href="mailto:hello@vamshicreates.com" className={styles.contactLink}>
-                  hello@vamshicreates.com
+                <a href="mailto:hello@vamshicreates.tech" className={styles.contactLink}>
+                  hello@vamshicreates.tech
                 </a>.
               </p>
             </section>
@@ -248,8 +248,8 @@ export default function PrivacyPage() {
               </ul>
               <p className={styles.paragraph}>
                 To exercise any of these rights, email us at{" "}
-                <a href="mailto:hello@vamshicreates.com" className={styles.contactLink}>
-                  hello@vamshicreates.com
+                <a href="mailto:hello@vamshicreates.tech" className={styles.contactLink}>
+                  hello@vamshicreates.tech
                 </a>
                 . We will respond promptly within 30 days.
               </p>
@@ -282,8 +282,8 @@ export default function PrivacyPage() {
                 Reach out directly and we will be happy to assist you.
               </p>
               <div>
-                <a href="mailto:hello@vamshicreates.com" className={styles.contactLink}>
-                  hello@vamshicreates.com
+                <a href="mailto:hello@vamshicreates.tech" className={styles.contactLink}>
+                  hello@vamshicreates.tech
                 </a>
               </div>
             </div>
@@ -318,7 +318,7 @@ export default function PrivacyPage() {
             <Link href="/#consultation">Consulting</Link>
             <Link href="/terms">Terms</Link>
             <Link href="/privacy">Privacy</Link>
-            <a href="mailto:hello@vamshicreates.com">hello@vamshicreates.com</a>
+            <a href="mailto:hello@vamshicreates.tech">hello@vamshicreates.tech</a>
           </div>
           <span className={homeStyles.copyright}>© 2026 @vamshicreates</span>
         </footer>

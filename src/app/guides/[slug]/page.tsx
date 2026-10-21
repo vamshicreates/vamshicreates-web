@@ -59,7 +59,7 @@ export default function GuideDetailPage() {
           </nav>
 
           <div className={styles.navRight}>
-            <a href="mailto:hello@vamshicreates.com" className={styles.navCta}>Get in touch <ArrowUpRight size={15} aria-hidden="true" /></a>
+            <a href="mailto:hello@vamshicreates.tech" className={styles.navCta}>Get in touch <ArrowUpRight size={15} aria-hidden="true" /></a>
           </div>
         </header>
       </div>
@@ -105,11 +105,11 @@ export default function GuideDetailPage() {
 
               <div className="mt-3.5 flex flex-wrap items-center justify-center gap-2.5 sm:justify-start">
                 <a
-                  href="mailto:hello@vamshicreates.com"
+                  href="mailto:hello@vamshicreates.tech"
                   className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-700 hover:border-zinc-400 hover:bg-white"
                 >
                   <Mail className="h-3.5 w-3.5" />
-                  hello@vamshicreates.com
+                  hello@vamshicreates.tech
                 </a>
                 <Link
                   href="/journey"
@@ -154,7 +154,7 @@ export default function GuideDetailPage() {
               <strong>Want help applying this to your idea?</strong> Tell me what you are trying to build and where you are stuck.
             </p>
             <a
-              href="mailto:hello@vamshicreates.com?subject=Help%20with%20an%20AI%20agent"
+              href="mailto:hello@vamshicreates.tech?subject=Help%20with%20an%20AI%20agent"
               className="shrink-0 inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-blue-700"
             >
               Send an email <ArrowUpRight className="h-4 w-4" />
@@ -292,7 +292,7 @@ export default function GuideDetailPage() {
             </p>
             <div className="mt-5 flex flex-wrap gap-3">
               <a
-                href="mailto:hello@vamshicreates.com?subject=My%20AI%20agent%20idea"
+                href="mailto:hello@vamshicreates.tech?subject=My%20AI%20agent%20idea"
                 className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-xs font-semibold text-white transition hover:bg-blue-700"
               >
                 Send an email <ArrowUpRight className="h-4 w-4" />
