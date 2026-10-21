@@ -2,7 +2,6 @@ import Link from "next/link";
 import {
   ArrowUpRight,
   ArrowRight,
-  Mail,
   Workflow,
   MessageCircle,
   Check,
@@ -13,6 +12,7 @@ import styles from "./home.module.css";
 import BuilderPaths from "@/components/BuilderPaths";
 
 const EMAIL = "hello@vamshicreates.tech";
+const TOPMATE_DISCOVERY_URL = "https://topmate.io/vamshikrishna_kokkula10/2368080";
 
 function emailLink(subject: string, body: string) {
   return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
@@ -96,8 +96,8 @@ export default function HomePage() {
                 team, and the next steps to make it happen.
               </p>
 
-              <a href={emailLink("AI automation for my startup", "Hi Vamshi,\n\nMy startup's problem statement is:\n\nWhat we have tried so far:\n\n")} className={styles.primaryButton}>
-                Send an email <Mail size={17} aria-hidden="true" />
+              <a href={TOPMATE_DISCOVERY_URL} target="_blank" rel="noreferrer" className={styles.primaryButton}>
+                Book an AI automation discovery call <ArrowUpRight size={17} aria-hidden="true" />
               </a>
             </div>
 
