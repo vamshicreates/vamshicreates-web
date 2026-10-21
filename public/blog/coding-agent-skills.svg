@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Coding Agent Skills</title>
+  <desc id="desc">A blue and white editorial illustration showing a task becoming a reusable skill and a verified result.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9fcff"/><stop offset="1" stop-color="#e9f2ff"/></linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2c72e8"/><stop offset="1" stop-color="#1451bf"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="25" flood-color="#0c3988" flood-opacity=".12"/></filter>
+  </defs>
+  <rect width="1600" height="900" rx="52" fill="url(#bg)"/>
+  <circle cx="1482" cy="108" r="280" fill="#dceaff" opacity=".78"/>
+  <circle cx="1360" cy="820" r="360" fill="#cbdfff" opacity=".48"/>
+  <path d="M0 697c245-112 349-12 510-75 111-44 170-132 315-105" fill="none" stroke="#bfd6ff" stroke-width="3"/>
+  <text x="96" y="130" fill="#1d63d4" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" letter-spacing="5">VAMSHICREATES / THE NOTEBOOK</text>
+  <text x="96" y="275" fill="#0d2857" font-family="Arial,Helvetica,sans-serif" font-size="87" font-weight="750" letter-spacing="-4">CODING AGENT</text>
+  <text x="96" y="385" fill="#2166da" font-family="Arial,Helvetica,sans-serif" font-size="111" font-weight="800" letter-spacing="-5">SKILLS.</text>
+  <text x="99" y="474" fill="#476382" font-family="Arial,Helvetica,sans-serif" font-size="32">Reusable know-how for useful work.</text>
+  <g filter="url(#shadow)">
+    <rect x="89" y="582" width="650" height="168" rx="30" fill="#fff" stroke="#c9ddff" stroke-width="2"/>
+    <rect x="115" y="609" width="114" height="114" rx="23" fill="#e4f0ff"/>
+    <path d="m159 649-17 17 17 17m28-34 17 17-17 17" fill="none" stroke="#2166da" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="256" y="655" fill="#102c59" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">Beginner → Builder → Pro</text>
+    <text x="256" y="700" fill="#63809f" font-family="Arial,Helvetica,sans-serif" font-size="23">Learn. Package. Verify.</text>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="911" y="199" width="570" height="486" rx="38" fill="url(#panel)"/>
+    <rect x="951" y="239" width="490" height="68" rx="18" fill="#ffffff24" stroke="#ffffff55"/>
+    <text x="987" y="282" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">01  Task arrives</text>
+    <path d="M1196 314v32" stroke="#b7d3ff" stroke-width="5" stroke-linecap="round"/>
+    <path d="m1186 338 10 11 10-11" fill="none" stroke="#b7d3ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="951" y="354" width="490" height="104" rx="18" fill="#fff"/>
+    <rect x="973" y="374" width="68" height="64" rx="14" fill="#e8f1ff"/>
+    <path d="M991 393h33m-33 12h33m-33 12h23" stroke="#2e73e7" stroke-width="5" stroke-linecap="round"/>
+    <text x="1060" y="396" fill="#12386f" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">02  SKILL.md</text>
+    <text x="1060" y="429" fill="#5a769b" font-family="Arial,Helvetica,sans-serif" font-size="19">Instructions + references</text>
+    <path d="M1196 465v32" stroke="#b7d3ff" stroke-width="5" stroke-linecap="round"/>
+    <path d="m1186 489 10 11 10-11" fill="none" stroke="#b7d3ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="951" y="505" width="490" height="68" rx="18" fill="#ffffff24" stroke="#ffffff55"/>
+    <text x="987" y="548" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">03  Work + checks</text>
+    <rect x="951" y="590" width="490" height="57" rx="18" fill="#ffffff24" stroke="#ffffff55"/>
+    <path d="m981 617 10 10 18-21" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1030" y="627" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700">Verified result</text>
+  </g>
+</svg>

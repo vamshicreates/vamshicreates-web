@@ -1,0 +1,85 @@
+.page { max-width: 1080px; margin: 0 auto; padding: 40px 0 90px; }
+.back { display: inline-flex; align-items: center; gap: 8px; color: #52525b; font-size: 12px; font-weight: 650; text-decoration: none; }
+.back:hover { color: #2563eb; }
+.header { max-width: 900px; margin: 56px auto 38px; }
+.eyebrow, .kicker, .endNote > span { margin: 0; color: #1d63d4; font: 700 11px/1.5 var(--font-mono), monospace; letter-spacing: .1em; text-transform: uppercase; }
+.header h1 { max-width: 900px; margin: 15px 0 20px; color: #0b1230; font-size: clamp(42px, 5.7vw, 70px); line-height: 1.07; letter-spacing: -.058em; font-weight: 750; }
+.dek { max-width: 740px; margin: 0; color: #5b6779; font-size: clamp(17px, 1.7vw, 20px); line-height: 1.65; }
+.byline { display: flex; align-items: center; gap: 11px; margin-top: 27px; color: #18181b; }
+.byline img { border-radius: 50%; object-fit: cover; border: 1px solid #a8d5d1; }
+.byline span:not(.readTime) { display: flex; flex-direction: column; gap: 3px; }
+.byline strong { font-size: 12px; }
+.byline small { color: #71717a; font-size: 11px; }
+.readTime { display: inline-flex; align-items: center; gap: 6px; margin-left: 14px; padding-left: 16px; border-left: 1px solid #e4e4e7; color: #71717a; font-size: 11px; }
+.heroImage { display: block; width: 100%; height: auto; border: 1px solid #dbeafe; border-radius: 26px; box-shadow: 0 14px 34px rgba(20, 41, 75, .065); }
+.readingLayout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: clamp(28px, 5vw, 65px); max-width: 1020px; margin: 64px auto 0; }
+.toc { position: sticky; top: 110px; align-self: start; display: flex; flex-direction: column; gap: 13px; max-height: calc(100vh - 130px); overflow-y: auto; padding: 4px 0 4px 18px; border-left: 1px solid #cbdcf4; }
+.toc p { margin: 0 0 4px; color: #1d63d4; font: 700 10px var(--font-mono), monospace; letter-spacing: .1em; }
+.toc a { color: #697689; font-size: 12px; line-height: 1.4; text-decoration: none; }
+.toc a:hover { color: #1d63d4; }
+.body { min-width: 0; max-width: 745px; color: #303b4d; }
+.body p, .body li { font-size: 16px; line-height: 1.8; }
+.body p { margin: 0 0 22px; }
+.body a { color: #1d63d4; text-underline-offset: 3px; }
+.body a:hover { color: #0e47b3; }
+.intro p { font-size: 18px; line-height: 1.75; }
+.section { scroll-margin-top: 112px; padding-top: 58px; }
+.section h2 { margin: 10px 0 23px; color: #2563eb; font-size: clamp(29px, 3vw, 38px); line-height: 1.2; letter-spacing: -.045em; }
+.section h3 { margin: 35px 0 17px; color: #2563eb; font-size: clamp(22px, 2.4vw, 27px); line-height: 1.25; letter-spacing: -.035em; }
+.section ol, .section ul { margin: 0 0 25px; padding-left: 25px; }
+.section li { margin: 0 0 12px; padding-left: 5px; }
+.section li::marker { color: #2563eb; font-weight: 700; }
+.body code { padding: 2px 5px; border-radius: 5px; background: #eaf2ff; color: #1649a7; font: 14px var(--font-mono), monospace; }
+.callout { margin: 29px 0; padding: 24px 27px; border: 1px solid #bdd6fb; border-left: 5px solid #2563eb; border-radius: 16px; background: #eff6ff; }
+.callout > strong { display: block; margin-bottom: 9px; color: #1242a1; font-size: 16px; }
+.callout p { margin: 0; font-size: 15px; }
+.flow { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 29px 0; }
+.flow div { display: flex; flex-direction: column; min-height: 154px; padding: 17px; border: 1px solid #cfe0fa; border-radius: 15px; background: #fff; box-shadow: 0 7px 20px rgba(24, 62, 130, .035); }
+.flow span { color: #2563eb; font: 700 12px var(--font-mono), monospace; }
+.flow strong { margin: 15px 0 8px; color: #0d2d60; font-size: 20px; }
+.flow small { color: #65778f; font-size: 12px; line-height: 1.5; }
+.doDont { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 25px 0; }
+.doDont div { padding: 22px; border: 1px solid #d2e0f4; border-radius: 15px; background: #fff; }
+.doDont div:first-child { border-color: #a9ccff; background: #f0f6ff; }
+.doDont strong { color: #1756bb; font-size: 15px; }
+.doDont p { margin: 10px 0 0; font-size: 14px; line-height: 1.7; }
+.recommendationList { display: grid; gap: 10px; margin-bottom: 22px; }
+.recommendation { padding: 18px 21px; border: 1px solid #dbe7f9; border-radius: 15px; background: #fff; }
+.recommendation h4 { margin: 0 0 5px; color: #153f87; font-size: 17px; }
+.recommendation p { margin: 0 0 8px; font-size: 14px; line-height: 1.65; }
+.recommendation small { color: #63738a; font-size: 12px; line-height: 1.5; }
+.recommendation small strong { color: #2563eb; }
+.codeBlock { overflow-x: auto; margin: 25px 0; padding: 23px 26px; border: 1px solid #233c6a; border-radius: 16px; background: #0f1d38; }
+.body .codeBlock code { display: block; min-width: 510px; padding: 0; background: transparent; color: #e1f4ff; font: 13px/1.7 var(--font-mono), monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+.sourceList { list-style: none; padding: 0 !important; }
+.sourceList li { padding: 0; }
+.sourceList a { display: inline-flex; align-items: center; gap: 5px; font-size: 15px; font-weight: 650; }
+.endNote { margin-top: 70px; padding: 32px; border: 1px solid #b9d5fb; border-radius: 20px; background: linear-gradient(135deg, #e9f3ff, #fff); }
+.endNote p { margin: 9px 0 20px; color: #123466; font-size: 22px; font-weight: 650; line-height: 1.4; letter-spacing: -.025em; }
+.endNote div { display: flex; flex-wrap: wrap; gap: 13px 22px; }
+.endNote a { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; font-weight: 700; text-decoration: none; }
+
+@media (max-width: 850px) {
+  .readingLayout { grid-template-columns: 1fr; max-width: 745px; margin-top: 42px; }
+  .toc { position: static; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 14px; max-height: none; padding: 19px; border: 1px solid #dbe7f9; border-radius: 15px; background: #fff; }
+  .toc p { grid-column: 1 / -1; }
+}
+@media (max-width: 600px) {
+  .page { padding-top: 28px; }
+  .header { margin-top: 38px; }
+  .header h1 { font-size: clamp(36px, 9vw, 48px); }
+  .heroImage { border-radius: 18px; }
+  .intro p { font-size: 16px; }
+  .body p, .body li { font-size: 15px; }
+  .section { padding-top: 46px; }
+  .flow { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .flow div { min-height: 132px; }
+  .doDont { grid-template-columns: 1fr; }
+  .callout, .endNote { padding: 22px; }
+  .readTime { margin-left: 4px; padding-left: 10px; }
+}
+@media (max-width: 370px) {
+  .toc { grid-template-columns: 1fr; }
+  .flow { grid-template-columns: 1fr 1fr; }
+  .flow div { padding: 13px; }
+}

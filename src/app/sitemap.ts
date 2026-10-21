@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/projects/what-to-build/portfolio`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/projects/how-to-build/portfolio`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${SITE_URL}/blog`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/blog/coding-agent-skills`, lastModified: new Date("2026-10-21"), changeFrequency: "monthly", priority: 0.9, images: [`${SITE_URL}/blog/coding-agent-skills.svg`] },
     { url: `${SITE_URL}/blog/indie-saas-builders-to-follow`, lastModified: new Date("2026-10-16"), changeFrequency: "monthly", priority: 0.85, images: [`${SITE_URL}/blog/indie-saas-builders-cover.png`] },
     { url: `${SITE_URL}/blog/indian-ai-builders-instagram`, lastModified: new Date("2026-10-16"), changeFrequency: "monthly", priority: 0.85, images: [`${SITE_URL}/blog/indian-ai-builders-instagram.png`] },
     ...BLOG_SERIES.map((series) => ({

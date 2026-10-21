@@ -9,11 +9,11 @@ import styles from "./blog.module.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://vamshicreates-web.vercel.app"),
   title: "Blog | VamshiCreates",
-  description: "Practical articles by Vamshi Krishna on building useful products, Python, language models, and AI agents.",
+  description: "Practical articles by Vamshi Krishna on building useful products, coding agent skills, Python, language models, and AI agents.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "VamshiCreates Blog",
-    description: "Explore practical articles on indie products, Python, and large language models.",
+    description: "Explore practical articles on coding agent skills, indie products, Python, and large language models.",
     url: "/blog",
     type: "website",
     images: ["/blog/what-is-an-llm.jpg"],
@@ -33,6 +33,24 @@ export default function BlogPage() {
           Explore a series or read a standalone article.
         </p>
         <div className={styles.seriesNote}><BookOpen size={17} aria-hidden="true" /> {BLOG_SERIES.length} subjects · More coming</div>
+      </section>
+
+      <section className={styles.featuredSection} aria-labelledby="skills-guide-title">
+        <div className={styles.sectionHeading}>
+          <p className={styles.eyebrow}>NEW / PRACTICAL GUIDE</p>
+          <h2 id="skills-guide-title">Skills for coding agents</h2>
+          <p>What they are, how to use them well, and the workflows worth building.</p>
+        </div>
+        <div className={styles.standaloneList}>
+          <Link href="/blog/coding-agent-skills" className={styles.standaloneFeature}>
+            <Image src="/blog/coding-agent-skills.svg" alt="Coding Agent Skills article cover" width={1600} height={900} sizes="(max-width: 700px) 100vw, 50vw" unoptimized priority />
+            <span>
+              <small>CODING AGENTS / SKILL.MD</small>
+              <strong>Coding agent skills: what they are and which ones to build</strong>
+              <em>Read the guide <ArrowUpRight size={17} aria-hidden="true" /></em>
+            </span>
+          </Link>
+        </div>
       </section>
 
       <section className={styles.featuredSection} aria-labelledby="latest-title">
