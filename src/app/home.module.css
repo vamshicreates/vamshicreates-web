@@ -709,11 +709,77 @@
   margin-bottom: 22px;
 }
 
-.showcaseCopy > p:not(.eyebrow):not(.offerNote) {
+.showcaseCopy > p:not(.eyebrow):not(.offerNote):not(.discoveryPrice) {
   color: #71717a;
   font-size: 14px;
   line-height: 1.85;
   max-width: 455px;
+}
+
+.discoverySection .discoveryPrice {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #18181b;
+}
+
+.discoveryPrice span {
+  font-size: 13px;
+  font-weight: 400;
+  color: #52525b;
+}
+
+.offerNote {
+  max-width: 420px;
+  margin: 14px 0 0;
+  color: #52525b;
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+.discoveryVisual {
+  margin: 0;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e4e4e7;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.discoveryImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+}
+
+.discoveryCaption {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px;
+  border-top: 1px solid #e4e4e7;
+}
+
+.discoveryCaption > svg {
+  flex-shrink: 0;
+  color: #3b82f6;
+}
+
+.discoveryCaption strong {
+  display: block;
+  color: #18181b;
+  font-size: 14px;
+  font-weight: 550;
+  line-height: 1.5;
+}
+
+.discoveryCaption span {
+  display: block;
+  margin-top: 6px;
+  color: #71717a;
+  font-size: 11px;
+  line-height: 1.6;
 }
 
 .features {
@@ -1301,7 +1367,7 @@
   .showcaseCopy h2 {
     font-size: 29px;
   }
-  .showcaseCopy > p:not(.eyebrow):not(.offerNote) {
+  .showcaseCopy > p:not(.eyebrow):not(.offerNote):not(.discoveryPrice) {
     font-size: 13px;
   }
   .features {
@@ -1487,7 +1553,7 @@
   .showcaseCopy h2 {
     font-size: 32px;
   }
-  .showcaseCopy > p:not(.eyebrow):not(.offerNote) {
+  .showcaseCopy > p:not(.eyebrow):not(.offerNote):not(.discoveryPrice) {
     font-size: 14px;
   }
   .showcaseCopy .eyebrow {

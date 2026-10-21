@@ -28,6 +28,35 @@ export const metadata: Metadata = {
 const EMAIL = "hello@vamshicreates.tech";
 const TOPMATE_DISCOVERY_URL = "https://topmate.io/vamshikrishna_kokkula10/2368080";
 
+const discoveryOffers = [
+  {
+    id: "youtube-automation",
+    eyebrow: "YOUTUBE CONTENT WORKFLOW AUTOMATION",
+    headline: "Make more of your content.",
+    headlineEnd: "Spend less time on the process.",
+    description: "Bring me your YouTube goals and the parts of your content workflow that slow you down. We’ll talk through your business, audience, and current process, then explore where AI and automation could help with research, script drafts, repurposing, publishing preparation, and reporting.",
+    title: "YouTube Content Workflow Discovery Call",
+    topics: ["Your channel goals and bottlenecks", "Useful opportunities to automate", "What a suitable build could involve"],
+    image: "/images/discovery/youtube-content-workflow.webp",
+    imageAlt: "A camera feeds an editing workspace that connects to videos, short clips, and a publishing calendar.",
+    bookingUrl: "https://topmate.io/vamshikrishna_kokkula10/2368107",
+    bookingLabel: "Book a YouTube discovery call",
+  },
+  {
+    id: "personal-brand-automation",
+    eyebrow: "FOUNDER PERSONAL BRAND CONTENT AUTOMATION",
+    headline: "Your expertise. Your voice.",
+    headlineEnd: "A repeatable content workflow.",
+    description: "You have ideas and experience worth sharing. Let’s understand your audience, the channels you want to show up on, and what makes content hard to keep up with. We’ll explore how your ideas, recordings, and existing material could become a workflow for drafting, repurposing, approvals, and scheduling.",
+    title: "Founder Personal Brand Content Discovery Call",
+    topics: ["Your audience, voice, and business goals", "The content work that takes your time", "Where AI and automation could help"],
+    image: "/images/discovery/founder-personal-brand.webp",
+    imageAlt: "A founder’s notes and recorded ideas connect to a content workspace, posts, video, carousels, and an approval calendar.",
+    bookingUrl: "https://topmate.io/vamshikrishna_kokkula10/2368108",
+    bookingLabel: "Book a personal brand discovery call",
+  },
+];
+
 function emailLink(subject: string, body: string) {
   return `mailto:${EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
@@ -161,6 +190,54 @@ export default function HomePage() {
               </div>
             </div>
           </section>
+
+          {discoveryOffers.map((offer) => (
+            <section
+              key={offer.id}
+              id={offer.id}
+              className={`${styles.showcase} ${styles.discoverySection}`}
+              aria-labelledby={`${offer.id}-title`}
+            >
+              <div className={styles.showcaseCopy}>
+                <p className={styles.eyebrow}>{offer.eyebrow}</p>
+                <h2 id={`${offer.id}-title`}>
+                  {offer.headline}<br />{offer.headlineEnd}
+                </h2>
+                <p>{offer.description}</p>
+                <ul className={styles.features}>
+                  {offer.topics.map((topic) => (
+                    <li key={topic}><Check size={16} aria-hidden="true" />{topic}</li>
+                  ))}
+                </ul>
+                <p className={styles.discoveryPrice}>₹999 <span>· 45-minute video call</span></p>
+                <a href={offer.bookingUrl} target="_blank" rel="noreferrer" className={styles.primaryButton}>
+                  {offer.bookingLabel}<ArrowUpRight size={17} aria-hidden="true" />
+                </a>
+                <p className={styles.offerNote}>
+                  The fee covers my time on the discovery call and our discussion only.
+                  Any implementation is scoped and priced separately after we talk.
+                </p>
+              </div>
+              <figure className={styles.discoveryVisual}>
+                <img
+                  src={offer.image}
+                  alt={offer.imageAlt}
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  decoding="async"
+                  className={styles.discoveryImage}
+                />
+                <figcaption className={styles.discoveryCaption}>
+                  <MessageCircle size={20} aria-hidden="true" />
+                  <div>
+                    <strong>{offer.title}</strong>
+                    <span>Understand the problem. Explore what could help.</span>
+                  </div>
+                </figcaption>
+              </figure>
+            </section>
+          ))}
 
           <section id="agent-setup" className={styles.guideSection} aria-labelledby="agent-setup-title">
             <div className={styles.sectionHeading}>

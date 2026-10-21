@@ -1,0 +1,21 @@
+# Homepage discovery call images
+
+Generated with the built-in ChatGPT image generation tool. Final images use the homepage palette: off-white `#fafafa`, white `#ffffff`, charcoal `#18181b`, zinc `#71717a`, blue `#3b82f6` / `#2563eb`, teal `#0d9488`, and pale blue `#eff6ff`.
+
+Final web assets:
+- `public/images/discovery/youtube-content-workflow.webp`
+- `public/images/discovery/founder-personal-brand.webp`
+
+Both images are 1200 × 800 WebP files. The original generated PNGs are retained in `docs/assets/discovery/`.
+
+## YouTube generation prompt
+
+Use case: stylized-concept. Asset type: editorial illustration for a personal AI automation consultant's website service section, landscape 3:2. Primary request: clearly communicate a YouTube content production workflow being organized and automated for a business owner. Create an elegant, tactile 3D tabletop diorama on a warm off-white studio backdrop. A small camera and microphone at left feed via a single orderly teal path into a central desktop editing screen with a clear video timeline and large coral red rounded play symbol, then toward three neatly arranged video output cards showing a landscape video, a vertical short and a captioned clip. Include a small calendar tile to imply scheduling. Composition centered, spacious, readable at website half-column size, all important objects comfortably within central 80 percent, realistic soft shadows, matte cream surfaces, muted sage and teal with restrained coral accents. Refined human creative studio feeling, not futuristic. No people, no readable words, no letters, no tiny interface text, no watermark, no decorative floating clutter, no neon, no robots. Produce a finished polished standalone image.
+
+## Founder personal brand generation prompt
+
+Use case: stylized-concept. Asset type: editorial illustration for a personal AI automation consultant's website service section, landscape 3:2. Primary request: communicate a founder's expertise and voice becoming a consistent personal brand content workflow with AI automation. Create an elegant tactile 3D tabletop diorama on a warm off-white studio backdrop, matching a calm cream, muted sage and teal design palette with restrained warm amber accents. A notebook and a microphone with a simple audio waveform card at left connect via one orderly teal path to a central desktop with a cohesive content board, then to a tidy fan of three content format cards: a professional written post with abstract lines, a vertical talking-head video represented by a simple anonymous sculptural silhouette, and an image carousel of three square panels. Repeat a small warm amber circular identity motif across the cards to communicate consistent voice. Include a small approval checkmark and scheduling tile. Composition centered spacious readable at website half-column size; all important objects within central 80 percent. Soft studio shadows, matte physical materials, refined editorial craftsmanship. No readable words, no letters, no logos, no watermark, no neon, no robots, no social media engagement numbers or fake results. Produce a finished polished standalone image.
+
+## Final palette correction prompt, applied to both
+
+Edit this website service illustration to match the existing VamshiCreates website brand palette exactly. Preserve the objects, workflow meaning, composition, and polished 3D editorial style. Replace ALL warm beige/cream/brown/yellow/orange/coral/sage/olive hues with this strictly limited palette: near-white #fafafa background and tabletop; pure white #ffffff object surfaces; charcoal #18181b and cool zinc gray #71717a for equipment, UI and shadows; primary blue #3b82f6 and #2563eb for accent symbols and content highlights; teal #0d9488 only for connecting paths and approval check marks; very pale blue #eff6ff for subtle surfaces. All lighting must be neutral cool white, no warm color cast. Any plants are stylized cool gray or teal. Any displayed scenery is blue/gray abstract scenery. No red YouTube icon: use a blue play symbol. No readable text, no logos, no watermark. Keep landscape 3:2 framing. This is a cohesive illustration asset inside a minimalist white, zinc, blue and teal website, not an independent color scheme.
