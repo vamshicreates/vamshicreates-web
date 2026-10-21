@@ -40,7 +40,6 @@ export default function HomePage() {
           </Link>
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
-            <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
             <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>
@@ -270,7 +269,6 @@ export default function HomePage() {
           </div>
 
           <div className={styles.footerLinks}>
-            <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
             <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>

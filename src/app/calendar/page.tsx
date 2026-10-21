@@ -28,7 +28,6 @@ export default function CalendarPage() {
             VamshiCreates
           </Link>
           <nav aria-label="Main navigation" className={homeStyles.navLinks}>
-            <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
             <Link href="/calendar" aria-current="page" className={styles.activeNav}>Calendar</Link>
             <Link href="/blog">Blog</Link>
@@ -52,7 +51,6 @@ export default function CalendarPage() {
             <p>Ideas into useful things.</p>
           </div>
           <div className={homeStyles.footerLinks}>
-            <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
             <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>

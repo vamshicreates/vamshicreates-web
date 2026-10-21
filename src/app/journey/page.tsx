@@ -49,9 +49,6 @@ export default function MyJourneyPage() {
           </Link>
 
           <nav aria-label="Main navigation" className={styles.navLinks}>
-            <Link href="/journey" className="font-semibold text-teal-700">
-              Journey
-            </Link>
             <Link href="/projects">Projects</Link>
             <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>

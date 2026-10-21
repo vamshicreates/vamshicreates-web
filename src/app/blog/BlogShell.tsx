@@ -14,7 +14,6 @@ export default function BlogShell({ children }: { children: React.ReactNode }) {
             VamshiCreates
           </Link>
           <nav aria-label="Main navigation" className={homeStyles.navLinks}>
-            <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
             <Link href="/calendar">Calendar</Link>
             <Link href="/blog" aria-current="page" className={styles.activeNav}>Blog</Link>
@@ -36,7 +35,6 @@ export default function BlogShell({ children }: { children: React.ReactNode }) {
             <p>Ideas into useful things.</p>
           </div>
           <div className={homeStyles.footerLinks}>
-            <Link href="/journey">Journey</Link>
             <Link href="/projects">Projects</Link>
             <Link href="/calendar">Calendar</Link>
             <Link href="/blog">Blog</Link>

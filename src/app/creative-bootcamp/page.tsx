@@ -152,7 +152,6 @@ export default function CreativeBootcampPage() {
             <span>VamshiCreates</span>
           </Link>
           <nav aria-label="Bootcamp navigation">
-            <Link href="/journey">Journey</Link>
             <Link href="/guides">Guides</Link>
             <a href="#curriculum">Curriculum</a>
             <a href="#projects">Projects</a>
@@ -268,7 +267,7 @@ export default function CreativeBootcampPage() {
           <section className={styles.faqSection} id="faq" aria-labelledby="faq-title"><div><p className={styles.eyebrow}>A FEW GOOD QUESTIONS</p><h2 id="faq-title">Before you begin.</h2><p>Still curious? <a href="mailto:hello@vamshicreates.tech?subject=Creative%20AI%20Bootcamp">Ask Vamshi directly <Mail size={15} /></a></p></div><div className={styles.faqList}>{faq.map(([question, answer]) => <details key={question}><summary>{question}<ChevronDown size={18} /></summary><p>{answer}</p></details>)}</div></section>
         </main>
 
-        <footer className={styles.footer}><div><Link className={styles.brand} href="/"><img src="/journey/main-dp-icon.jpg" alt="" width="34" height="34" /> VamshiCreates</Link><p>Practical AI. Creative work you can actually make.</p></div><div><Link href="/">Home</Link><Link href="/journey">Journey</Link><Link href="/guides">Guides</Link><a href="mailto:hello@vamshicreates.tech">Contact</a></div></footer>
+        <footer className={styles.footer}><div><Link className={styles.brand} href="/"><img src="/journey/main-dp-icon.jpg" alt="" width="34" height="34" /> VamshiCreates</Link><p>Practical AI. Creative work you can actually make.</p></div><div><Link href="/">Home</Link><Link href="/guides">Guides</Link><a href="mailto:hello@vamshicreates.tech">Contact</a></div></footer>
       </div>
     </div>
   );
