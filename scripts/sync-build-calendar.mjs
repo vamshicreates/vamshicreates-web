@@ -82,7 +82,12 @@ function highlights(messages) {
 }
 
 const { data: repositories } = await github(`/users/${USER}/repos?per_page=100&type=owner&sort=pushed`);
-const publicRepos = repositories.filter((repo) => !repo.fork && !repo.archived && !EXCLUDED.has(repo.name) && !repo.name.startsWith("utv-"));
+const publicRepos = repositories.filter((repo) =>
+  !repo.fork &&
+  !repo.archived &&
+  !EXCLUDED.has(repo.name) &&
+  !/(my.?logline|utv|curapod)/i.test(`${repo.name} ${repo.description || ""}`)
+);
 const grouped = new Map();
 
 for (const repo of publicRepos) {
