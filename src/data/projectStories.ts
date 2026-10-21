@@ -63,13 +63,6 @@ export const PROJECT_STORIES: Record<string, ProjectStory> = {
     technology: "Next.js, React, TypeScript, and local course data.",
     build: "I built the public course catalogue, course pages, and a sample learner view as a frontend foundation.",
   },
-  "Curapod M": {
-    why: "A physical product is easier to understand when visitors can explore its form and use, not just read a feature list.",
-    forWhom: "Visitors can rotate a visual concept of the wearable and try a simple, browser-only period planning tool.",
-    idea: "Turn product imagery into a hands-on web experience around the wearable concept.",
-    technology: "Static HTML, CSS, JavaScript, and Three.js.",
-    build: "I created an interactive 3D approximation from public imagery and added a separate planning interaction.",
-  },
   "Ee Line Chusava": {
     why: "Filmmakers need a clearer way to discover stories, scripts, watch lists, and opportunities in one place.",
     forWhom: "Creators and film enthusiasts can explore the publication's articles, scripts, collections, and tools.",

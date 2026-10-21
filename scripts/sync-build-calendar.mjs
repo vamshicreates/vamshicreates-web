@@ -4,13 +4,19 @@ import { resolve } from "node:path";
 const USER = "vamshicreates";
 const MAX_PAGES = Number(process.env.CALENDAR_MAX_PAGES || 1);
 const OUTPUT = resolve("src/data/build-calendar.json");
-const EXCLUDED = new Set(["vamshicreates", "vamshicreates-web"]);
+const EXCLUDED = new Set([
+  "vamshicreates",
+  "vamshicreates-web",
+  "mylogline-idea-zone",
+  "can-one-sentence-become-a-film",
+  "directors-take",
+  "curapod-m",
+]);
 
 const TITLES = {
   "movie-draft": "Movie Draft",
   "cricket-draft": "Cricket Draft",
   "logo-cleaner-web": "Logo Cleaner",
-  "mylogline-idea-zone": "MyLogline Idea Zone",
   "thought-journal-box": "Notely",
   "film-audio-python": "Film Audio Python",
 };
@@ -19,7 +25,6 @@ const DESCRIPTIONS = {
   "movie-draft": "A multiplayer Telugu film draft and auction game.",
   "cricket-draft": "A live cricket player auction game for friends.",
   "logo-cleaner-web": "A browser tool for cleaning logos from video footage.",
-  "mylogline-idea-zone": "A place to develop and test film story ideas.",
   "thought-journal-box": "A simple space for saving and organizing personal notes.",
   "film-audio-python": "A practical film audio workflow built with Python tools.",
 };
@@ -28,7 +33,6 @@ const DEMOS = {
   "movie-draft": "https://movie-draft-phi.vercel.app",
   "cricket-draft": "https://cricket-draft-hazel.vercel.app",
   "logo-cleaner-web": "https://logo-cleaner-web.vercel.app",
-  "mylogline-idea-zone": "https://mylogline-idea-zone.vercel.app",
 };
 
 const IMAGES = {

@@ -28,18 +28,6 @@
     },
     {
       "date": "2026-10-20",
-      "repo": "can-one-sentence-become-a-film",
-      "title": "Can One Sentence Become A Film",
-      "description": "My Logline skill for short film writing reels that turn a movie premise into a one-sentence story lesson.",
-      "demoUrl": null,
-      "image": null,
-      "count": 1,
-      "highlights": [
-        "Document setup and step-by-step usage"
-      ]
-    },
-    {
-      "date": "2026-10-20",
       "repo": "code-visuals-for-music",
       "title": "Code Visuals For Music",
       "description": "AI skill for music visuals using Python audio processing, Chitram and GSAP animation, and FFmpeg video delivery.",
@@ -149,20 +137,6 @@
       ]
     },
     {
-      "date": "2026-10-19",
-      "repo": "mylogline-idea-zone",
-      "title": "MyLogline Idea Zone",
-      "description": "A place to develop and test film story ideas.",
-      "demoUrl": "https://mylogline-idea-zone.vercel.app/",
-      "image": null,
-      "count": 3,
-      "highlights": [
-        "Point metadata at public Vercel site",
-        "Ignore local Vercel credentials and project state",
-        "Launch Film Idea Zone for My Logline"
-      ]
-    },
-    {
       "date": "2026-10-17",
       "repo": "lyric-diagram-music-video",
       "title": "Lyric Diagram Music Video",
@@ -172,30 +146,6 @@
       "count": 1,
       "highlights": [
         "Lyric-diagram music video skill"
-      ]
-    },
-    {
-      "date": "2026-10-16",
-      "repo": "can-one-sentence-become-a-film",
-      "title": "Can One Sentence Become A Film",
-      "description": "My Logline skill for short film writing reels that turn a movie premise into a one-sentence story lesson.",
-      "demoUrl": null,
-      "image": null,
-      "count": 1,
-      "highlights": [
-        "Add My Logline film sentence reel skill"
-      ]
-    },
-    {
-      "date": "2026-10-16",
-      "repo": "directors-take",
-      "title": "Directors Take",
-      "description": "My Logline script skill for short Director’s Take reels about bold film choices and visual storytelling.",
-      "demoUrl": null,
-      "image": null,
-      "count": 1,
-      "highlights": [
-        "Add Directors Take My Logline skill"
       ]
     },
     {
