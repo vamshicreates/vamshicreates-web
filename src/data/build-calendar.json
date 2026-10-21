@@ -2,6 +2,31 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-10-21",
+      "repo": "claude-model-guide",
+      "title": "Claude Model Guide",
+      "description": "Task-aware Claude model + effort recommendations (Haiku, Sonnet, Opus, Fable) for Claude Code and the Claude apps, with global setup and uninstall.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Publish Claude Model Guide with global setup and uninstall"
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "repo": "codex-model-guide",
+      "title": "Codex Model Guide",
+      "description": "Task-aware model recommendations for Codex, with global setup and uninstall.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Recommend models for follow-up instructions and support existing chat activation",
+        "Publish Codex Model Guide with global setup and uninstall"
+      ]
+    },
+    {
       "date": "2026-10-20",
       "repo": "can-one-sentence-become-a-film",
       "title": "Can One Sentence Become A Film",
