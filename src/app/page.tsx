@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import styles from "./home.module.css";
 import BuilderPaths from "@/components/BuilderPaths";
-import BuilderNewsletter from "@/components/BuilderNewsletter";
 
 const EMAIL = "hello@vamshicreates.tech";
 
@@ -78,7 +77,6 @@ export default function HomePage() {
           </section>
 
           <BuilderPaths />
-          <BuilderNewsletter source="home" />
 
           {/* CONSULTING */}
           <section
