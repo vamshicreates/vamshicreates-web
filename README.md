@@ -2,16 +2,16 @@
 
 The official website for Vamshi Krishna and Vamshi Creates. It brings together shipped products, build notes, guides, and practical AI workflows.
 
-**Live site:** https://vamshicreates-web.vercel.app  
+**Live site:** https://www.vamshicreates.tech  
 **GitHub profile:** https://github.com/vamshicreates
 
 ## Explore
 
-- [Projects](https://vamshicreates-web.vercel.app/projects) — products and working demos
-- [What 2 Build](https://vamshicreates-web.vercel.app/projects/what-to-build) — product opportunity research
-- [How 2 Build](https://vamshicreates-web.vercel.app/projects/how-to-build) — practical build walkthroughs
-- [Journey](https://vamshicreates-web.vercel.app/journey) — the builder story
-- [Blog](https://vamshicreates-web.vercel.app/blog) and [guides](https://vamshicreates-web.vercel.app/guides) — useful notes and tutorials
+- [Projects](https://www.vamshicreates.tech/projects) — products and working demos
+- [What 2 Build](https://www.vamshicreates.tech/projects/what-to-build) — product opportunity research
+- [How 2 Build](https://www.vamshicreates.tech/projects/how-to-build) — practical build walkthroughs
+- [Journey](https://www.vamshicreates.tech/journey) — the builder story
+- [Blog](https://www.vamshicreates.tech/blog) and [guides](https://www.vamshicreates.tech/guides) — useful notes and tutorials
 
 ## Stack
 
@@ -34,4 +34,4 @@ Builder Notes signups require explicit consent and are stored privately. The mai
 
 ## Contributing
 
-Issues and focused pull requests are welcome. For product context, start with the [live site](https://vamshicreates-web.vercel.app) and [project portfolio](https://vamshicreates-web.vercel.app/projects).
+Issues and focused pull requests are welcome. For product context, start with the [live site](https://www.vamshicreates.tech) and [project portfolio](https://www.vamshicreates.tech/projects).
