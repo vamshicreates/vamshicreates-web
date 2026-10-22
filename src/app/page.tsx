@@ -209,14 +209,9 @@ export default function HomePage() {
                     <li key={topic}><Check size={16} aria-hidden="true" />{topic}</li>
                   ))}
                 </ul>
-                <p className={styles.discoveryPrice}>₹999 <span>· 45-minute video call</span></p>
                 <a href={offer.bookingUrl} target="_blank" rel="noreferrer" className={styles.primaryButton}>
                   {offer.bookingLabel}<ArrowUpRight size={17} aria-hidden="true" />
                 </a>
-                <p className={styles.offerNote}>
-                  The fee covers my time on the discovery call and our discussion only.
-                  Any implementation is scoped and priced separately after we talk.
-                </p>
               </div>
               <figure className={styles.discoveryVisual}>
                 <img
