@@ -2,6 +2,33 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-10-22",
+      "repo": "claude-model-guide",
+      "title": "Claude Model Guide",
+      "description": "Task-aware Claude model + effort recommendations (Haiku, Sonnet, Opus, Fable) for Claude Code and the Claude apps, with global setup and uninstall.",
+      "demoUrl": null,
+      "image": null,
+      "count": 3,
+      "highlights": [
+        "Add changelog for the subagent-routing release",
+        "Expand subagent-routing to 14 roles across three seats",
+        "Add subagent-routing extension and skip the gate for one-turn tasks"
+      ]
+    },
+    {
+      "date": "2026-10-22",
+      "repo": "skills-everywhere",
+      "title": "Skills Everywhere",
+      "description": "Share your existing local Agent Skills across coding agents through one installation.",
+      "demoUrl": "https://www.vamshicreates.tech/blog/skills-everywhere",
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Record published launch article and X post",
+        "Release Skills Everywhere agent skill and local sharing installer"
+      ]
+    },
+    {
       "date": "2026-10-21",
       "repo": "antigravity-web-skills",
       "title": "Antigravity Web Skills",
