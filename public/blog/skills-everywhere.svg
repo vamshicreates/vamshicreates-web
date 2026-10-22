@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<rect width="1600" height="900" fill="#0c1729"/>
+<path d="M0 735H1600M120 0V900M1480 0V900" stroke="#233148"/>
+<circle cx="1370" cy="170" r="270" fill="#153044" opacity=".6"/>
+<text x="120" y="104" fill="#8ce7d1" font-family="Arial,sans-serif" font-size="23" letter-spacing="5">VAMSHICREATES / OPEN SOURCE</text>
+<text x="120" y="230" fill="#ffffff" font-family="Arial,sans-serif" font-weight="700" font-size="88" letter-spacing="-4">Skills Everywhere</text>
+<text x="123" y="299" fill="#b8c9d9" font-family="Arial,sans-serif" font-size="34">One local library. Across your coding agents.</text>
+<rect x="120" y="405" width="340" height="220" rx="23" fill="#15243a" stroke="#3a506a"/>
+<text x="155" y="457" fill="#8ce7d1" font-family="monospace" font-size="20">01 / YOUR SKILLS</text>
+<text x="155" y="514" fill="#fff" font-family="Arial,sans-serif" font-size="30">SKILL.md</text>
+<text x="155" y="555" fill="#b8c9d9" font-family="Arial,sans-serif" font-size="24">scripts · references</text>
+<text x="155" y="590" fill="#b8c9d9" font-family="Arial,sans-serif" font-size="24">assets · workflows</text>
+<path d="M480 515H585M565 500L585 515L565 530" fill="none" stroke="#8ce7d1" stroke-width="4"/>
+<rect x="605" y="405" width="340" height="220" rx="23" fill="#153e3e" stroke="#8ce7d1" stroke-width="2"/>
+<text x="640" y="457" fill="#8ce7d1" font-family="monospace" font-size="20">02 / ONE LIBRARY</text>
+<text x="640" y="514" fill="#fff" font-family="Arial,sans-serif" font-size="30">Discover · Link</text>
+<text x="640" y="555" fill="#c5e8df" font-family="Arial,sans-serif" font-size="24">Preserve originals</text>
+<text x="640" y="590" fill="#c5e8df" font-family="Arial,sans-serif" font-size="24">Refresh automatically</text>
+<path d="M965 515H1070M1050 500L1070 515L1050 530" fill="none" stroke="#8ce7d1" stroke-width="4"/>
+<rect x="1090" y="405" width="390" height="220" rx="23" fill="#15243a" stroke="#3a506a"/>
+<text x="1125" y="457" fill="#8ce7d1" font-family="monospace" font-size="20">03 / YOUR AGENTS</text>
+<text x="1125" y="514" fill="#fff" font-family="Arial,sans-serif" font-size="28">Codex · Claude Code</text>
+<text x="1125" y="555" fill="#b8c9d9" font-family="Arial,sans-serif" font-size="25">Antigravity · Cursor</text>
+<text x="1125" y="590" fill="#b8c9d9" font-family="Arial,sans-serif" font-size="25">OpenCode + more</text>
+<text x="120" y="811" fill="#b8c9d9" font-family="Arial,sans-serif" font-size="25">AGENT SKILL + LOCAL INSTALLER</text>
+<text x="1480" y="811" text-anchor="end" fill="#8ce7d1" font-family="monospace" font-size="24">github.com/vamshicreates/skills-everywhere</text>
+</svg>

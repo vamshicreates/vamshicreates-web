@@ -43,6 +43,14 @@ export default function BlogPage() {
           <p>What they are, how to use them well, and the workflows worth building.</p>
         </div>
         <div className={styles.standaloneList}>
+          <Link href="/blog/skills-everywhere" className={styles.standaloneFeature}>
+            <Image src="/blog/skills-everywhere.png" alt="Skills Everywhere: one shared library for coding agents" width={1600} height={900} sizes="(max-width: 700px) 100vw, 50vw" priority />
+            <span>
+              <small>NEW / OPEN SOURCE</small>
+              <strong>Skills Everywhere: share your skills across coding agents</strong>
+              <em>Read the launch story <ArrowUpRight size={17} aria-hidden="true" /></em>
+            </span>
+          </Link>
           <Link href="/blog/coding-agent-skills" className={styles.standaloneFeature}>
             <Image src="/blog/coding-agent-skills.svg" alt="Coding Agent Skills article cover" width={1600} height={900} sizes="(max-width: 700px) 100vw, 50vw" unoptimized priority />
             <span>
