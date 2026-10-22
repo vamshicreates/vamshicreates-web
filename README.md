@@ -15,7 +15,7 @@ The official website for Vamshi Krishna and Vamshi Creates. It brings together s
 
 ## Stack
 
-Next.js 16 App Router, React 19, TypeScript, CSS Modules, Tailwind CSS, and Vercel Blob.
+Next.js 16 App Router with static export, React 19, TypeScript, CSS Modules, and Tailwind CSS. Hosted on GitHub Pages.
 
 ## Run locally
 
@@ -28,9 +28,13 @@ Open http://localhost:3000. Run `npm run build` before deploying.
 
 ## Deployment and data
 
-The `main` branch deploys to the `vamshicreates-web` Vercel project. `NEXT_PUBLIC_SITE_URL` supplies the production URL for social metadata. Form submissions use the project’s private Vercel Blob store. To test forms locally, link the Vercel project and pull its development environment variables or use a development Blob store. Keep local environment files out of Git.
+The `main` branch deploys to GitHub Pages through `.github/workflows/deploy-pages.yml`. `npm run build` exports the complete website to `out/`, with directory-based URLs for direct navigation. GitHub Pages uses `www.vamshicreates.tech` as the custom domain and redirects the apex domain to it. Site metadata uses `src/config/site.ts`.
 
-Builder Notes signups require explicit consent and are stored privately. The mailing list is a launch list; an email sending provider and schedule are not connected yet. The Creative Bootcamp page is available directly but remains outside public navigation and marked `noindex, nofollow`.
+The deploy workflow also runs after the scheduled build-calendar sync, so commits made by `GITHUB_TOKEN` are published even though they do not trigger a normal push workflow.
+
+Newsletter, bootcamp, and call requests use email links to `hello@vamshicreates.tech`. Visitors must send the email from their own app; clicking a link does not save a submission. Guides are freely accessible. There are no server endpoints or Vercel Blob dependencies. Existing private signup records are retained in the former store; they are not copied into this public repository.
+
+The Creative Bootcamp page remains outside public navigation and marked `noindex, nofollow`. Google Analytics respects the existing consent controls. `vercel.json` disables Git-triggered Vercel deployments.
 
 ## Contributing
 

@@ -124,7 +124,7 @@ export default function PrivacyPage() {
               <h3 className={styles.subHeading}>A. Information You Provide to Us Directly</h3>
               <ul className={styles.list}>
                 <li>
-                  <strong>Email Subscriptions:</strong> Your email address when you sign up for our newsletter, download free guides, access automation packs, or request project notifications.
+                  <strong>Email Subscriptions:</strong> Your email address and message when you email us to request Builder Notes, bootcamp updates, or project notifications. Free guides can be opened without providing an email address.
                 </li>
                 <li>
                   <strong>Consultation &amp; Advisory Bookings:</strong> Your name, email address, company or project name, current technical stack, and any project notes you submit when booking a 1:1 call or requesting a custom build.
@@ -133,7 +133,7 @@ export default function PrivacyPage() {
                   <strong>Customer &amp; Transaction Details (Digital Products):</strong> When you purchase digital downloads (e.g., guides, templates, code repositories, or course materials), our payment partners collect transaction information (name, billing address, email, and purchase history).
                 </li>
                 <li>
-                  <strong>Direct Inquiries:</strong> Any correspondence, feedback, or support messages you send us via email or contact forms.
+                  <strong>Direct Inquiries:</strong> Any correspondence, feedback, or support messages you send us via email.
                 </li>
               </ul>
 
@@ -195,10 +195,10 @@ export default function PrivacyPage() {
               </p>
               <ul className={styles.list}>
                 <li>
-                  <strong>Hosting &amp; Edge Delivery:</strong> Vercel (cloud deployment) and GitHub (code repository &amp; public releases).
+                  <strong>Hosting &amp; Edge Delivery:</strong> GitHub Pages (static website hosting) and GitHub (code repository &amp; public releases).
                 </li>
                 <li>
-                  <strong>Email Delivery:</strong> Transactional and newsletter platforms (e.g., Resend, ConvertKit, or Mailchimp) for reliable email sending with instant unsubscribe controls.
+                  <strong>Email Delivery:</strong> Contact and signup links open your email app. Information is sent to our mailbox only when you send the email; the website does not save new form submissions. Previous signup records remain private and may be removed on request.
                 </li>
                 <li>
                   <strong>Calendar &amp; Scheduling:</strong> Topmate handles consultation bookings through its own service and privacy policy.
@@ -243,7 +243,7 @@ export default function PrivacyPage() {
               </p>
               <ul className={styles.list}>
                 <li>
-                  <strong>Opting Out of Emails:</strong> Every automated email includes an instant &quot;Unsubscribe&quot; link in the footer. Clicking it immediately removes you from future marketing mailings.
+                  <strong>Opting Out of Emails:</strong> Email hello@vamshicreates.tech to ask to be removed from Builder Notes or bootcamp updates.
                 </li>
                 <li>
                   <strong>Access &amp; Portability:</strong> You may request a copy of the personal information we hold about you.

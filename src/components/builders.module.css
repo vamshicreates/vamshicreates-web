@@ -39,7 +39,8 @@
 .signupForm input[type="email"] { width: 100%; border: 1px solid #91b5da; border-radius: 9px; padding: 14px; background: #fff; color: #102843; font-size: 16px; }
 .signupForm .consent { display: flex; align-items: flex-start; gap: 10px; color: #c8d8e8; font-size: 12px; line-height: 1.65; font-weight: 400; margin: 2px 0 5px; }
 .consent input { margin-top: 3px; width: 17px; height: 17px; flex-shrink: 0; accent-color: #8fc8ff; }
-.signupForm button { display: flex; justify-content: center; align-items: center; gap: 12px; border: 1px solid #b7dafa; border-radius: 9px; padding: 14px 18px; background: #d5eaff; color: #102b4b; font-size: 13px; font-weight: 650; cursor: pointer; }
+.signupForm button, .emailSignup { display: flex; justify-content: center; align-items: center; gap: 12px; border: 1px solid #b7dafa; border-radius: 9px; padding: 14px 18px; background: #d5eaff; color: #102b4b; font-size: 13px; font-weight: 650; cursor: pointer; }
+.emailSignup { text-decoration: none; }
 .signupForm button:disabled { opacity: .65; cursor: wait; }
 .newsletter .privacy { font-size: 11px; color: #a9c0d9; margin: 15px 0 0; }
 .privacy a, .formError a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }

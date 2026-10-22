@@ -188,11 +188,11 @@ export default function TermsPage() {
             <section className={styles.section}>
               <h2 className={styles.sectionHeading}>4. Email Newsletter &amp; Communications</h2>
               <p className={styles.paragraph}>
-                When you subscribe to our newsletter or download free resources:
+                When you email us to request newsletter updates:
               </p>
               <ul className={styles.list}>
                 <li>You agree to receive periodic emails covering AI workflows, build notes, and product announcements.</li>
-                <li>You may unsubscribe at any time using the one-click unsubscribe link at the bottom of every automated email.</li>
+                <li>You may unsubscribe at any time by emailing hello@vamshicreates.tech. Accessing free guides does not subscribe you to updates.</li>
                 <li>We commit to keeping communications focused, respectful, and zero-spam.</li>
               </ul>
             </section>

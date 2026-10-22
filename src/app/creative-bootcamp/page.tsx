@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import {
   ArrowDown,
@@ -112,36 +112,6 @@ const faq = [
 
 export default function CreativeBootcampPage() {
   const [expanded, setExpanded] = useState(false);
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-  async function submitInterest(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    setStatus("loading");
-    const form = new FormData(event.currentTarget);
-    const payload = {
-      type: "creative-bootcamp-interest",
-      name: String(form.get("name") || "").trim(),
-      email: String(form.get("email") || "").trim(),
-      interest: String(form.get("interest") || "").trim(),
-    };
-    if (!payload.name || !payload.email) {
-      setStatus("error");
-      return;
-    }
-    try {
-      const response = await fetch("/api/email-list", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      if (!response.ok) throw new Error("Could not save interest");
-      setStatus("success");
-      event.currentTarget.reset();
-    } catch {
-      setStatus("error");
-    }
-  }
-
   return (
     <div className={styles.page}>
       <a className={styles.skipLink} href="#main">Skip to content</a>
@@ -252,15 +222,12 @@ export default function CreativeBootcampPage() {
           <section className={styles.interestSection} id="interest" aria-labelledby="interest-title">
             <div className={styles.interestCopy}><p className={styles.eyebrow}>NEXT COHORT</p><h2 id="interest-title">Make your next body of work here.</h2><p>Register interest and get the confirmed dates, fee, and enrollment details when they are ready.</p><div className={styles.interestPromise}><Check size={17} /> Curriculum and setup details before enrollment</div></div>
             <div className={styles.interestCard}>
-              {status === "success" ? <div className={styles.success} role="status"><span><Check size={24} /></span><h3>You’re on the interest list.</h3><p>We’ll send the cohort details when they’re confirmed.</p></div> : <form onSubmit={submitInterest}>
-                <h3>Keep me in the loop</h3><p>Share where to send the details.</p>
-                <label htmlFor="bootcamp-name">Your name</label><input id="bootcamp-name" name="name" type="text" autoComplete="name" placeholder="Your name" required />
-                <label htmlFor="bootcamp-email">Email address</label><input id="bootcamp-email" name="email" type="email" autoComplete="email" placeholder="you@example.com" required />
-                <label htmlFor="bootcamp-interest">What do you most want to learn? <span>(optional)</span></label><select id="bootcamp-interest" name="interest" defaultValue=""><option value="">Choose an area</option><option>Design and branding</option><option>Blender and 3D</option><option>Video and AI video</option><option>AI and MCP workflows</option><option>The full creative stack</option></select>
-                <button type="submit" className={styles.primaryButton} disabled={status === "loading"}>{status === "loading" ? "Saving…" : "Register interest"}<ArrowRight size={17} /></button>
-                {status === "error" && <p className={styles.formError} role="alert">We couldn’t save your details. Please try again or email <a href="mailto:hello@vamshicreates.tech">hello@vamshicreates.tech</a>.</p>}
-                <small>No payment today. We’ll only use your email for bootcamp updates.</small>
-              </form>}
+              <div className={styles.success}>
+                <h3>Keep me in the loop</h3>
+                <p>Email your name and what you would most like to learn. We’ll reply with cohort details when they are confirmed.</p>
+                <a href="mailto:hello@vamshicreates.tech?subject=Creative%20Bootcamp%20interest&body=Hi%20Vamshi%2C%0A%0APlease%20keep%20me%20updated%20about%20the%20Creative%20Bootcamp.%0A%0AMy%20name%3A%20%0AWhat%20I%20want%20to%20learn%3A%20" className={styles.primaryButton}>Register interest by email <ArrowRight size={17} /></a>
+                <small>Opens your email app. Send the message to register your interest. No payment today.</small>
+              </div>
             </div>
           </section>
 

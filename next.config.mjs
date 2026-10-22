@@ -1,15 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  trailingSlash: true,
   images: {
     unoptimized: true,
-  },
-  async redirects() {
-    return ["vamshicreates-web.vercel.app", "vamshicreates.tech"].map((host) => ({
-      source: "/:path*",
-      has: [{ type: "host", value: host }],
-      destination: "https://www.vamshicreates.tech/:path*",
-      permanent: true,
-    }));
   },
 };
 
