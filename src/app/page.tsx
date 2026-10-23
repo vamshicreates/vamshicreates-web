@@ -119,6 +119,149 @@ export default function HomePage() {
             </div>
           </section>
 
+          <section id="agent-setup" className={styles.guideSection} aria-labelledby="agent-setup-title">
+            <div className={styles.sectionHeading}>
+              <div>
+                <p className={styles.eyebrow}>A PRACTICAL PLACE TO START</p>
+                <h2 id="agent-setup-title">Set up your AI agent.</h2>
+              </div>
+              <div>
+                <p>Use the agent you prefer. The same foundations help you get useful work done.</p>
+                <Link className={styles.textLink} href="/guides/ai-agent-setup">
+                  Read the full setup guide <ArrowUpRight size={17} aria-hidden="true" />
+                </Link>
+              </div>
+            </div>
+
+            <div className={styles.guideGrid}>
+              <Link className={styles.guideCard} href="/guides/ai-agent-setup">
+                <div className={styles.guideCardTop}>
+                  <span className={styles.guideIcon}><GraduationCap size={22} strokeWidth={1.5} aria-hidden="true" /></span>
+                  <span className={styles.freeTag}>01</span>
+                </div>
+                <span className={styles.guideCategory}>Choose &amp; install</span>
+                <h3>Start with your agent</h3>
+                <p>Codex, Claude Code, Gemini CLI, Cursor, or another tool: install from its official source and open your project.</p>
+                <span className={styles.guideCardCta}>See setup steps <ArrowUpRight size={16} aria-hidden="true" /></span>
+              </Link>
+              <Link className={styles.guideCard} href="/guides/ai-agent-setup">
+                <div className={styles.guideCardTop}>
+                  <span className={styles.guideIcon}><FileText size={22} strokeWidth={1.5} aria-hidden="true" /></span>
+                  <span className={styles.freeTag}>02</span>
+                </div>
+                <span className={styles.guideCategory}>Give it context</span>
+                <h3>Tell it what matters</h3>
+                <p>Put your goal, audience, constraints, and definition of done in one place so any agent can understand the work.</p>
+                <span className={styles.guideCardCta}>See context template <ArrowUpRight size={16} aria-hidden="true" /></span>
+              </Link>
+              <Link className={styles.guideCard} href="/guides/ai-agent-setup">
+                <div className={styles.guideCardTop}>
+                  <span className={styles.guideIcon}><Workflow size={22} strokeWidth={1.5} aria-hidden="true" /></span>
+                  <span className={styles.freeTag}>03</span>
+                </div>
+                <span className={styles.guideCategory}>Build &amp; verify</span>
+                <h3>Make the first useful thing</h3>
+                <p>Give your agent a small task, review the result, and add skills or tools only when the workflow needs them.</p>
+                <span className={styles.guideCardCta}>See first task <ArrowUpRight size={16} aria-hidden="true" /></span>
+              </Link>
+            </div>
+          </section>
+
+          {discoveryOffers.map((offer) => (
+            <section
+              key={offer.id}
+              id={offer.id}
+              className={`${styles.showcase} ${styles.discoverySection}`}
+              aria-labelledby={`${offer.id}-title`}
+            >
+              <div className={styles.showcaseCopy}>
+                <p className={styles.eyebrow}>{offer.eyebrow}</p>
+                <h2 id={`${offer.id}-title`}>
+                  {offer.headline}<br />{offer.headlineEnd}
+                </h2>
+                <p>{offer.description}</p>
+                <ul className={styles.features}>
+                  {offer.topics.map((topic) => (
+                    <li key={topic}><Check size={16} aria-hidden="true" />{topic}</li>
+                  ))}
+                </ul>
+                <a href={offer.bookingUrl} target="_blank" rel="noreferrer" className={styles.primaryButton}>
+                  {offer.bookingLabel}<ArrowUpRight size={17} aria-hidden="true" />
+                </a>
+              </div>
+              <figure className={styles.discoveryVisual}>
+                <img
+                  src={offer.image}
+                  alt={offer.imageAlt}
+                  width={1200}
+                  height={800}
+                  loading="lazy"
+                  decoding="async"
+                  className={styles.discoveryImage}
+                />
+                <figcaption className={styles.discoveryCaption}>
+                  <MessageCircle size={20} aria-hidden="true" />
+                  <div>
+                    <strong>{offer.title}</strong>
+                    <span>Understand the problem. Explore what could help.</span>
+                  </div>
+                </figcaption>
+              </figure>
+            </section>
+          ))}
+
+          {/* FAQ SECTION */}
+          <section className={styles.faqSection} aria-labelledby="faq-title">
+            <div>
+              <p className={styles.eyebrow}>BEFORE YOU GET STARTED</p>
+              <h2 id="faq-title">A few good questions.</h2>
+              <p>
+                Still wondering about something?
+                <br />
+                <a href={`mailto:${EMAIL}`} className={styles.textLink}>
+                  Send me an email <ArrowUpRight size={15} aria-hidden="true" />
+                </a>
+              </p>
+            </div>
+
+            <div className={styles.faqList}>
+              <details>
+                <summary>Where should I start as a solo builder?<span aria-hidden="true">+</span></summary>
+                <p>Start with <Link href="/projects/what-to-build#sample-opportunity">What 2 Build</Link> to explore a buyer and test an idea. If you already have a problem in mind, try the free <Link href="/projects/how-to-build#sample-build">How 2 Build walkthrough</Link>. Both are projects by Vamshi Creates, and their first samples are open to everyone.</p>
+              </details>
+              <details>
+                <summary>
+                  What kind of projects do you build?
+                  <span aria-hidden="true">+</span>
+                </summary>
+                <p>
+                  Websites, AI agents, useful automations, and creative tools. <Link href="/projects">See my projects</Link> for examples.
+                </p>
+              </details>
+
+              <details>
+                <summary>
+                  Do I need a detailed technical brief?
+                  <span aria-hidden="true">+</span>
+                </summary>
+                <p>
+                  No. Send the problem in your own words. We can find the right use case and scope together.
+                </p>
+              </details>
+
+              <details>
+                <summary>
+                  Can you help my startup find AI use cases?
+                  <span aria-hidden="true">+</span>
+                </summary>
+                <p>
+                  Yes. Tell me what your team does, where work gets stuck, and what you want to improve. I’ll suggest practical options.
+                </p>
+              </details>
+
+            </div>
+          </section>
+
           {/* CONSULTING */}
           <section
             id="consultation"
@@ -186,149 +329,6 @@ export default function HomePage() {
                 </div>
 
               </div>
-            </div>
-          </section>
-
-          {discoveryOffers.map((offer) => (
-            <section
-              key={offer.id}
-              id={offer.id}
-              className={`${styles.showcase} ${styles.discoverySection}`}
-              aria-labelledby={`${offer.id}-title`}
-            >
-              <div className={styles.showcaseCopy}>
-                <p className={styles.eyebrow}>{offer.eyebrow}</p>
-                <h2 id={`${offer.id}-title`}>
-                  {offer.headline}<br />{offer.headlineEnd}
-                </h2>
-                <p>{offer.description}</p>
-                <ul className={styles.features}>
-                  {offer.topics.map((topic) => (
-                    <li key={topic}><Check size={16} aria-hidden="true" />{topic}</li>
-                  ))}
-                </ul>
-                <a href={offer.bookingUrl} target="_blank" rel="noreferrer" className={styles.primaryButton}>
-                  {offer.bookingLabel}<ArrowUpRight size={17} aria-hidden="true" />
-                </a>
-              </div>
-              <figure className={styles.discoveryVisual}>
-                <img
-                  src={offer.image}
-                  alt={offer.imageAlt}
-                  width={1200}
-                  height={800}
-                  loading="lazy"
-                  decoding="async"
-                  className={styles.discoveryImage}
-                />
-                <figcaption className={styles.discoveryCaption}>
-                  <MessageCircle size={20} aria-hidden="true" />
-                  <div>
-                    <strong>{offer.title}</strong>
-                    <span>Understand the problem. Explore what could help.</span>
-                  </div>
-                </figcaption>
-              </figure>
-            </section>
-          ))}
-
-          <section id="agent-setup" className={styles.guideSection} aria-labelledby="agent-setup-title">
-            <div className={styles.sectionHeading}>
-              <div>
-                <p className={styles.eyebrow}>A PRACTICAL PLACE TO START</p>
-                <h2 id="agent-setup-title">Set up your AI agent.</h2>
-              </div>
-              <div>
-                <p>Use the agent you prefer. The same foundations help you get useful work done.</p>
-                <Link className={styles.textLink} href="/guides/ai-agent-setup">
-                  Read the full setup guide <ArrowUpRight size={17} aria-hidden="true" />
-                </Link>
-              </div>
-            </div>
-
-            <div className={styles.guideGrid}>
-              <Link className={styles.guideCard} href="/guides/ai-agent-setup">
-                <div className={styles.guideCardTop}>
-                  <span className={styles.guideIcon}><GraduationCap size={22} strokeWidth={1.5} aria-hidden="true" /></span>
-                  <span className={styles.freeTag}>01</span>
-                </div>
-                <span className={styles.guideCategory}>Choose &amp; install</span>
-                <h3>Start with your agent</h3>
-                <p>Codex, Claude Code, Gemini CLI, Cursor, or another tool: install from its official source and open your project.</p>
-                <span className={styles.guideCardCta}>See setup steps <ArrowUpRight size={16} aria-hidden="true" /></span>
-              </Link>
-              <Link className={styles.guideCard} href="/guides/ai-agent-setup">
-                <div className={styles.guideCardTop}>
-                  <span className={styles.guideIcon}><FileText size={22} strokeWidth={1.5} aria-hidden="true" /></span>
-                  <span className={styles.freeTag}>02</span>
-                </div>
-                <span className={styles.guideCategory}>Give it context</span>
-                <h3>Tell it what matters</h3>
-                <p>Put your goal, audience, constraints, and definition of done in one place so any agent can understand the work.</p>
-                <span className={styles.guideCardCta}>See context template <ArrowUpRight size={16} aria-hidden="true" /></span>
-              </Link>
-              <Link className={styles.guideCard} href="/guides/ai-agent-setup">
-                <div className={styles.guideCardTop}>
-                  <span className={styles.guideIcon}><Workflow size={22} strokeWidth={1.5} aria-hidden="true" /></span>
-                  <span className={styles.freeTag}>03</span>
-                </div>
-                <span className={styles.guideCategory}>Build &amp; verify</span>
-                <h3>Make the first useful thing</h3>
-                <p>Give your agent a small task, review the result, and add skills or tools only when the workflow needs them.</p>
-                <span className={styles.guideCardCta}>See first task <ArrowUpRight size={16} aria-hidden="true" /></span>
-              </Link>
-            </div>
-          </section>
-
-          {/* FAQ SECTION */}
-          <section className={styles.faqSection} aria-labelledby="faq-title">
-            <div>
-              <p className={styles.eyebrow}>BEFORE YOU GET STARTED</p>
-              <h2 id="faq-title">A few good questions.</h2>
-              <p>
-                Still wondering about something?
-                <br />
-                <a href={`mailto:${EMAIL}`} className={styles.textLink}>
-                  Send me an email <ArrowUpRight size={15} aria-hidden="true" />
-                </a>
-              </p>
-            </div>
-
-            <div className={styles.faqList}>
-              <details>
-                <summary>Where should I start as a solo builder?<span aria-hidden="true">+</span></summary>
-                <p>Start with <Link href="/projects/what-to-build#sample-opportunity">What 2 Build</Link> to explore a buyer and test an idea. If you already have a problem in mind, try the free <Link href="/projects/how-to-build#sample-build">How 2 Build walkthrough</Link>. Both are projects by Vamshi Creates, and their first samples are open to everyone.</p>
-              </details>
-              <details>
-                <summary>
-                  What kind of projects do you build?
-                  <span aria-hidden="true">+</span>
-                </summary>
-                <p>
-                  Websites, AI agents, useful automations, and creative tools. <Link href="/projects">See my projects</Link> for examples.
-                </p>
-              </details>
-
-              <details>
-                <summary>
-                  Do I need a detailed technical brief?
-                  <span aria-hidden="true">+</span>
-                </summary>
-                <p>
-                  No. Send the problem in your own words. We can find the right use case and scope together.
-                </p>
-              </details>
-
-              <details>
-                <summary>
-                  Can you help my startup find AI use cases?
-                  <span aria-hidden="true">+</span>
-                </summary>
-                <p>
-                  Yes. Tell me what your team does, where work gets stuck, and what you want to improve. I’ll suggest practical options.
-                </p>
-              </details>
-
             </div>
           </section>
         </main>
