@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import {
   ArrowUpRight,
   ArrowRight,
+  ArrowDown,
   Workflow,
   MessageCircle,
   Check,
@@ -10,7 +11,6 @@ import {
   FileText,
 } from "lucide-react";
 import styles from "./home.module.css";
-import BuilderPaths from "@/components/BuilderPaths";
 import { SITE_URL } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -110,16 +110,14 @@ export default function HomePage() {
                 <br />
                 <span>for real-world problem statements.</span>
               </h1>
-              <p className={styles.heroDescription}>I’m Vamshi Krishna. I build websites, AI tools, and automations, and share the research and practical steps behind them. Find your next idea with What 2 Build. Make it real with How 2 Build.</p>
+              <p className={styles.heroDescription}>I’m Vamshi Krishna. I build websites, AI tools, and automations, and share the research and practical steps behind them.</p>
 
               <div className={styles.heroActions}>
-                <a href="#start-building" className={styles.primaryButton}>Choose your starting point <ArrowRight size={17} aria-hidden="true" /></a>
-                <Link href="/projects/what-to-build/portfolio" className={styles.textLink}>See what I’ve shipped <ArrowUpRight size={17} aria-hidden="true" /></Link>
+                <a href="#consultation" className={styles.primaryButton}>Work with me <ArrowDown size={17} aria-hidden="true" /></a>
+                <Link href="/projects" className={styles.textLink}>See what I’ve shipped <ArrowUpRight size={17} aria-hidden="true" /></Link>
               </div>
             </div>
           </section>
-
-          <BuilderPaths />
 
           {/* CONSULTING */}
           <section
