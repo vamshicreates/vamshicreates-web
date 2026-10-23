@@ -3,26 +3,37 @@ import { SITE_URL } from "@/config/site";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowLeft, ArrowUpRight, BookOpen } from "lucide-react";
-import { BLOG_SERIES, getSeriesArticles } from "@/data/blog";
+import { BLOG_ARTICLES, BLOG_SERIES, getReadingMinutes, getSeriesArticles } from "@/data/blog";
+import BlogPillarsFilter, { type ArticlePreview } from "./BlogPillarsFilter";
 import BlogShell from "./BlogShell";
 import styles from "./blog.module.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Blog | VamshiCreates",
-  description: "Practical articles by Vamshi Krishna on building useful products, coding agent skills, Python, language models, and AI agents.",
+  title: "Blog & Guides | VamshiCreates",
+  description: "Practical guides and articles by Vamshi Krishna on open-source AI tools, coding agents, automation workflows, and modern web engineering.",
   alternates: { canonical: "/blog" },
   openGraph: {
-    title: "VamshiCreates Blog",
-    description: "Explore practical articles on coding agent skills, indie products, Python, and large language models.",
+    title: "VamshiCreates Blog & Guides",
+    description: "Explore practical guides on open-source AI replacements, coding agent skills, n8n automations, and modern web stacks.",
     url: "/blog",
     type: "website",
-    images: ["/blog/what-is-an-llm.jpg"],
+    images: ["/blog/open-source-ai-replacements.svg"],
   },
   twitter: { card: "summary_large_image" },
 };
 
 export default function BlogPage() {
+  const articlePreviews: ArticlePreview[] = BLOG_ARTICLES.map((article) => ({
+    slug: article.slug,
+    title: article.title,
+    description: article.description,
+    image: article.image,
+    category: article.category,
+    series: article.series,
+    readingMinutes: getReadingMinutes(article),
+  }));
+
   return (
     <BlogShell>
       <section className={styles.indexHero} aria-labelledby="blog-title">
@@ -30,11 +41,13 @@ export default function BlogPage() {
         <p className={styles.eyebrow}>THE NOTEBOOK / LEARN ONE IDEA AT A TIME</p>
         <h1 id="blog-title">Learn the basics.<br /><span>Build what matters.</span></h1>
         <p className={styles.heroDescription}>
-          Straightforward notes on the skills, people, and ideas behind useful products.
-          Explore a series or read a standalone article.
+          Practical notes on open-source AI tools, coding agents, automation workflows, and the skills behind shipped products.
         </p>
-        <div className={styles.seriesNote}><BookOpen size={17} aria-hidden="true" /> {BLOG_SERIES.length} subjects · More coming</div>
+        <div className={styles.seriesNote}><BookOpen size={17} aria-hidden="true" /> {BLOG_SERIES.length} Content Pillars · {BLOG_ARTICLES.length} Guides</div>
       </section>
+
+      {/* INTERACTIVE CONTENT PILLARS FILTER */}
+      <BlogPillarsFilter articles={articlePreviews} />
 
       <section className={styles.featuredSection} aria-labelledby="skills-guide-title">
         <div className={styles.sectionHeading}>

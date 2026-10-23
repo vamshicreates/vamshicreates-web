@@ -1,4 +1,5 @@
 import { LLM_ARTICLES } from "./llm-articles";
+import { TOOLS_ARTICLES } from "./tools-articles";
 
 export type BlogBlock =
   | { type: "paragraph"; text: string }
@@ -8,7 +9,7 @@ export type BlogBlock =
   | { type: "table"; rows: string[][] }
   | { type: "list"; items: { text: string; href?: string }[] };
 
-export type BlogSeriesSlug = "python" | "llm";
+export type BlogSeriesSlug = "python" | "llm" | "open-source" | "agents" | "automation" | "vibe-coding";
 
 export type BlogArticle = {
   slug: string;
@@ -764,9 +765,33 @@ const PYTHON_ARTICLES: BlogArticle[] = [
   }
 ];
 
-export const BLOG_ARTICLES: BlogArticle[] = [...PYTHON_ARTICLES, ...LLM_ARTICLES];
+export const BLOG_ARTICLES: BlogArticle[] = [...TOOLS_ARTICLES, ...PYTHON_ARTICLES, ...LLM_ARTICLES];
 
 export const BLOG_SERIES = [
+  {
+    slug: "open-source",
+    title: "Open-Source Replacements",
+    description: "Replace expensive paid AI subscriptions with free, self-hosted and open-source GitHub repositories.",
+    image: "/blog/open-source-ai-replacements.svg",
+  },
+  {
+    slug: "agents",
+    title: "AI Agents & Coding",
+    description: "MCP servers, Claude Code setups, token optimization, and specialist agent orchestration.",
+    image: "/blog/essential-claude-code-plugins-mcp.svg",
+  },
+  {
+    slug: "automation",
+    title: "Automation & Workflows",
+    description: "Production n8n blueprints, local autonomous outreach agents, and practical systems.",
+    image: "/blog/ready-made-n8n-automations.svg",
+  },
+  {
+    slug: "vibe-coding",
+    title: "Vibe Coding & Stack",
+    description: "Modern web toolkits, indie developer stacks, component libraries, and shipping fast.",
+    image: "/blog/21-sites-for-vibe-coders.svg",
+  },
   {
     slug: "python",
     title: "Python",
