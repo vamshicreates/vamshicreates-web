@@ -1,16 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { PROJECTS } from "@/data/projects";
+import ProjectCard from "./ProjectCard";
 import ProjectsShell from "./ProjectsShell";
 import styles from "./projects.module.css";
 import BuilderNewsletter from "@/components/BuilderNewsletter";
 
 export const metadata: Metadata = {
-  title: "Projects | What 2 Build & How 2 Build | VamshiCreates",
-  description: "Two connected projects by Vamshi Krishna: find a worthwhile product opportunity with What 2 Build, then follow a practical path to launch with How 2 Build.",
+  title: "Projects | Shipped Work, What 2 Build & How 2 Build | VamshiCreates",
+  description: "Explore projects built by Vamshi Krishna, alongside What 2 Build and How 2 Build frameworks.",
   alternates: { canonical: "/projects" },
   openGraph: {
-    title: "What 2 Build & How 2 Build | VamshiCreates",
+    title: "Projects | VamshiCreates",
     description: "Find the right problem. Build and launch a useful product.",
     url: "/projects",
   },
@@ -19,9 +21,32 @@ export const metadata: Metadata = {
 export default function ProjectsPage() {
   return (
     <ProjectsShell>
-      <section className={styles.focusHero} aria-labelledby="projects-title">
+      {/* PROJECTS I BUILT */}
+      <section className={styles.portfolioHero} aria-labelledby="portfolio-title">
+        <p className={styles.eyebrow}>PORTFOLIO / SHIPPED PRODUCTS</p>
+        <h1 id="portfolio-title">Projects I built<span>.</span></h1>
+        <p>Each product began with a real problem statement. See what was built, why it exists, and explore each live website.</p>
+      </section>
+
+      <section className={styles.collection} aria-labelledby="shipped-projects-title">
+        <div className={styles.sectionIntro}>
+          <div>
+            <p className={styles.eyebrow}>SHIPPED PRODUCTS</p>
+            <h2 id="shipped-projects-title">Live websites &amp; tools</h2>
+          </div>
+          <p>Explore each product on its live website.</p>
+        </div>
+        <div className={styles.projectGrid}>
+          {PROJECTS.map((project, index) => (
+            <ProjectCard key={project.title} project={project} mode="what" priority={index === 0} />
+          ))}
+        </div>
+      </section>
+
+      {/* THE TWO PROJECTS I AM BUILDING AROUND */}
+      <section className={styles.focusHero} aria-labelledby="projects-title" style={{ marginTop: "90px" }}>
         <p className={styles.eyebrow}>THE TWO PROJECTS I AM BUILDING AROUND</p>
-        <h1 id="projects-title">Find the right idea.<br /><span>Bring it to life.</span></h1>
+        <h2 id="projects-title">Find the right idea.<br /><span>Bring it to life.</span></h2>
         <p>My work follows one path: understand what is worth building, then learn how to build it well. Choose where you want to start.</p>
       </section>
 

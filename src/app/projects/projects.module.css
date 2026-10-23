@@ -14,7 +14,8 @@
   text-align: center;
 }
 
-.focusHero h1 {
+.focusHero h1,
+.focusHero h2 {
   margin: 0;
   color: #071b40;
   font-size: clamp(46px, 7vw, 86px);
@@ -24,6 +25,7 @@
 }
 
 .focusHero h1 span,
+.focusHero h2 span,
 .detailHero h1 span,
 .portfolioHero h1 span {
   color: #0755e9;
