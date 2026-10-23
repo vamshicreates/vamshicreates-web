@@ -37,19 +37,19 @@
 .sectionHeading { margin-bottom: 24px; }
 .sectionHeading h2 { margin: 9px 0 0; font-size: clamp(27px, 3vw, 38px); line-height: 1.15; letter-spacing: -.04em; color: #0b1230; }
 .sectionHeading > p:last-child:not(.eyebrow) { margin: 9px 0 0; color: #71717a; font-size: 14px; }
-.articleGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.articleGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; }
 .articleCard { display: flex; flex-direction: column; overflow: hidden; min-width: 0; background: #fff; border: 1px solid #e4e4e7; border-radius: 24px; box-shadow: 0 7px 25px rgba(24, 24, 27, .035); transition: border-color .2s, box-shadow .2s, transform .2s; }
 .articleCard:hover { border-color: #bfd5ff; box-shadow: 0 13px 33px rgba(37, 99, 235, .09); transform: translateY(-3px); }
 .cardImageLink { display: block; overflow: hidden; background: #eef5ff; aspect-ratio: 16 / 9; }
 .cardImage { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
 .articleCard:hover .cardImage { transform: scale(1.025); }
-.cardBody { display: flex; flex: 1; flex-direction: column; padding: 26px; }
-.cardMeta { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: #0f766e; font: 600 10px/1.5 var(--font-mono), monospace; letter-spacing: .04em; text-transform: uppercase; }
+.cardBody { display: flex; flex: 1; flex-direction: column; padding: 22px; }
+.cardMeta { display: flex; align-items: center; justify-content: space-between; gap: 10px; color: #0f766e; font: 600 10px/1.5 var(--font-mono), monospace; letter-spacing: .04em; text-transform: uppercase; }
 .cardMeta span:last-child { display: inline-flex; align-items: center; gap: 5px; color: #71717a; white-space: nowrap; }
-.cardBody h2 { margin: 17px 0 10px; font-size: clamp(20px, 2.2vw, 27px); line-height: 1.27; letter-spacing: -.035em; color: #10172f; }
+.cardBody h2 { margin: 14px 0 10px; font-size: clamp(18px, 1.8vw, 22px); line-height: 1.3; letter-spacing: -.035em; color: #10172f; }
 .cardBody h2 a { color: inherit; text-decoration: none; }
 .cardBody h2 a:hover { color: #2563eb; }
-.cardBody > p { margin: 0 0 24px; color: #5e606a; line-height: 1.7; font-size: 14px; }
+.cardBody > p { margin: 0 0 20px; color: #5e606a; line-height: 1.6; font-size: 13.5px; }
 .readLink { display: inline-flex; align-items: center; gap: 8px; margin-top: auto; color: #2563eb; font-size: 13px; font-weight: 700; text-decoration: none; }
 .readLink:hover { gap: 12px; }
 .featuredSection .articleCard { display: grid; grid-template-columns: 1.18fr 1fr; }
@@ -133,6 +133,9 @@
 .relatedGrid strong { color: #20253b; font-size: 13px; line-height: 1.4; }
 .relatedGrid a svg { position: absolute; right: 18px; bottom: 20px; color: #2563eb; }
 
+@media (max-width: 1040px) {
+  .articleGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+}
 @media (max-width: 800px) {
   .readingLayout { grid-template-columns: minmax(0, 1fr); max-width: 720px; margin-top: 40px; }
   .tableOfContents { display: none; }
