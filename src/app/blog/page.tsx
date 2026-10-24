@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "Explore practical guides on open-source AI replacements, coding agent skills, n8n automations, and modern web stacks.",
     url: "/blog",
     type: "website",
-    images: ["/blog/open-source-ai-replacements.svg"],
+    images: ["/blog/open-source-ai-replacements.jpg"],
   },
   twitter: { card: "summary_large_image" },
 };
