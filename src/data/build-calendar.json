@@ -2,6 +2,32 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-10-24",
+      "repo": "cattchee",
+      "title": "Cattchee",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": "https://cattchee.vercel.app/",
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Enhance mobile audio engine with iOS/Android unlock & increase t-shirt size for easy tapping",
+        "Initial commit: Cattchee - Catch The Tee mobile game by T-SHIRTbaba"
+      ]
+    },
+    {
+      "date": "2026-10-24",
+      "repo": "creator-studio",
+      "title": "Creator Studio",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "complete creator studio landing with 15 master styles, motion, real assets and booking engine",
+        "initial creator studio vite + motion setup with ui-ux-pro-max"
+      ]
+    },
+    {
       "date": "2026-10-22",
       "repo": "claude-model-guide",
       "title": "Claude Model Guide",
