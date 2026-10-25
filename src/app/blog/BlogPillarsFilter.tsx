@@ -14,23 +14,19 @@ export interface ArticlePreview {
   category: string;
   series: string;
   readingMinutes: number;
+  href?: string;
 }
 
 const PILLARS = [
   {
     id: "all",
     label: "All Topics",
-    tagline: "Explore all guides, open-source replacements, agent setups, and builder frameworks.",
-  },
-  {
-    id: "open-source",
-    label: "Open-Source Replacements",
-    tagline: "Replace expensive paid AI subscriptions with free, self-hosted and open-source GitHub repositories.",
+    tagline: "Explore all guides, coding agent setups, automation blueprints, and builder frameworks.",
   },
   {
     id: "agents",
     label: "AI Agents & Coding",
-    tagline: "MCP servers, Claude Code plugins, context optimization, and multi-agent terminal systems.",
+    tagline: "MCP servers, Claude Code plugins, context optimization, open-source AI repos, and agent skills.",
   },
   {
     id: "automation",
@@ -105,36 +101,39 @@ export default function BlogPillarsFilter({ articles }: { articles: ArticlePrevi
 
       {/* FILTERED ARTICLES GRID */}
       <div className={styles.articleGrid}>
-        {filteredArticles.map((article, idx) => (
-          <article key={article.slug} className={styles.articleCard}>
-            <Link href={`/blog/${article.slug}`} className={styles.cardImageLink} aria-label={`Read ${article.title}`}>
-              <Image
-                src={article.image}
-                alt={article.title}
-                width={1600}
-                height={900}
-                className={styles.cardImage}
-                priority={idx < 2}
-                unoptimized={article.image.endsWith(".svg")}
-              />
-            </Link>
-            <div className={styles.cardBody}>
-              <div className={styles.cardMeta}>
-                <span>{article.category}</span>
-                <span>
-                  <Clock3 size={13} aria-hidden="true" /> {article.readingMinutes} min read
-                </span>
-              </div>
-              <h2>
-                <Link href={`/blog/${article.slug}`}>{article.title}</Link>
-              </h2>
-              <p>{article.description}</p>
-              <Link href={`/blog/${article.slug}`} className={styles.readLink}>
-                Read full guide <ArrowUpRight size={16} aria-hidden="true" />
+        {filteredArticles.map((article, idx) => {
+          const articleUrl = article.href || `/blog/${article.slug}`;
+          return (
+            <article key={article.slug} className={styles.articleCard}>
+              <Link href={articleUrl} className={styles.cardImageLink} aria-label={`Read ${article.title}`}>
+                <Image
+                  src={article.image}
+                  alt={article.title}
+                  width={1600}
+                  height={900}
+                  className={styles.cardImage}
+                  priority={idx < 2}
+                  unoptimized={article.image.endsWith(".svg")}
+                />
               </Link>
-            </div>
-          </article>
-        ))}
+              <div className={styles.cardBody}>
+                <div className={styles.cardMeta}>
+                  <span>{article.category}</span>
+                  <span>
+                    <Clock3 size={13} aria-hidden="true" /> {article.readingMinutes} min read
+                  </span>
+                </div>
+                <h2>
+                  <Link href={articleUrl}>{article.title}</Link>
+                </h2>
+                <p>{article.description}</p>
+                <Link href={articleUrl} className={styles.readLink}>
+                  Read full guide <ArrowUpRight size={16} aria-hidden="true" />
+                </Link>
+              </div>
+            </article>
+          );
+        })}
       </div>
     </section>
   );

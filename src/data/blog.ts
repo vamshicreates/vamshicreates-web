@@ -769,15 +769,9 @@ export const BLOG_ARTICLES: BlogArticle[] = [...TOOLS_ARTICLES, ...PYTHON_ARTICL
 
 export const BLOG_SERIES = [
   {
-    slug: "open-source",
-    title: "Open-Source Replacements",
-    description: "Replace expensive paid AI subscriptions with free, self-hosted and open-source GitHub repositories.",
-    image: "/blog/open-source-ai-replacements.jpg",
-  },
-  {
     slug: "agents",
     title: "AI Agents & Coding",
-    description: "MCP servers, Claude Code setups, token optimization, and specialist agent orchestration.",
+    description: "MCP servers, Claude Code setups, token optimization, open-source AI tools, and specialist agent orchestration.",
     image: "/blog/essential-claude-code-plugins-mcp.jpg",
   },
   {

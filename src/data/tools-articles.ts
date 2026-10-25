@@ -6,8 +6,8 @@ export const TOOLS_ARTICLES: BlogArticle[] = [
     "title": "7 Open-Source Repos That Quietly Replace $500/Month in AI Subscriptions",
     "description": "Replace expensive subscriptions for voice cloning, image generation, app scaffolding, and video editing with tested, open-source GitHub repositories.",
     "image": "/blog/open-source-ai-replacements.jpg",
-    "category": "Open Source",
-    "series": "open-source",
+    "category": "Open Source AI",
+    "series": "agents",
     "sourceTabId": "tools.1",
     "blocks": [
       {
@@ -222,8 +222,8 @@ export const TOOLS_ARTICLES: BlogArticle[] = [
     "title": "The Free Open-Source Audio & Voice Cloning Stack You Can Run on Your Laptop",
     "description": "How to set up F5-TTS, Voicebox, and ChatTTS locally to clone voices and generate high-quality speech without cloud API fees.",
     "image": "/blog/local-voice-cloning-stack.jpg",
-    "category": "Open Source",
-    "series": "open-source",
+    "category": "Voice & Audio",
+    "series": "agents",
     "sourceTabId": "tools.2",
     "blocks": [
       {
@@ -360,8 +360,8 @@ export const TOOLS_ARTICLES: BlogArticle[] = [
     "title": "How to Run a 70B AI Model on a Single 4GB Laptop GPU (Without Cloud Subscriptions)",
     "description": "Learn how layer-wise inference with AirLLM loads large language models into memory one layer at a time on budget consumer hardware.",
     "image": "/blog/run-70b-model-4gb-gpu.jpg",
-    "category": "Open Source",
-    "series": "open-source",
+    "category": "Local LLM",
+    "series": "agents",
     "sourceTabId": "tools.3",
     "blocks": [
       {
