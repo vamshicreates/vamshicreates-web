@@ -227,7 +227,7 @@ export default function HomePage() {
             <div className={styles.faqList}>
               <details>
                 <summary>Where should I start as a solo builder?<span aria-hidden="true">+</span></summary>
-                <p>Start with <Link href="/projects/what-to-build#sample-opportunity">What 2 Build</Link> to explore a buyer and test an idea. If you already have a problem in mind, try the free <Link href="/projects/how-to-build#sample-build">How 2 Build walkthrough</Link>. Both are projects by Vamshi Creates, and their first samples are open to everyone.</p>
+                <p>Start by exploring practical problem statements and market validation. Check out my live guides on <Link href="/blog">the blog</Link> or see shipped work in <Link href="/projects">projects</Link>.</p>
               </details>
               <details>
                 <summary>

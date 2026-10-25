@@ -61,17 +61,8 @@ export const PROJECTS: Project[] = [
     description: "A fast, privacy-first personal PDF editor that edits text, adds signatures, fills forms, and reorders pages directly in your browser.",
     image: "/projects/mama-pdf-ai.jpg",
     imageAlt: "Live web app screenshot of Mama PDF editor interface",
-    live: "https://mama-pdf-vamshicreates.vercel.app",
+    live: "https://mama-pdf-five.vercel.app",
     code: "https://github.com/vamshicreates/mama-pdf",
-  },
-  {
-    title: "What 2 Build",
-    kind: "SaaS framework · opportunity radar",
-    description: "A source-linked SaaS opportunity radar, buyer research, and practical validation tests before writing code.",
-    image: "/projects/what-to-build-ai.jpg",
-    imageAlt: "SaaS opportunity radar, buyer context, and problem validation dashboard",
-    live: "https://www.vamshicreates.tech/projects/what-to-build",
-    code: "https://github.com/vamshicreates/what-to-build",
   },
   {
     title: "Logo Cleaner",

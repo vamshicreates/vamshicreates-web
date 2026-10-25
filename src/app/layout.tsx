@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI Automation & Tech Solutions | VamshiCreates",
     description:
-      "Find a useful problem, build a small product, and reach your first users with What 2 Build and How 2 Build.",
+      "Find real problems, build AI agents, and ship useful products with VamshiCreates.",
     type: "website",
     siteName: "VamshiCreates",
     locale: "en_IN",

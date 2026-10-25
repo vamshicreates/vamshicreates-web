@@ -25,7 +25,7 @@ export default function ProjectsPage() {
           Find the right idea.<br />
           <span>Bring it to life.</span>
         </h1>
-        <p>Each product began with a real problem statement. See what was built, why it exists, and explore each live product.</p>
+        <p>Each product began with a real problem statement or to give a fun experience to the user. See what was built, why it exists, and explore each live product.</p>
       </section>
 
       {/* 3-COLUMN PROJECTS GRID */}

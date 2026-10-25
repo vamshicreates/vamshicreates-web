@@ -72,9 +72,9 @@ export default function HowToBuildPage() {
 
       <section className={styles.nextPath} aria-labelledby="how-next">
         <span>BEFORE THE BUILD</span>
-        <h2 id="how-next">Need the right problem first?</h2>
-        <p>What 2 Build is where I collect opportunity research, buyer context, and validation ideas.</p>
-        <div><Link href="/projects/what-to-build" className={styles.primaryAction}>Explore What 2 Build <ArrowRight size={17} aria-hidden="true" /></Link></div>
+        <h2 id="how-next">Explore shipped products</h2>
+        <p>Explore live websites, interactive tools, and experimental projects shipped by Vamshi Creates.</p>
+        <div><Link href="/projects" className={styles.primaryAction}>Explore all projects <ArrowRight size={17} aria-hidden="true" /></Link></div>
       </section>
       <BuilderNewsletter source="how-to-build" />
     </ProjectsShell>
