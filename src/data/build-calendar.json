@@ -2,6 +2,46 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-10-25",
+      "repo": "creator-studio",
+      "title": "Creator Studio",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": "https://creator-studio-lemon.vercel.app/",
+      "image": null,
+      "count": 4,
+      "highlights": [
+        "replicate krackerz.com design, animations, typography, and visual presentation with creator studio content",
+        "complete Creators Studio by Ramanaidu redesign in Krackerz neo-brutalist style",
+        "add Creators Studio by Ramanaidu Krackerz implementation plan"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "repo": "mama-pdf",
+      "title": "Mama PDF",
+      "description": "Browser-based PDF editor with local text editing, annotations, signatures, and page tools.",
+      "demoUrl": "https://mama-pdf-five.vercel.app/",
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "redesign PDF editor with yellow & white theme by Vamshi Creates"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "repo": "super-job-board",
+      "title": "Super Job Board",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": "https://super-job-board.vercel.app/",
+      "image": null,
+      "count": 4,
+      "highlights": [
+        "JobGod - Twain.ai inspired talking page experience, white & lavender regenerated images, 10 jobs",
+        "Greek modern landing page with statues, quotes, white & lavender theme, 10 job links",
+        "redesign to 10x Job Hunt - white and lavender theme, 1st row intake, 10 best jobs"
+      ]
+    },
+    {
       "date": "2026-10-24",
       "repo": "cattchee",
       "title": "Cattchee",
@@ -19,7 +59,7 @@
       "repo": "creator-studio",
       "title": "Creator Studio",
       "description": "A public project by Vamshi Creates.",
-      "demoUrl": null,
+      "demoUrl": "https://creator-studio-lemon.vercel.app/",
       "image": null,
       "count": 2,
       "highlights": [
@@ -317,7 +357,7 @@
       "repo": "mama-pdf",
       "title": "Mama PDF",
       "description": "Browser-based PDF editor with local text editing, annotations, signatures, and page tools.",
-      "demoUrl": null,
+      "demoUrl": "https://mama-pdf-five.vercel.app/",
       "image": null,
       "count": 1,
       "highlights": [
@@ -451,6 +491,18 @@
       "count": 1,
       "highlights": [
         "Add universal 1-click installer and YouTube/local video knowledge harvester"
+      ]
+    },
+    {
+      "date": "2026-10-04",
+      "repo": "job-hunter",
+      "title": "Job Hunter",
+      "description": "Cross-platform job search skill for role discovery, ATS-ready PDF resumes, and approval-gated application prep.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add Indeed (in.indeed.com) multi-platform search, query generation, and DOM inspection support"
       ]
     },
     {
