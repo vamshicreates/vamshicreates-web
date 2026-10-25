@@ -7,7 +7,7 @@ import styles from "./post.module.css";
 
 import { SITE_URL } from "@/config/site";
 const PATH = "/blog/coding-agent-skills";
-const COVER = "/blog/coding-agent-skills.svg";
+const COVER = "/blog/coding-agent-skills.jpg";
 const TITLE = "Coding Agent Skills: What They Are, How They Work, and Which Ones to Build";
 const DESCRIPTION = "A practical guide to skills for Codex, Claude Code, Cursor, Gemini CLI, and other coding agents. Learn the basics, build better skills, and choose useful workflows for developers and designers.";
 const PUBLISHED = "2026-10-21";

@@ -7,7 +7,7 @@ import styles from "../coding-agent-skills/post.module.css";
 import { SITE_URL } from "@/config/site";
 
 const PATH = "/blog/skills-everywhere";
-const COVER = "/blog/skills-everywhere.png";
+const COVER = "/blog/skills-everywhere.jpg";
 const REPO = "https://github.com/vamshicreates/skills-everywhere";
 const TITLE = "Skills Everywhere: Share Your Skills Across Coding Agents";
 const DESCRIPTION = "I built an open source Agent Skill that shares existing local skills across Codex, Claude Code, Antigravity, Cursor, and more through one installation.";

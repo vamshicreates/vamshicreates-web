@@ -56,6 +56,13 @@ export const PROJECT_STORIES: Record<string, ProjectStory> = {
     technology: "React, Web Speech API / real-time audio, Tailwind, and Vercel.",
     build: "I designed the minimalist dark interface, persona selector, audio streaming pipeline, and conversation state.",
   },
+  "Mama PDF": {
+    why: "Most online PDF editors force users to upload sensitive personal documents to third-party cloud servers. I wanted a fast, privacy-first editor that runs 100% locally in the browser.",
+    forWhom: "Anyone needing to edit text, sign documents, fill standard forms, or rearrange pages without privacy risks or subscription fees.",
+    idea: "A personal browser-based PDF editor powered by PDF.js, PDFium, and pdf-lib with zero server uploads.",
+    technology: "React, TypeScript, Vite, PDF.js, PDFium WebAssembly, pdf-lib, IndexedDB, and Vercel.",
+    build: "I integrated PDFium in a web worker for text block replacement, pdf-lib for vector writes, and IndexedDB for autosave.",
+  },
   "What 2 Build": {
     why: "Founders waste months building software nobody wants. Validating buyer problems with source-linked data saves time.",
     forWhom: "Founders, indie hackers, and builders exploring verified SaaS opportunities with buyer context.",
