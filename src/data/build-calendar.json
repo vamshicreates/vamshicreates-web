@@ -2,6 +2,18 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-10-27",
+      "repo": "mru-aicc-assessment-skills",
+      "title": "Mru Aicc Assessment Skills",
+      "description": "MRU AICC assessment skills with student feedback PDFs, Google Sheets workflows, and a Windows/macOS/Linux installer",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Publish portable MRU AICC assessment skills and installer"
+      ]
+    },
+    {
       "date": "2026-10-25",
       "repo": "creator-studio",
       "title": "Creator Studio",
