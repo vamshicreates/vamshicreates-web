@@ -3,6 +3,20 @@
   "entries": [
     {
       "date": "2026-10-28",
+      "repo": "pulse-reel-edit",
+      "title": "Pulse Reel Edit",
+      "description": "Agent skill: beat-synced focus-pulse + colour-pop reel editor (Python/FFmpeg, FilmCraft MCP, DaVinci LUTs). macOS, Windows, Linux.",
+      "demoUrl": null,
+      "image": null,
+      "count": 3,
+      "highlights": [
+        "Add INSTALL_PROMPT.md: one paste installs the skill, engine and FilmCraft MCP",
+        "Keep shell scripts LF and PowerShell CRLF",
+        "pulse-reel-edit v1.0: focus-pulse + colour-pop reel editor skill"
+      ]
+    },
+    {
+      "date": "2026-10-28",
       "repo": "script-production-breakdown",
       "title": "Script Production Breakdown",
       "description": "Codex skill for screenplay indexing, scene breakdowns, continuity tracking, and 3×3 storyboards.",
