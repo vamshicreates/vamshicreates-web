@@ -2,6 +2,30 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-10-28",
+      "repo": "script-production-breakdown",
+      "title": "Script Production Breakdown",
+      "description": "Codex skill for screenplay indexing, scene breakdowns, continuity tracking, and 3×3 storyboards.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add film costume continuity skill"
+      ]
+    },
+    {
+      "date": "2026-10-28",
+      "repo": "ultimate-skills-pack",
+      "title": "Ultimate Skills Pack",
+      "description": "Definitive library of 975+ agent skills for Claude Code, Antigravity, OpenCode/Codex, Cursor, Windsurf, and Roo across Windows, macOS, and Linux",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "initial release of Ultimate Skills Pack (975+ cross-platform skills for all coding agents)"
+      ]
+    },
+    {
       "date": "2026-10-27",
       "repo": "mru-aicc-assessment-skills",
       "title": "Mru Aicc Assessment Skills",
