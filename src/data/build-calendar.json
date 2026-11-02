@@ -2,6 +2,18 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-02",
+      "repo": "ultimate-skills-pack",
+      "title": "Ultimate Skills Pack",
+      "description": "Definitive library of 975+ agent skills for Claude Code, Antigravity, OpenCode/Codex, Cursor, Windsurf, and Roo across Windows, macOS, and Linux",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "add budget-breakdown and schedule-planner skills"
+      ]
+    },
+    {
       "date": "2026-10-28",
       "repo": "pulse-reel-edit",
       "title": "Pulse Reel Edit",
