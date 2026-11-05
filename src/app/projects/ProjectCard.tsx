@@ -13,6 +13,11 @@ export default function ProjectCard({
   priority?: boolean;
 }) {
   const story = PROJECT_STORIES[project.title];
+  const repoLink = project.code && (
+    <a href={project.code} className={styles.repoLink} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`}>
+      <Github size={16} aria-hidden="true" /> View GitHub
+    </a>
+  );
 
   if (mode === "simple") {
     return (
@@ -31,14 +36,15 @@ export default function ProjectCard({
             <p className={styles.projectDescription}>{project.description}</p>
           </div>
           <div className={styles.projectLinks}>
+            {repoLink}
             <a
               href={project.live}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.experienceButton}
-              aria-label={`Experience ${project.title}`}
+              aria-label={`View ${project.title} website`}
             >
-              Experience it <ArrowUpRight size={16} aria-hidden="true" />
+              View Website <ArrowUpRight size={16} aria-hidden="true" />
             </a>
           </div>
         </div>
@@ -77,9 +83,7 @@ export default function ProjectCard({
           <a href={project.live} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} website`}>
             View Website <ArrowUpRight size={16} aria-hidden="true" />
           </a>
-          <a href={project.code} className={styles.repoLink} target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} GitHub repository${project.codePrivate ? " (private, access required)" : ""}`} title={project.codePrivate ? "Private repository — GitHub access required" : undefined}>
-            <Github size={16} aria-hidden="true" /> GitHub{project.codePrivate ? " · Private" : ""}
-          </a>
+          {repoLink}
         </div>
       </div>
     </article>

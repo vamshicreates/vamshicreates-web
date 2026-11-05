@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { PROJECTS } from "@/data/projects";
+import { BUILT_TOOLS, CREATED_WEBSITES, WEB_EXPERIENCES } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
 import ProjectsShell from "./ProjectsShell";
 import styles from "./projects.module.css";
 
 export const metadata: Metadata = {
   title: "Projects | Find the Right Idea. Bring it to Life | VamshiCreates",
-  description: "Explore live projects built by Vamshi Krishna: Movie Draft, Cricket Draft, Logo Cleaner, Whiteboard for Code, and more.",
+  description: "Explore websites and tools built by Vamshi Krishna, including Muddhugumma, Hampi Privé, Mama PDF, and Whiteboard for Code.",
   alternates: { canonical: "/projects" },
   openGraph: {
     title: "Projects | VamshiCreates",
@@ -25,14 +25,28 @@ export default function ProjectsPage() {
           Find the right idea.<br />
           <span>Bring it to life.</span>
         </h1>
-        <p>Each product began with a real problem statement or to give a fun experience to the user. See what was built, why it exists, and explore each live product.</p>
+        <p>Explore the websites I’ve created and the tools I’ve built for everyday work.</p>
       </section>
 
-      {/* 3-COLUMN PROJECTS GRID */}
-      <section className={styles.collection} aria-label="Shipped projects">
+      <section className={styles.collection} aria-labelledby="created-websites">
+        <div className={styles.sectionIntro}>
+          <h2 id="created-websites">Websites I’ve Created</h2>
+          <p>Brand sites, community projects, and browser games.</p>
+        </div>
         <div className={styles.projectGrid}>
-          {PROJECTS.map((project, index) => (
+          {[...CREATED_WEBSITES, ...WEB_EXPERIENCES].map((project, index) => (
             <ProjectCard key={project.title} project={project} mode="simple" priority={index < 3} />
+          ))}
+        </div>
+      </section>
+      <section className={styles.collection} aria-labelledby="built-tools">
+        <div className={styles.sectionIntro}>
+          <h2 id="built-tools">Tools I’ve Built</h2>
+          <p>Apps for editing, diagramming, and working with AI.</p>
+        </div>
+        <div className={styles.projectGrid}>
+          {BUILT_TOOLS.map((project) => (
+            <ProjectCard key={project.title} project={project} mode="simple" />
           ))}
         </div>
       </section>

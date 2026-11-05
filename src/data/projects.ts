@@ -5,11 +5,45 @@ export interface Project {
   image: string;
   imageAlt: string;
   live: string;
-  code: string;
-  codePrivate?: boolean;
+  code?: string;
 }
 
-export const PROJECTS: Project[] = [
+export const CREATED_WEBSITES: Project[] = [
+  {
+    title: "Muddhugumma",
+    kind: "Fashion website",
+    description: "A boutique catalog for custom-made frocks and handpicked sarees, with collection filters, styling videos, and Instagram ordering.",
+    image: "/projects/muddhugumma-screenshot.jpg",
+    imageAlt: "Muddhugumma homepage featuring its custom frock collection",
+    live: "https://muddhugumma.vercel.app",
+  },
+  {
+    title: "Hampi Privé",
+    kind: "Travel website",
+    description: "A travel site for private stays and guided heritage trips in Hampi, with itineraries, a photo gallery, and a WhatsApp enquiry form.",
+    image: "/projects/hampi-prive-screenshot.jpg",
+    imageAlt: "Hampi Privé homepage introducing private trips in Hampi",
+    live: "https://hampi-prive.vercel.app",
+  },
+  {
+    title: "Little Hands Organisation",
+    kind: "Nonprofit website",
+    description: "A website for a youth-run nonprofit where visitors can explore community projects, read impact stories, volunteer, and find ways to donate.",
+    image: "/projects/littlehands-website-screenshot.jpg",
+    imageAlt: "Little Hands Organisation homepage with volunteer and donation links",
+    live: "https://littlehands-website.vercel.app",
+  },
+  {
+    title: "The House of Loomi",
+    kind: "Jewellery and gifting website",
+    description: "A boutique storefront for everyday jewellery and curated gifts, with browsable collections and Instagram enquiries.",
+    image: "/projects/house-of-loomi-screenshot.jpg",
+    imageAlt: "The House of Loomi homepage showcasing jewellery and curated gifts",
+    live: "https://house-of-loomi.vercel.app",
+  },
+];
+
+export const WEB_EXPERIENCES: Project[] = [
   {
     title: "Movie Draft",
     kind: "Live website · multiplayer game",
@@ -35,7 +69,6 @@ export const PROJECTS: Project[] = [
     image: "/projects/ravana-dahan-ai.jpg",
     imageAlt: "3D Dussehra courtyard with bow, arrows, and festive lighting",
     live: "https://ravana-dahan.vercel.app",
-    code: "https://github.com/vamshicreates/ravana-dahan",
   },
   {
     title: "Cattchee",
@@ -46,6 +79,9 @@ export const PROJECTS: Project[] = [
     live: "https://cattchee.vercel.app",
     code: "https://github.com/vamshicreates/cattchee",
   },
+];
+
+export const BUILT_TOOLS: Project[] = [
   {
     title: "AI Companion",
     kind: "Live web app · conversational AI",
@@ -53,7 +89,6 @@ export const PROJECTS: Project[] = [
     image: "/projects/ai-companion-ai.jpg",
     imageAlt: "AI Companion personal conversational interface and persona selector",
     live: "https://ai-companion-eta-liard.vercel.app",
-    code: "https://github.com/vamshicreates/ai-companion",
   },
   {
     title: "Mama PDF",
@@ -80,7 +115,7 @@ export const PROJECTS: Project[] = [
     image: "/projects/whiteboard-for-code-screenshot.jpg",
     imageAlt: "Live website screenshot of Whiteboard for Code architecture canvas",
     live: "https://whiteboard-for-code.vercel.app",
-    code: "https://github.com/vamshicreates/whiteboard-for-code",
-    codePrivate: true,
   },
 ];
+
+export const PROJECTS = [...WEB_EXPERIENCES, ...BUILT_TOOLS];
