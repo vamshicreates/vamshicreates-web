@@ -8,6 +8,15 @@ export interface Project {
   code?: string;
 }
 
+const AI_COMPANION: Project = {
+  title: "AI Companion",
+  kind: "Live web app · conversational AI",
+  description: "A thoughtful personal conversational companion for reflection and growth with adaptive presence and real-time dialogue.",
+  image: "/projects/ai-companion-ai.jpg",
+  imageAlt: "AI Companion personal conversational interface and persona selector",
+  live: "https://ai-companion-eta-liard.vercel.app",
+};
+
 export const CREATED_WEBSITES: Project[] = [
   {
     title: "Muddhugumma",
@@ -41,9 +50,10 @@ export const CREATED_WEBSITES: Project[] = [
     imageAlt: "The House of Loomi homepage showcasing jewellery and curated gifts",
     live: "https://house-of-loomi.vercel.app",
   },
+  AI_COMPANION,
 ];
 
-export const WEB_EXPERIENCES: Project[] = [
+export const CREATED_GAMES: Project[] = [
   {
     title: "Movie Draft",
     kind: "Live website · multiplayer game",
@@ -83,14 +93,6 @@ export const WEB_EXPERIENCES: Project[] = [
 
 export const BUILT_TOOLS: Project[] = [
   {
-    title: "AI Companion",
-    kind: "Live web app · conversational AI",
-    description: "A thoughtful personal conversational companion for reflection and growth with adaptive presence and real-time dialogue.",
-    image: "/projects/ai-companion-ai.jpg",
-    imageAlt: "AI Companion personal conversational interface and persona selector",
-    live: "https://ai-companion-eta-liard.vercel.app",
-  },
-  {
     title: "Mama PDF",
     kind: "Live web tool · PDF editor",
     description: "A fast, privacy-first personal PDF editor that edits text, adds signatures, fills forms, and reorders pages directly in your browser.",
@@ -118,4 +120,4 @@ export const BUILT_TOOLS: Project[] = [
   },
 ];
 
-export const PROJECTS = [...WEB_EXPERIENCES, ...BUILT_TOOLS];
+export const PROJECTS = [...CREATED_GAMES, AI_COMPANION, ...BUILT_TOOLS];

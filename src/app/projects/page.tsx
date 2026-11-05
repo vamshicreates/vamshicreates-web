@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { BUILT_TOOLS, CREATED_WEBSITES, WEB_EXPERIENCES } from "@/data/projects";
+import { BUILT_TOOLS, CREATED_GAMES, CREATED_WEBSITES } from "@/data/projects";
 import ProjectCard from "./ProjectCard";
 import ProjectsShell from "./ProjectsShell";
 import styles from "./projects.module.css";
 
 export const metadata: Metadata = {
   title: "Projects | Find the Right Idea. Bring it to Life | VamshiCreates",
-  description: "Explore websites and tools built by Vamshi Krishna, including Muddhugumma, Hampi Privé, Mama PDF, and Whiteboard for Code.",
+  description: "Explore websites, browser games, and tools built by Vamshi Krishna, including Hampi Privé, Movie Draft, and Mama PDF.",
   alternates: { canonical: "/projects" },
   openGraph: {
     title: "Projects | VamshiCreates",
@@ -25,24 +25,35 @@ export default function ProjectsPage() {
           Find the right idea.<br />
           <span>Bring it to life.</span>
         </h1>
-        <p>Explore the websites I’ve created and the tools I’ve built for everyday work.</p>
+        <p>Explore the websites, browser games, and tools I’ve built.</p>
       </section>
 
       <section className={styles.collection} aria-labelledby="created-websites">
         <div className={styles.sectionIntro}>
           <h2 id="created-websites">Websites I’ve Created</h2>
-          <p>Brand sites, community projects, and browser games.</p>
+          <p>Brand sites, community projects, and AI Companion.</p>
         </div>
         <div className={styles.projectGrid}>
-          {[...CREATED_WEBSITES, ...WEB_EXPERIENCES].map((project, index) => (
+          {CREATED_WEBSITES.map((project, index) => (
             <ProjectCard key={project.title} project={project} mode="simple" priority={index < 3} />
+          ))}
+        </div>
+      </section>
+      <section className={styles.collection} aria-labelledby="created-games">
+        <div className={styles.sectionIntro}>
+          <h2 id="created-games">Games I’ve Created</h2>
+          <p>Draft games, arcade challenges, and festive experiences you can play in your browser.</p>
+        </div>
+        <div className={styles.projectGrid}>
+          {CREATED_GAMES.map((project) => (
+            <ProjectCard key={project.title} project={project} mode="simple" />
           ))}
         </div>
       </section>
       <section className={styles.collection} aria-labelledby="built-tools">
         <div className={styles.sectionIntro}>
           <h2 id="built-tools">Tools I’ve Built</h2>
-          <p>Apps for editing, diagramming, and working with AI.</p>
+          <p>Tools for editing PDFs and videos, and turning code into diagrams.</p>
         </div>
         <div className={styles.projectGrid}>
           {BUILT_TOOLS.map((project) => (
