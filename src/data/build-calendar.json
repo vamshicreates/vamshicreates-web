@@ -2,6 +2,18 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-08",
+      "repo": "wtf-wall",
+      "title": "Wtf Wall",
+      "description": "A quirky, colour-shifting wall of every WTF is with Nikhil Kamath episode. Unofficial fan-made index.",
+      "demoUrl": "https://wtf-wall.vercel.app/",
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "The WTF Wall: every WTF is with Nikhil Kamath episode, colour-shifting"
+      ]
+    },
+    {
       "date": "2026-11-02",
       "repo": "ultimate-skills-pack",
       "title": "Ultimate Skills Pack",
