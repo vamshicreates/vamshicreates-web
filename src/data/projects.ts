@@ -50,6 +50,33 @@ export const CREATED_WEBSITES: Project[] = [
     imageAlt: "The House of Loomi homepage showcasing jewellery and curated gifts",
     live: "https://house-of-loomi.vercel.app",
   },
+  {
+    title: "Creators' Studio",
+    kind: "Education website",
+    description: "A cohort-program site for Creators' Studio by Ramanaidu Studios, covering the program, mentors, curriculum, admissions, and FAQs.",
+    image: "/projects/creators-studio-screenshot.jpg",
+    imageAlt: "Creators' Studio homepage with the headline For the craft they don't teach in film schools",
+    live: "https://creator-studio-lemon.vercel.app",
+    code: "https://github.com/vamshicreates/creator-studio",
+  },
+  {
+    title: "Film Idea Zone",
+    kind: "Film ideas website",
+    description: "A My Logline library of Indian true-story film ideas, each with a logline, synopsis, 13-beat treatment, and source links.",
+    image: "/projects/film-idea-zone-screenshot.jpg",
+    imageAlt: "Film Idea Zone homepage with the headline Real lives. Unwritten films.",
+    live: "https://mylogline-idea-zone.vercel.app",
+    code: "https://github.com/vamshicreates/mylogline-idea-zone",
+  },
+  {
+    title: "The WTF Wall",
+    kind: "Fan-made podcast website",
+    description: "A colour-shifting wall of every WTF is with Nikhil Kamath episode, with search, sorting, in-page playback, and a Surprise me button.",
+    image: "/projects/wtf-wall-screenshot.jpg",
+    imageAlt: "The WTF Wall homepage with a bold WTF headline and episode stats",
+    live: "https://wtf-wall.vercel.app",
+    code: "https://github.com/vamshicreates/wtf-wall",
+  },
   AI_COMPANION,
 ];
 
@@ -117,6 +144,15 @@ export const BUILT_TOOLS: Project[] = [
     image: "/projects/whiteboard-for-code-screenshot.jpg",
     imageAlt: "Live website screenshot of Whiteboard for Code architecture canvas",
     live: "https://whiteboard-for-code.vercel.app",
+  },
+  {
+    title: "Super Job Board",
+    kind: "Live web app · career tool",
+    description: "An AI career command center that matches your resume to the 10 best job links, with ATS tailoring and a pipeline tracker.",
+    image: "/projects/super-job-board-screenshot.jpg",
+    imageAlt: "Super Job Board JobGod home screen with resume upload and job search form",
+    live: "https://super-job-board.vercel.app",
+    code: "https://github.com/vamshicreates/super-job-board",
   },
 ];
 

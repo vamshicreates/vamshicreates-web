@@ -105,4 +105,11 @@ export const PROJECT_STORIES: Record<string, ProjectStory> = {
     technology: "Static HTML, CSS, JavaScript, localized media, and Vercel functions for the admin studio.",
     build: "I rebuilt the interface around the existing content collections, then added a protected publishing dashboard.",
   },
+  "Super Job Board": {
+    why: "Job hunting means sending hundreds of applications into the void. I wanted one place that finds the best-fit roles and keeps the work organised.",
+    forWhom: "Job seekers can upload a resume, set a role and location, and get a short list of well-matched openings to apply to.",
+    idea: "Replace scattered job tabs with one board that scores fit, tailors the resume, and tracks every application.",
+    technology: "React, TypeScript, Vite, Tailwind CSS, a Python posting-safety check, and Vercel.",
+    build: "I combined job matching, a resume-tailoring view, and a Kanban pipeline, and paused every application before submit for human approval.",
+  },
 };

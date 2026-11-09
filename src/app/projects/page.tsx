@@ -31,7 +31,7 @@ export default function ProjectsPage() {
       <section className={styles.collection} aria-labelledby="created-websites">
         <div className={styles.sectionIntro}>
           <h2 id="created-websites">Websites I’ve Created</h2>
-          <p>Brand sites, community projects, and AI Companion.</p>
+          <p>Brand sites, film and creator platforms, community projects, and AI Companion.</p>
         </div>
         <div className={styles.projectGrid}>
           {CREATED_WEBSITES.map((project, index) => (
@@ -53,7 +53,7 @@ export default function ProjectsPage() {
       <section className={styles.collection} aria-labelledby="built-tools">
         <div className={styles.sectionIntro}>
           <h2 id="built-tools">Tools I’ve Built</h2>
-          <p>Tools for editing PDFs and videos, and turning code into diagrams.</p>
+          <p>Tools for editing PDFs and videos, turning code into diagrams, and finding jobs.</p>
         </div>
         <div className={styles.projectGrid}>
           {BUILT_TOOLS.map((project) => (
