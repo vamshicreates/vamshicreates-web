@@ -2,6 +2,33 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-10",
+      "repo": "movie-games-adda",
+      "title": "Movie Games Adda",
+      "description": "A black-and-red film quiz for phones and laptops, starting with Tollywood.",
+      "demoUrl": "https://movie-games-adda.vercel.app/",
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Use Guess the Actor/Actress titles instead of hero/heroine wording",
+        "Rename to Guess the Actor/Actress and grow to 4 + 3 levels with 40 actors and 30 actresses"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "repo": "movie-games-adda",
+      "title": "Movie Games Adda",
+      "description": "A black-and-red film quiz for phones and laptops, starting with Tollywood.",
+      "demoUrl": "https://movie-games-adda.vercel.app/",
+      "image": null,
+      "count": 10,
+      "highlights": [
+        "Mark five games as coming soon, remove audio game, add levels to hero and heroine",
+        "Add Guess the Song: 5-second clips, reveal card, and 9 unlockable levels",
+        "Blur: middle ground between hard and easy (14px)"
+      ]
+    },
+    {
       "date": "2026-11-08",
       "repo": "wtf-wall",
       "title": "Wtf Wall",
