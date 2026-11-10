@@ -3,15 +3,28 @@
   "entries": [
     {
       "date": "2026-11-10",
+      "repo": "fm-website",
+      "title": "Fm Website",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "complete Fake Muchatlu (@fakemuchatlu) archive website (2018-2026)"
+      ]
+    },
+    {
+      "date": "2026-11-10",
       "repo": "movie-games-adda",
       "title": "Movie Games Adda",
       "description": "A black-and-red film quiz for phones and laptops, starting with Tollywood.",
       "demoUrl": "https://movie-games-adda.vercel.app/",
       "image": null,
-      "count": 2,
+      "count": 6,
       "highlights": [
-        "Use Guess the Actor/Actress titles instead of hero/heroine wording",
-        "Rename to Guess the Actor/Actress and grow to 4 + 3 levels with 40 actors and 30 actresses"
+        "Sounds: tick on every number 5 to 1, reactions play to the end, Web Audio timing",
+        "Add quiz sounds: countdown ticks, time's up, cheer and 'better luck' reactions, mute toggle",
+        "Trim Guess the Actor to 30 clear-face actors (3 levels of 10)"
       ]
     },
     {
