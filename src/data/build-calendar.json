@@ -27,6 +27,18 @@
     },
     {
       "date": "2026-11-11",
+      "repo": "movie-games-adda",
+      "title": "Movie Games Adda",
+      "description": "A black-and-red film quiz for phones and laptops, starting with Tollywood.",
+      "demoUrl": "https://movie-games-adda.vercel.app/",
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add Guess the Movie by Frames: 24 typed levels with a timer"
+      ]
+    },
+    {
+      "date": "2026-11-11",
       "repo": "suno-music",
       "title": "Suno Music",
       "description": "Describe the song that you want, and we will generate the lyrics and give you the complete style.",
