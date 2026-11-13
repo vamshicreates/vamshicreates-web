@@ -2,6 +2,20 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-13",
+      "repo": "himisha-portfolio",
+      "title": "Himisha Portfolio",
+      "description": "Portfolio website for Himisha Talasila, brand & marketing strategist in Hyderabad",
+      "demoUrl": "https://himisha-portfolio.vercel.app/",
+      "image": null,
+      "count": 6,
+      "highlights": [
+        "Load ring logos eagerly",
+        "Real brand logos in rings and cards, colourful skills, WhatsApp-only contact with hiring message, fix sticker ",
+        "Highlight her three roles as distinct badges under the portrait"
+      ]
+    },
+    {
       "date": "2026-11-11",
       "repo": "elevenlabs-music",
       "title": "Elevenlabs Music",
