@@ -8,11 +8,11 @@
       "description": "Portfolio website for Himisha Talasila, brand & marketing strategist in Hyderabad",
       "demoUrl": "https://himisha-portfolio.vercel.app/",
       "image": null,
-      "count": 6,
+      "count": 14,
       "highlights": [
-        "Load ring logos eagerly",
-        "Real brand logos in rings and cards, colourful skills, WhatsApp-only contact with hiring message, fix sticker ",
-        "Highlight her three roles as distinct badges under the portrait"
+        "Add PDF resume with the same styling as the site",
+        "Light profile images with unique coloured borders; remove footer credit",
+        "Brand cards: linked Instagram profile images instead of embedded reels"
       ]
     },
     {
