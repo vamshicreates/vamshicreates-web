@@ -2,6 +2,19 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-14",
+      "repo": "daily-food-menu",
+      "title": "Daily Food Menu",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": "https://daily-food-menu-pi.vercel.app/",
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Add 30 non-veg dishes with veg/non-veg toggle",
+        "Daily Food Menu: 30 veg dishes from Amma Chethi Vanta"
+      ]
+    },
+    {
       "date": "2026-11-13",
       "repo": "himisha-portfolio",
       "title": "Himisha Portfolio",
