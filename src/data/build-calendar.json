@@ -2,6 +2,34 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-15",
+      "repo": "healara",
+      "title": "Healara",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": "https://healara-india.vercel.app/",
+      "image": null,
+      "count": 4,
+      "highlights": [
+        "Outcome-first messaging: mirror picker hero, results carousel, problem-led concerns",
+        "Gabit-inspired upgrades from REA analysis",
+        "Trigger Vercel deploy"
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "repo": "movie-games-adda",
+      "title": "Movie Games Adda",
+      "description": "A black-and-red film quiz for phones and laptops, starting with Tollywood.",
+      "demoUrl": "https://movie-games-adda.vercel.app/",
+      "image": null,
+      "count": 3,
+      "highlights": [
+        "One daily quiz: ten typed questions, frame and dialogue alternating",
+        "Make daily Telugu movie games the home hero",
+        "Add daily Telugu movie games, sharing, stats and info pages"
+      ]
+    },
+    {
       "date": "2026-11-14",
       "repo": "daily-food-menu",
       "title": "Daily Food Menu",
