@@ -3,16 +3,28 @@
   "entries": [
     {
       "date": "2026-11-15",
+      "repo": "64arts",
+      "title": "64arts",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add 64 Arts School website"
+      ]
+    },
+    {
+      "date": "2026-11-15",
       "repo": "healara",
       "title": "Healara",
       "description": "A public project by Vamshi Creates.",
       "demoUrl": "https://healara-india.vercel.app/",
       "image": null,
-      "count": 4,
+      "count": 6,
       "highlights": [
-        "Outcome-first messaging: mirror picker hero, results carousel, problem-led concerns",
-        "Gabit-inspired upgrades from REA analysis",
-        "Trigger Vercel deploy"
+        "Code-drawn ingredient visuals",
+        "Switch to Figtree (Gabit's typeface)",
+        "Outcome-first messaging: mirror picker hero, results carousel, problem-led concerns"
       ]
     },
     {
@@ -27,6 +39,18 @@
         "One daily quiz: ten typed questions, frame and dialogue alternating",
         "Make daily Telugu movie games the home hero",
         "Add daily Telugu movie games, sharing, stats and info pages"
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "repo": "pro-website-skills",
+      "title": "Pro Website Skills",
+      "description": "⚡ The definitive collection of 198+ agent skills for website development, frontend, backend, fullstack, UI/UX, SEO, Vercel, performance, and testing.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "initial release of Pro Website Skills (198+ curated agent skills)"
       ]
     },
     {
