@@ -2,6 +2,20 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-16",
+      "repo": "screenplay-formatter",
+      "title": "Screenplay Formatter",
+      "description": "Claude skill: turn a rough film script into a properly formatted screenplay (.docx + .pdf) without changing a word, with Telugu-letters modes for Tinglish scripts.",
+      "demoUrl": null,
+      "image": null,
+      "count": 5,
+      "highlights": [
+        "SKILL.md: put the V3 step after the V2 notes",
+        "Add V3: Telugu two-column crew layout (heading bar, action | name : | dialogue, Telugu names), with V3-aware c",
+        "Add cross-checks for long scripts: page check + OCR, per-page word check, final-file check, independent review"
+      ]
+    },
+    {
       "date": "2026-11-15",
       "repo": "64arts",
       "title": "64arts",
