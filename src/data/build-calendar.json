@@ -2,6 +2,18 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-17",
+      "repo": "64arts",
+      "title": "64arts",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": "https://64arts.vercel.app/",
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add vercel.json for static deploy"
+      ]
+    },
+    {
       "date": "2026-11-16",
       "repo": "screenplay-formatter",
       "title": "Screenplay Formatter",
@@ -20,7 +32,7 @@
       "repo": "64arts",
       "title": "64arts",
       "description": "A public project by Vamshi Creates.",
-      "demoUrl": null,
+      "demoUrl": "https://64arts.vercel.app/",
       "image": null,
       "count": 1,
       "highlights": [
