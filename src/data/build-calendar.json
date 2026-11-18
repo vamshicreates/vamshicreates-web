@@ -2,6 +2,33 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-18",
+      "repo": "sup-studios",
+      "title": "Sup Studios",
+      "description": "Website for SwipeUp Studios (SUP) - Originals, Ad Films, Short Stories",
+      "demoUrl": "https://sup-studios.vercel.app/",
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Add all Instagram media, video loops, Now Showing strip and All Stories gallery",
+        "SwipeUp Studios website: hero, work, series, drops, footer"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "repo": "tatvamasi",
+      "title": "Tatvamasi",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": "https://tatvamasi-pi.vercel.app/",
+      "image": null,
+      "count": 10,
+      "highlights": [
+        "Nav: use only the TATVAMASI wordmark from the logo",
+        "Use the original Tatvamasi logo (transparent cutout) in the nav",
+        "Place intro video between the About text and the themes grid"
+      ]
+    },
+    {
       "date": "2026-11-17",
       "repo": "64arts",
       "title": "64arts",
