@@ -2,6 +2,20 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-23",
+      "repo": "screenplay-formatter",
+      "title": "Screenplay Formatter",
+      "description": "Claude skill: turn a rough film script into a properly formatted screenplay (.docx + .pdf) without changing a word. Modes: standard, Telugu letters (V1 dialogue, V2 full, V3 two-column crew layout) and V4, the V1 layout ",
+      "demoUrl": null,
+      "image": null,
+      "count": 3,
+      "highlights": [
+        "Add V4: V1 screenplay layout with all text in English letters",
+        "Revert \"Add V4: two-column crew layout with all text in English letters\"",
+        "Add V4: two-column crew layout with all text in English letters"
+      ]
+    },
+    {
       "date": "2026-11-19",
       "repo": "pocket-rocket",
       "title": "Pocket Rocket",
@@ -58,7 +72,7 @@
       "date": "2026-11-16",
       "repo": "screenplay-formatter",
       "title": "Screenplay Formatter",
-      "description": "Claude skill: turn a rough film script into a properly formatted screenplay (.docx + .pdf) without changing a word, with Telugu-letters modes for Tinglish scripts.",
+      "description": "Claude skill: turn a rough film script into a properly formatted screenplay (.docx + .pdf) without changing a word. Modes: standard, Telugu letters (V1 dialogue, V2 full, V3 two-column crew layout) and V4, the V1 layout ",
       "demoUrl": null,
       "image": null,
       "count": 5,
@@ -553,6 +567,18 @@
     },
     {
       "date": "2026-10-20",
+      "repo": "script-to-budget",
+      "title": "Script To Budget",
+      "description": "Codex skill for screenplay production breakdowns and preliminary film budgets in PDF.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Document setup and step-by-step usage"
+      ]
+    },
+    {
+      "date": "2026-10-20",
       "repo": "vamsi-creates-carousel-skill",
       "title": "Vamsi Creates Carousel Skill",
       "description": "Canva skill for editable social media carousels using the Vamsi Creates visual system.",
@@ -611,6 +637,18 @@
         "Keep REAPER smoke session for Windows app test",
         "Add REAPER film audio mixing skill and Windows setup",
         "Install both film skills on Windows"
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "repo": "script-to-budget",
+      "title": "Script To Budget",
+      "description": "Codex skill for screenplay production breakdowns and preliminary film budgets in PDF.",
+      "demoUrl": null,
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Add screenplay budget estimation skill"
       ]
     },
     {
