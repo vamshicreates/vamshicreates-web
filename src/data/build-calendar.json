@@ -2,6 +2,46 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-25",
+      "repo": "just-storyboards",
+      "title": "Just Storyboards",
+      "description": "Pick stick-figure characters, a camera angle and a location. Get the storyboard frame in 3D. Download it as a PNG.",
+      "demoUrl": "https://just-storyboards.vercel.app/",
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Add app scripts and flatten layout so the site runs",
+        "Add Just Storyboards: page, styles, favicon, README and Vercel config"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "repo": "movie-games-adda",
+      "title": "Movie Games Adda",
+      "description": "A black-and-red film quiz for phones and laptops, starting with Tollywood.",
+      "demoUrl": "https://movie-games-adda.vercel.app/",
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Play seven questions per round in every level game",
+        "Keep Actor and Actress photos blurred when picking an answer"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "repo": "movie-games-adda",
+      "title": "Movie Games Adda",
+      "description": "A black-and-red film quiz for phones and laptops, starting with Tollywood.",
+      "demoUrl": "https://movie-games-adda.vercel.app/",
+      "image": null,
+      "count": 4,
+      "highlights": [
+        "Move to the next question automatically after an answer",
+        "Let players pick or type their answer in every game",
+        "Rename the site to Movie Games Daily"
+      ]
+    },
+    {
       "date": "2026-11-23",
       "repo": "screenplay-formatter",
       "title": "Screenplay Formatter",
