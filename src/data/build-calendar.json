@@ -2,6 +2,20 @@
   "source": "Public GitHub commits, dates shown in Asia/Kolkata",
   "entries": [
     {
+      "date": "2026-11-26",
+      "repo": "claude-workflow",
+      "title": "Claude Workflow",
+      "description": "Claude skills and workflow notes for my production work",
+      "demoUrl": null,
+      "image": null,
+      "count": 3,
+      "highlights": [
+        "Add README",
+        "Add optional After Effects MCP setup note",
+        "Create SKILL.mdAdd Tatvamasi production skill"
+      ]
+    },
+    {
       "date": "2026-11-25",
       "repo": "cinema-explained-india",
       "title": "Cinema Explained India",
@@ -38,6 +52,19 @@
         "Add Beta notice, bug report form and admin report list",
         "Play seven questions per round in every level game",
         "Keep Actor and Actress photos blurred when picking an answer"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "repo": "tatvamasi",
+      "title": "Tatvamasi",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": "https://tatvamasi-pi.vercel.app/",
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Add Explore the Tatvas page and home-page Explore section",
+        "Artwork theme: mood-board palette, lace frames, Rama frieze, bells, medallion filters"
       ]
     },
     {
