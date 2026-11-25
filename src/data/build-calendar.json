@@ -3,6 +3,18 @@
   "entries": [
     {
       "date": "2026-11-25",
+      "repo": "cinema-explained-india",
+      "title": "Cinema Explained India",
+      "description": "Long-form ending, budget and true-story explainers — Cinema Explained India",
+      "demoUrl": "https://cinema-explained-india.vercel.app/",
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Initial site: Cinema Explained India — ending, budget and true-story explainers"
+      ]
+    },
+    {
+      "date": "2026-11-25",
       "repo": "just-storyboards",
       "title": "Just Storyboards",
       "description": "Pick stick-figure characters, a camera angle and a location. Get the storyboard frame in 3D. Download it as a PNG.",
@@ -21,10 +33,35 @@
       "description": "A black-and-red film quiz for phones and laptops, starting with Tollywood.",
       "demoUrl": "https://movie-games-adda.vercel.app/",
       "image": null,
-      "count": 2,
+      "count": 3,
       "highlights": [
+        "Add Beta notice, bug report form and admin report list",
         "Play seven questions per round in every level game",
         "Keep Actor and Actress photos blurred when picking an answer"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "repo": "tollywood-daily",
+      "title": "Tollywood Daily",
+      "description": "Daily Telugu film news — Tollywood Daily",
+      "demoUrl": "https://tollywood-daily.vercel.app/",
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Initial site: Tollywood Daily — daily Telugu film news"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "repo": "which-ott",
+      "title": "Which Ott",
+      "description": "Find which OTT platform any film is streaming on — Which OTT",
+      "demoUrl": "https://which-ott-six.vercel.app/",
+      "image": null,
+      "count": 1,
+      "highlights": [
+        "Initial site: Which OTT — find any film's streaming platform"
       ]
     },
     {
