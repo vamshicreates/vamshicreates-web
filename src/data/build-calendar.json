@@ -266,6 +266,33 @@
       ]
     },
     {
+      "date": "2026-11-12",
+      "repo": "creator-school-ramanaidu-studios",
+      "title": "Creator School Ramanaidu Studios",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": null,
+      "image": null,
+      "count": 2,
+      "highlights": [
+        "Plain coloured labels, uniform module cards, mentors after hero CTAs",
+        "Restore original fonts and colours; keep cleaner layout"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "repo": "creator-school-ramanaidu-studios",
+      "title": "Creator School Ramanaidu Studios",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": null,
+      "image": null,
+      "count": 12,
+      "highlights": [
+        "Restyle: classic, restrained design system (Geist, neutral cards, warm dark sections)",
+        "Move why-Ramanaidu-Studios-started section right after hero tagline",
+        "Remove hero photo, put 60 years section after hero line, reorder welcome, images, CTAs"
+      ]
+    },
+    {
       "date": "2026-11-11",
       "repo": "elevenlabs-music",
       "title": "Elevenlabs Music",
@@ -431,6 +458,20 @@
     },
     {
       "date": "2026-10-27",
+      "repo": "creator-school-ramanaidu-studios",
+      "title": "Creator School Ramanaidu Studios",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": null,
+      "image": null,
+      "count": 5,
+      "highlights": [
+        "Publish classroom imagery with Creator Studios by Rama Naidu branding",
+        "Replace sprint imagery with coordinated creative studio concepts",
+        "Show full monologue photo without zoom crop"
+      ]
+    },
+    {
+      "date": "2026-10-27",
       "repo": "mru-aicc-assessment-skills",
       "title": "Mru Aicc Assessment Skills",
       "description": "MRU AICC assessment skills with student feedback PDFs, Google Sheets workflows, and a Windows/macOS/Linux installer",
@@ -439,6 +480,20 @@
       "count": 1,
       "highlights": [
         "Publish portable MRU AICC assessment skills and installer"
+      ]
+    },
+    {
+      "date": "2026-10-25",
+      "repo": "creator-school-ramanaidu-studios",
+      "title": "Creator School Ramanaidu Studios",
+      "description": "A public project by Vamshi Creates.",
+      "demoUrl": null,
+      "image": null,
+      "count": 15,
+      "highlights": [
+        "Hero: welcome line as a pill button",
+        "Legacy heading: 'we stand' in red",
+        "Heritage: add 'The legacy we stand for' heading"
       ]
     },
     {
